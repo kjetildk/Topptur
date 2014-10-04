@@ -39,7 +39,6 @@
 		B4D175D2198C100D008DA3AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175D1198C100D008DA3AE /* AppDelegate.swift */; };
 		B4D175D5198C100D008DA3AE /* ToppTurSvalbard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4D175D3198C100D008DA3AE /* ToppTurSvalbard.xcdatamodeld */; };
 		B4D175DC198C100D008DA3AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D175DB198C100D008DA3AE /* Images.xcassets */; };
-		B4D175E8198C100D008DA3AE /* ToppTurSvalbardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175E7198C100D008DA3AE /* ToppTurSvalbardTests.swift */; };
 		B4D175F2198C11C8008DA3AE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175F1198C11C8008DA3AE /* MainVC.swift */; };
 		B4D175F4198C1215008DA3AE /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175F3198C1215008DA3AE /* DetailVC.swift */; };
 		B4D175F6198C1BF3008DA3AE /* SummitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175F5198C1BF3008DA3AE /* SummitManager.swift */; };
@@ -102,14 +101,12 @@
 		B4CEA54E19955B3F00F6411A /* EditVisitDateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditVisitDateVC.swift; sourceTree = "<group>"; };
 		B4CFB23F19ACA4D2005F9AAF /* PhotoThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoThumbnail.swift; sourceTree = "<group>"; };
 		B4D01AF619A23C8C00CA44B3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		B4D175CC198C100D008DA3AE /* Topptur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Topptur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D175CC198C100D008DA3AE /* Topptur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Topptur.app; path = "/Users/kjetildk/Google Drive/Mine Apper/Topptur/ToppturApp/build/Debug-iphoneos/Topptur.app"; sourceTree = "<absolute>"; };
 		B4D175D0198C100D008DA3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4D175D1198C100D008DA3AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4D175D4198C100D008DA3AE /* ToppTurSvalbard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToppTurSvalbard.xcdatamodel; sourceTree = "<group>"; };
 		B4D175DB198C100D008DA3AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B4D175E1198C100D008DA3AE /* ToppTurSvalbardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToppTurSvalbardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4D175E6198C100D008DA3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4D175E7198C100D008DA3AE /* ToppTurSvalbardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppTurSvalbardTests.swift; sourceTree = "<group>"; };
+		B4D175E1198C100D008DA3AE /* ToppTurSvalbardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ToppTurSvalbardTests.xctest; path = "/Users/kjetildk/Google Drive/Mine Apper/Topptur/ToppturApp/build/Debug-iphoneos/ToppTurSvalbardTests.xctest"; sourceTree = "<absolute>"; };
 		B4D175F1198C11C8008DA3AE /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B4D175F3198C1215008DA3AE /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		B4D175F5198C1BF3008DA3AE /* SummitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummitManager.swift; sourceTree = "<group>"; };
@@ -160,18 +157,7 @@
 				B4D6324819AB3B1A003A7BE9 /* CoreLocation.framework */,
 				B4D01AF619A23C8C00CA44B3 /* MapKit.framework */,
 				B4D175CE198C100D008DA3AE /* ToppTurSvalbard */,
-				B4D175E4198C100D008DA3AE /* ToppTurSvalbardTests */,
-				B4D175CD198C100D008DA3AE /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		B4D175CD198C100D008DA3AE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B4D175CC198C100D008DA3AE /* Topptur.app */,
-				B4D175E1198C100D008DA3AE /* ToppTurSvalbardTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B4D175CE198C100D008DA3AE /* ToppTurSvalbard */ = {
@@ -233,23 +219,6 @@
 				B4C6689D19A9C2CD00ACEE18 /* text-list.png */,
 				B44357C319A3E755002B8323 /* mountain.png */,
 				B4D175D0198C100D008DA3AE /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B4D175E4198C100D008DA3AE /* ToppTurSvalbardTests */ = {
-			isa = PBXGroup;
-			children = (
-				B4D175E7198C100D008DA3AE /* ToppTurSvalbardTests.swift */,
-				B4D175E5198C100D008DA3AE /* Supporting Files */,
-			);
-			path = ToppTurSvalbardTests;
-			sourceTree = "<group>";
-		};
-		B4D175E5198C100D008DA3AE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B4D175E6198C100D008DA3AE /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -332,7 +301,7 @@
 				nb,
 			);
 			mainGroup = B4D175C3198C100D008DA3AE;
-			productRefGroup = B4D175CD198C100D008DA3AE /* Products */;
+			productRefGroup = B4D175C3198C100D008DA3AE;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -418,7 +387,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4D175E8198C100D008DA3AE /* ToppTurSvalbardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
