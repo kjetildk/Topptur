@@ -31,7 +31,7 @@ class MainMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
         var longDelta:CLLocationDegrees = 0.32
         var theSpan:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
         
-        var mapCenter:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 78.2, longitude: 15.60)
+        var mapCenter:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 78.2, longitude: 15.63)
         var theRegion:MKCoordinateRegion = MKCoordinateRegion(center: mapCenter, span: theSpan)
         
         //Display in map
