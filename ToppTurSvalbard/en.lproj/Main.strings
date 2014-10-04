@@ -1,0 +1,36 @@
+
+/* Class = "IBUITabBarItem"; title = "Target"; ObjectID = "1aB-00-Vhc"; */
+"1aB-00-Vhc.title" = "Target";
+
+/* Class = "IBUITabBarItem"; title = "Visits"; ObjectID = "D8A-ah-MIX"; */
+"D8A-ah-MIX.title" = "Visits";
+
+/* Class = "IBUILabel"; text = "0 / 0"; ObjectID = "HM2-uy-lT2"; */
+"HM2-uy-lT2.text" = "0 / 0";
+
+/* Class = "IBUITextView"; text = "Description..."; ObjectID = "Hxg-76-VNZ"; */
+"Hxg-76-VNZ.text" = "Description...";
+
+/* Class = "IBUILabel"; text = "Første besøk"; ObjectID = "YVJ-tr-fsi"; */
+"YVJ-tr-fsi.text" = "First visit";
+
+/* Class = "IBUILabel"; text = "Her ser du valge ditt"; ObjectID = "YqW-3t-STp"; */
+"YqW-3t-STp.text" = "Her ser du valge ditt";
+
+/* Class = "IBUILabel"; text = "moh"; ObjectID = "aNE-gb-3Hh"; */
+"aNE-gb-3Hh.text" = "m";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Select visit date"; ObjectID = "f1M-Ls-VDn"; */
+"f1M-Ls-VDn.headerTitle" = "Select visit date";
+
+/* Class = "IBUITabBarItem"; title = "Toppturer"; ObjectID = "lAQ-5g-ciy"; */
+"lAQ-5g-ciy.title" = "Summits";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "luV-4R-uJe"; */
+"luV-4R-uJe.text" = "Label";
+
+/* Class = "IBUITabBarItem"; title = "Description"; ObjectID = "xTk-5S-uNG"; */
+"xTk-5S-uNG.title" = "Description";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "yza-BV-Z90"; */
+"yza-BV-Z90.text" = "Title";

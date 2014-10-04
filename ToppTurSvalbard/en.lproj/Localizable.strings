@@ -1,0 +1,73 @@
+/* 
+  Localizable.strings
+  ToppTurSvalbard
+
+  Created by Kjetil Dahl Knutsen on 17.08.14.
+  Copyright (c) 2014 publisoft. All rights reserved.
+*/
+
+
+
+APPLICATION_TITLE = "Summits on Svalbard";
+SUMMIT_FIRST_VISIT = "Not visited";
+
+TAKE_PICTURE = "Take Picture";
+
+CANCEL = "Cancel";
+CAMERA = "Camera";
+PHOTO_LIBRARY = "Pictures";
+
+SUMMIT_HEIGHT = "m";
+
+TERRAIN_FLAT = "Flat";
+TERRAIN_HILLY = "Hilly";
+TERRAIN_VERYHILLY = "Very Hilly";
+
+DIFFICULTY_EASY = "Easy";
+DIFFICULTY_QUITEEASY = "Quite Easy";
+DIFFICULTY_MEDIUM = "Medium";
+DIFFICULTY_MOREDEMANDING = "More Demanding";
+DIFFICULTY_INTENSIVE = "Intensive";
+DIFFICULTY_EXSTRADEMANDING = "Extra Demanding";
+
+SUTIBLEFOR_MOSTPEOPLE = "Most People";
+SUTIBLEFOR_CHILD = "Child";
+SUTIBLEFOR_YOUTH = "Youth";
+SUTIBLEFOR_SENIOR = "Senior";
+SUTIBLEFOR_MOUNTAINSPORTENTHUSIASTS = "MountainSportsEnthusiasts";
+
+INFO_HEADER_1 = "Developed by";
+INFO_HEADER_2 = "Information and data collected from";
+INFO_HEADER_3 = "DNT designations for hiking";
+
+NSLOCATIONALWAYSUSAGEDESCRIPTION = "";
+
+SUKKERTOPPEN_DESC = "Sukkertoppen is the nearest top trim post to Longyearbyen. It is located just behind (north of) downtown. The most common route to the top is to start your trip in Gruvedalen and follow back up on the left side viewed from below. Be aware of loose stones and that it sometimes is hard and icy at the top of the top before the snow has melted. There are old mining memories Mine 2b several places under Sukkertoppen, these are automatically protected. The box is on the boulevard on the first flaten.Fra loaf can keep up on the plateau, and it is nice and a slightly longer walk to go down Vannledningsdalen to the west or Steintippdalen to the east. It is also possible to move on from Sukkertoppen, inland plateau and Trollsteinen, or around Gruvedalen and to Lindholmhøgda.";
+
+SARKOFAGEN_DESC = "The trip to Sarkofagen is common to start from New Town. Here you have to cross the river while walking southward up the moraine to the right of Larsbreen, under Sarkofagen. It is relatively clear path through morena. When you get to level of the glacier plateau, turn right (back) and follow the ridge on the Sarkofagen. From the Varden with Checkout is a great view down the Longyear Valley, the city and the advent and Hiorthfjellet. Go back the same way, or cross Larsbreen and go against Trollsteinen see tour description 3 It is also possible to go through Longyearbreen and get the mailbox in Morena traveling up or down.";
+
+TROLLSTEINEN_DESC = "The trip to Trollsteinen go easily from New Town. The route on the map (green)'s winter schedule. In summer, walk the road to the old dog yard and take off to the left at the first plateau above the river valley below the sarcophagus. Follow the path through morena. Cross Lars glacier suited place, it is almost entirely flat level with the sarcophagus. Please note parties with blue ice and meltwater channels aimed Trollsteinen. At the foot of the ridge towards Trollsteinen go directly east and up or take the left (below) and follow the ridge up. The box is located at the back before the Trollsteinen, in the same place as Trollsteinens friends have had winter crate. Trollsteinen both combined with loaf (round 1), Lindholm anticline (turn 11), sarcophagus (round 2) and Morena Longyearbreen (turn 6). It is also nice to walk around around to Lars Hierta Mountain.";
+
+NORDENSKJOLD_DESC = "Nordenskiöldtoppen is the highest peak in the vicinity of Longyearbyen. People go on the top of the New Town and Sverdrupbyen via Tverrdalen or Skjæringa and over Platåberget. On top of Tverrdalen continue to the southwest through the moraine. In summer it is common to follow the East ridge of Store towards the top, but it's also nice to go down the west ridge. While there is still snow yesterday snowmobile trail and the most common route of skiing on the glacier and up the west ridge of the installations and the cabin on top. Great skiing, great opportunities for skiing in the different flanks.";
+
+BOLTERDALEN_DESC = "Park at the kennel to Base Camp or up in the bend where the old road goes to Mine 7 Follow høgdedraga inwards by more than 3 km are obvious cairn.";
+
+MORENA_DESC = "Go from New Town, follow the old road south, past the former dog yard at Mine 4 You have to cross a tilførselelv to Longyear river before following stepped up the moraine under Longyearbreen. The box stands on a large rock visible, right on the moraine. The distance from New Town to this hiking destination is 1.7 km. When you pass the old dog yard is about 850 meters left to checkout. The walk follows the rocky terrain, but is easy and can be fitted together with fossil picking, exciting for both children and adults.";
+
+BJORNDALEN_DESC = "This is a kid friendly jaunt. We encourage as many people as possible to start the trip by bike from Longyearbyen. At the end of the road in Bjørndalen continue to maintain altitude inland on the south side of Bjørndalen. After a few hundred meters walk you will see the beacon well marked. Those who want it now has a chance to proceed to checkout at Fuglefjella.";
+
+SNEHEIM_DESC = "Sneheim is dagan resort to Deer Mountain mine and the building located at 545 m. It is a protected monument, but it is possible to enter the building. The trip here is common to start from Hiorthhamn, opposite the advent of Longyearbyen. From Hiorthhamn hold to the right of the cluster of buildings, which have been laid planks through the wetlands. Continue up the hill until you hit the trail, that takes you up in northern direction towards the valley. Eventually it flattens slightly, and it is wise to try to keep some altitude before you cross the 'gutter' where it usually is snow. When the next climb begins, it is wise to keep the comb to the right of the gutter all the way to the building. The trip is approximately 1.7 km from Hiorthhamn. The box is fastened at the entrance.";
+
+PLATAABERGET_DESC = "In addition to Sukkertoppen (see tour description 1), this is the most common community in Longyearbyen. The most common route starts at Taubanesentralen. Here's a step up to the Varden. The box is on the first cairn you come to. The trip is about 900 m long. If you want a longer hike, continue on up and inward Platåberget. Then you can go back Sverdrup Hammaren (tour description 14) and possibly continue up the Nordenskiöldtoppen (tour description 4).";
+
+FUGLEFJELLA_DESC = "Start the walk where the road ends in Bjørndalen, at the site linked to mine 3 Go south and cross Bjørndalselva. You may want to look for a good wading place early, when the water flow varies widely. After approximately 1.5 km follow the first deep ravine just west on Pilarberget. Up on the plateau, go north. The box is on the boulevard, the tip of the decorations facing the fjord.";
+
+LINDHOLMHOGDA_DESC = "Northwestern tip of Lindholm Høgda go to from the center, or from the kennel or from the road by Kuhaugen. Follow the cable car route into Adventdalen from Blåmyra along the north side of Sukkertoppen to Gruvedalen (Steintippdalen). Here you have to walk a short distance up the valley, for it is steep right under the cable car route. Cross the river and follow the ridge along Lindholmfjellet. It is very steep and rough on the right side, hold therefore left up to the top. There are three 'levels', and the case is on the third, 363 m. It can be tricky to get right up on top of the mountain (445 m), and therefore are not case placed there. An alternative route is to go from 'Kuhaugen' above the kennel at Isdammen and follow the ridge up.";
+
+BLOMSTERDALSHOGDA_DESC = "It's nice to start the walk from the funicular center and follow the Burma Road onto the road to the Mine 3 Derfrat walk up the ridge to the left of Blomsterdalen seen from below. It's gentle slope, before going steeply up towards the last state where cairns says. Until the snow melts, it's easiest to keep right up to cairns. At the top there are several vard formations (cultural). The box is located approximately 100 meters further up the ravine on a small hill. Here is a nice view to the fjord. The tour can be combined with a trip nr 9, Varden on Platåberget. Follow the height of the wing / ramp between the two destination.";
+
+ENDALEN_DESC = "This is a nice winter walk, especially after being run Løyp into Endalen. The trip can either be started by the main road through Adventdalen or by running into mine 5th Post Kassa is approximately 4.4 kilometers by Mining 5th Summer route goes up from the riverbed.";
+
+SVERDRUPHAMAREN_DESC = "Main Route: Start from the house, go through Tverrdalen and on Platåberget. Then go north towards Nina Varden / posts and continue in that direction until you reach a dalsøkk.Kryss this and turn east toward New Town / gruve2 mountain. Varden is a few meters down on the edge. Another option is to combine 'Varden' (Suggestion 9) and Sverdruphammarn. After going up to the Varden continue up a small level until you're up on the plateau and follow the edge backwards along Longyeardalen until you hit the canyon walls, then the beacon seen slightly to the left in the direction New Town.";
+
+INFO_DNT_TEXT = "Difficulty\n\nEasy - day trips from the cabin or light dagsarrangement for everyone. The tours can usually be adapted to participants' assumptions. Fresh daypack. \n Pretty easy - day tours from a hut or Stages on 2-4 hour / about 15 km. Light day pack or bag of 8-10 kg.\nMedium - longest day trip of 5 hours / about 20 km. Bag of 8 -10 kg.\nMore demanding - the longest day trip on 6 -7 hours / about 25 km. Bag of 8 -10 kg.\nDemanding - longest day trip of 7-9 hours / about 30 km. Bag of 8 -10 kg.\nExtra demanding - trips with longer and heavier Stages than 9 hours.\n\nTerrain\n\n\nRough terrain indicates the route runs through and is divided into the following grades:\n\nFlatt - means that the tour is easy terrain\nHilly -Does that the terrain is hilly\n Very kupert- means it will be much ascent and descent\n\nWho is this trip for?\n\nMost people - tours courses and events for adults\nChildren - trips, courses and events for the age group 0 to 12 years, with or without parents\nYouth - trips, courses and events for the age group 13 to 26 years\nSenior - trips and events specifically tailored for the age group 60 +\nMountaineers - trips, courses and events with activities in mountain sports, as eg glacier climbing";
