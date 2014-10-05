@@ -34,7 +34,7 @@ SUTIBLEFOR_MOSTPEOPLE = "Most People";
 SUTIBLEFOR_CHILD = "Child";
 SUTIBLEFOR_YOUTH = "Youth";
 SUTIBLEFOR_SENIOR = "Senior";
-SUTIBLEFOR_MOUNTAINSPORTENTHUSIASTS = "MountainSportsEnthusiasts";
+SUTIBLEFOR_MOUNTAINSPORTENTHUSIASTS = "Mountainsports Enthusiasts";
 
 INFO_HEADER_1 = "Developed by";
 INFO_HEADER_2 = "Information and data collected from";
