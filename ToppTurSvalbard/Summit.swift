@@ -26,11 +26,11 @@ class Summit: NSObject {
     class Visit: NSObject{
         
         var visitDate:NSDate = NSDate()
-        var photo:UIImage = UIImage(named: "AppIcon72x72.png")
+        var photo:UIImage = UIImage(named: "AppIcon72x72.png")!
         
         init(visitDate:NSDate, photo:NSData){
             self.visitDate = visitDate
-            self.photo = UIImage(data: photo)
+            self.photo = UIImage(data: photo)!
         }
         
         func addPhoto(photo:UIImage){

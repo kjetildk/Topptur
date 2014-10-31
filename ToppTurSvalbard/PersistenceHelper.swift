@@ -46,8 +46,8 @@ class PersistenceHelper: NSObject {
         var request = NSFetchRequest(entityName: entity)
         request.returnsObjectsAsFaults = false
         
-        let resultPredicate1 = NSPredicate(format: "name = %@", name)
-        let resultPredicate2 = NSPredicate(format: "visitdate = %@", value)
+        let resultPredicate1:NSPredicate = NSPredicate(format: "name = %@", name)!
+        let resultPredicate2:NSPredicate = NSPredicate(format: "visitdate = %@", value)!
         
         var compound = NSCompoundPredicate.andPredicateWithSubpredicates([resultPredicate1, resultPredicate2])
         request.predicate = compound
@@ -72,8 +72,8 @@ class PersistenceHelper: NSObject {
         var request = NSFetchRequest(entityName: entity)
         request.returnsObjectsAsFaults = false
         
-        let resultPredicate1 = NSPredicate(format: "name = %@", name)
-        let resultPredicate2 = NSPredicate(format: "visitdate = %@", value)
+        let resultPredicate1:NSPredicate = NSPredicate(format: "name = %@", name)!
+        let resultPredicate2:NSPredicate = NSPredicate(format: "visitdate = %@", value)!
         
         var compound = NSCompoundPredicate.andPredicateWithSubpredicates([resultPredicate1, resultPredicate2])
         request.predicate = compound
@@ -101,8 +101,8 @@ class PersistenceHelper: NSObject {
         var request = NSFetchRequest(entityName: entity)
         request.returnsObjectsAsFaults = false
         
-        let resultPredicate1 = NSPredicate(format: "name = %@", name)
-        let resultPredicate2 = NSPredicate(format: "visitdate = %@", value)
+        let resultPredicate1:NSPredicate = NSPredicate(format: "name = %@", name)!
+        let resultPredicate2:NSPredicate = NSPredicate(format: "visitdate = %@", value)!
         
         var compound = NSCompoundPredicate.andPredicateWithSubpredicates([resultPredicate1, resultPredicate2])
         request.predicate = compound

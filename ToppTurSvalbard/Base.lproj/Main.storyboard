@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pgc-cg-aSZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pgc-cg-aSZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -576,12 +576,12 @@ Cgo
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="10A-rq-Gbs">
-                        <barButtonItem key="leftBarButtonItem" image="info.png" id="aaK-iy-Mql">
+                        <barButtonItem key="leftBarButtonItem" image="BarIconInfo" id="aaK-iy-Mql">
                             <connections>
                                 <segue destination="9E2-Kt-Gc2" kind="show" identifier="showInfo" id="O5L-Ez-716"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="103-map.png" id="Adq-3P-jIK">
+                        <barButtonItem key="rightBarButtonItem" image="BarIconMap" id="Adq-3P-jIK">
                             <connections>
                                 <segue destination="Cw3-jk-GK3" kind="show" identifier="showMap" id="y0n-cS-WAc"/>
                             </connections>
@@ -610,9 +610,6 @@ Cgo
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3GV-hW-Ppm">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
-                                </variation>
                                 <connections>
                                     <outlet property="delegate" destination="Cw3-jk-GK3" id="wpn-ZM-E7S"/>
                                 </connections>
@@ -733,7 +730,7 @@ Cgo
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2R-k4-kzw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer numberOfTapsRequired="2" id="zbu-Ct-WBN">
                     <connections>
-                        <segue destination="gO5-va-EKg" kind="show" identifier="addVisitDate" id="y7y-58-w3y"/>
+                        <action selector="AddCurrentDate:" destination="plT-tn-RiM" id="hvd-zP-ukZ"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -1228,15 +1225,15 @@ Cgo
     </scenes>
     <resources>
         <image name="07-map-marker.png" width="16" height="26"/>
-        <image name="103-map.png" width="26" height="21"/>
         <image name="AppIcon72x72.png" width="72" height="72"/>
+        <image name="BarIconInfo" width="22" height="22"/>
+        <image name="BarIconMap" width="22" height="22"/>
         <image name="Blomsterdalshogda.png" width="329" height="147"/>
-        <image name="info.png" width="30" height="30"/>
         <image name="mountain.png" width="30" height="30"/>
         <image name="text-list.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Edf-tN-I1s"/>
+        <segue reference="dfC-gV-ol0"/>
         <segue reference="itA-Re-vQA"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -38,6 +38,12 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
         visitList.reloadData()
     }
     
+    //Add current date to the list
+    @IBAction func AddCurrentDate(sender: AnyObject) {
+        
+        loggVisit()
+    }
+    
     //This is for the tableview actions
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return summit!.getVisitCount()
@@ -56,7 +62,7 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
             let formatter = NSDateFormatter()
             formatter.dateStyle = .FullStyle
             cell.visitDate = date
-            cell.textLabel?.text = formatter.stringFromDate(date)
+            cell.textLabel.text = formatter.stringFromDate(date)
         }
         return cell
     }

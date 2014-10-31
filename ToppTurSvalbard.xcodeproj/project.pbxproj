@@ -10,7 +10,6 @@
 		B4216C6319A29BC900BC8725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4216C6119A29BC900BC8725 /* Main.storyboard */; };
 		B44357C419A3E755002B8323 /* mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = B44357C319A3E755002B8323 /* mountain.png */; };
 		B4520F4C19917CEF00268F05 /* SummitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4520F4B19917CEF00268F05 /* SummitCell.swift */; };
-		B45B8C1219C72379003F8B7A /* mountain_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B45B8C1119C72379003F8B7A /* mountain_small.png */; };
 		B469C0F819C4B381005C9596 /* ImageVideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469C0F719C4B381005C9596 /* ImageVideoPicker.swift */; };
 		B48C6D4D19AB911E009AFB4B /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48C6D4C19AB911E009AFB4B /* Photos.framework */; };
 		B4C523A919D1831B00CD44C2 /* ToppturSvalbard.geojson in Resources */ = {isa = PBXBuildFile; fileRef = B4C523A819D1831B00CD44C2 /* ToppturSvalbard.geojson */; };
@@ -48,13 +47,10 @@
 		B4D6324919AB3B1A003A7BE9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D6324819AB3B1A003A7BE9 /* CoreLocation.framework */; };
 		B4D6324D19AB5FB0003A7BE9 /* 103-map.png in Resources */ = {isa = PBXBuildFile; fileRef = B4D6324C19AB5FB0003A7BE9 /* 103-map.png */; };
 		B4D6324F19AB6000003A7BE9 /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = B4D6324E19AB6000003A7BE9 /* 07-map-marker.png */; };
-		B4D6325119AB60E7003A7BE9 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = B4D6325019AB60E7003A7BE9 /* info.png */; };
 		B4DCF59619A9157000C3B7F2 /* DescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCF59519A9157000C3B7F2 /* DescriptionVC.swift */; };
 		B4DCF59A19A92E8E00C3B7F2 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCF59919A92E8E00C3B7F2 /* MapVC.swift */; };
 		B4DE042B19A0BE69004EF7C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4DE042D19A0BE69004EF7C3 /* Localizable.strings */; };
 		B4E4A6E819CAF1A8002B5AC6 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4A6E719CAF1A8002B5AC6 /* InfoVC.swift */; };
-		B4E4A6F019CB80B8002B5AC6 /* LaunchImage640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = B4E4A6EE19CB80B8002B5AC6 /* LaunchImage640x1136.png */; };
-		B4E4A6F219CB8126002B5AC6 /* LaunchImage640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = B4E4A6F119CB8126002B5AC6 /* LaunchImage640x960.png */; };
 		B4EEFFF119D1CF7B00526376 /* AppIcon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EEFFF019D1CF7B00526376 /* AppIcon72x72.png */; };
 		B4FB189C19B73AB8000994AB /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB189B19B73AB8000994AB /* TabBarVC.swift */; };
 /* End PBXBuildFile section */
@@ -73,7 +69,6 @@
 		B4216C6219A29BC900BC8725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B44357C319A3E755002B8323 /* mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mountain.png; path = "iconbeast-lite/iconbeast lite - png/mountain.png"; sourceTree = "<group>"; };
 		B4520F4B19917CEF00268F05 /* SummitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummitCell.swift; sourceTree = "<group>"; };
-		B45B8C1119C72379003F8B7A /* mountain_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mountain_small.png; path = "iconbeast-lite/iconbeast lite - png/mountain_small.png"; sourceTree = "<group>"; };
 		B45B8C1419C72660003F8B7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		B45B8C1619C726A2003F8B7A /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Main.strings; sourceTree = "<group>"; };
 		B469C0F719C4B381005C9596 /* ImageVideoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVideoPicker.swift; sourceTree = "<group>"; };
@@ -101,30 +96,27 @@
 		B4CEA54E19955B3F00F6411A /* EditVisitDateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditVisitDateVC.swift; sourceTree = "<group>"; };
 		B4CFB23F19ACA4D2005F9AAF /* PhotoThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoThumbnail.swift; sourceTree = "<group>"; };
 		B4D01AF619A23C8C00CA44B3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		B4D175CC198C100D008DA3AE /* Topptur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Topptur.app; path = "/Users/kjetildk/Google Drive/Mine Apper/Topptur/ToppturApp/build/Debug-iphoneos/Topptur.app"; sourceTree = "<absolute>"; };
 		B4D175D0198C100D008DA3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4D175D1198C100D008DA3AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4D175D4198C100D008DA3AE /* ToppTurSvalbard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToppTurSvalbard.xcdatamodel; sourceTree = "<group>"; };
 		B4D175DB198C100D008DA3AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B4D175E1198C100D008DA3AE /* ToppTurSvalbardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ToppTurSvalbardTests.xctest; path = "/Users/kjetildk/Google Drive/Mine Apper/Topptur/ToppturApp/build/Debug-iphoneos/ToppTurSvalbardTests.xctest"; sourceTree = "<absolute>"; };
 		B4D175F1198C11C8008DA3AE /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B4D175F3198C1215008DA3AE /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		B4D175F5198C1BF3008DA3AE /* SummitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummitManager.swift; sourceTree = "<group>"; };
 		B4D175F7198C1C4C008DA3AE /* PersistenceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceHelper.swift; sourceTree = "<group>"; };
+		B4D57BA21A026885008D5478 /* Topptur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Topptur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D57BA31A026885008D5478 /* ToppTurSvalbardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ToppTurSvalbardTests.xctest; path = "/Users/kjetildk/Google Drive/Mine Apper/Topptur/ToppturApp/build/Debug-iphoneos/ToppTurSvalbardTests.xctest"; sourceTree = "<absolute>"; };
 		B4D6324019AB1C55003A7BE9 /* MainMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMapVC.swift; sourceTree = "<group>"; };
 		B4D6324619AB338A003A7BE9 /* SummitPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummitPointAnnotation.swift; sourceTree = "<group>"; };
 		B4D6324819AB3B1A003A7BE9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B4D6324C19AB5FB0003A7BE9 /* 103-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "103-map.png"; path = "PNG icons/103-map.png"; sourceTree = "<group>"; };
 		B4D6324E19AB6000003A7BE9 /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "07-map-marker.png"; path = "PNG icons/07-map-marker.png"; sourceTree = "<group>"; };
-		B4D6325019AB60E7003A7BE9 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.png; path = "iconbeast-lite/iconbeast lite - png/info.png"; sourceTree = "<group>"; };
 		B4DCF59519A9157000C3B7F2 /* DescriptionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionVC.swift; sourceTree = "<group>"; };
 		B4DCF59919A92E8E00C3B7F2 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		B4DE042C19A0BE69004EF7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B4DE043119A0BF2B004EF7C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B4DE043319A0C069004EF7C3 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B4E4A6E719CAF1A8002B5AC6 /* InfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
-		B4E4A6EE19CB80B8002B5AC6 /* LaunchImage640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage640x1136.png; sourceTree = "<group>"; };
-		B4E4A6F119CB8126002B5AC6 /* LaunchImage640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage640x960.png; sourceTree = "<group>"; };
 		B4EEFFF019D1CF7B00526376 /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon72x72.png; sourceTree = "<group>"; };
 		B4FB189B19B73AB8000994AB /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,34 +149,28 @@
 				B4D6324819AB3B1A003A7BE9 /* CoreLocation.framework */,
 				B4D01AF619A23C8C00CA44B3 /* MapKit.framework */,
 				B4D175CE198C100D008DA3AE /* ToppTurSvalbard */,
+				B4D57BA21A026885008D5478 /* Topptur.app */,
 			);
 			sourceTree = "<group>";
 		};
 		B4D175CE198C100D008DA3AE /* ToppTurSvalbard */ = {
 			isa = PBXGroup;
 			children = (
-				B4216C6119A29BC900BC8725 /* Main.storyboard */,
-				B4C8973519D1649300B19933 /* Launch Screen.xib */,
-				B4C523A819D1831B00CD44C2 /* ToppturSvalbard.geojson */,
+				B4D57BCD1A0384AC008D5478 /* Photo and Video */,
+				B4D57BA41A0268E2008D5478 /* Images */,
+				B4D57BA51A0268F9008D5478 /* Geodata */,
+				B4D57BCC1A03848D008D5478 /* Core Data */,
+				B4D57BCB1A038423008D5478 /* Summit */,
+				B4D57BCA1A03840B008D5478 /* Storyboard */,
 				B4D175D1198C100D008DA3AE /* AppDelegate.swift */,
 				B4D175F1198C11C8008DA3AE /* MainVC.swift */,
 				B4E4A6E719CAF1A8002B5AC6 /* InfoVC.swift */,
 				B4D6324019AB1C55003A7BE9 /* MainMapVC.swift */,
-				B4D6324619AB338A003A7BE9 /* SummitPointAnnotation.swift */,
 				B4D175F3198C1215008DA3AE /* DetailVC.swift */,
 				B4CEA54E19955B3F00F6411A /* EditVisitDateVC.swift */,
-				B4CFB23F19ACA4D2005F9AAF /* PhotoThumbnail.swift */,
 				B4DCF59519A9157000C3B7F2 /* DescriptionVC.swift */,
 				B4DCF59919A92E8E00C3B7F2 /* MapVC.swift */,
 				B4FB189B19B73AB8000994AB /* TabBarVC.swift */,
-				B4D175F5198C1BF3008DA3AE /* SummitManager.swift */,
-				B4D175F7198C1C4C008DA3AE /* PersistenceHelper.swift */,
-				B4C936FB199803AF0078BFC7 /* VisitCell.swift */,
-				B4520F4B19917CEF00268F05 /* SummitCell.swift */,
-				B4CC1CB91991F64A0059B5AD /* Summit.swift */,
-				B469C0F719C4B381005C9596 /* ImageVideoPicker.swift */,
-				B4D175DB198C100D008DA3AE /* Images.xcassets */,
-				B4D175D3198C100D008DA3AE /* ToppTurSvalbard.xcdatamodeld */,
 				B4DE042D19A0BE69004EF7C3 /* Localizable.strings */,
 				B4D175CF198C100D008DA3AE /* Supporting Files */,
 			);
@@ -195,8 +181,20 @@
 			isa = PBXGroup;
 			children = (
 				B4EEFFF019D1CF7B00526376 /* AppIcon72x72.png */,
-				B4E4A6F119CB8126002B5AC6 /* LaunchImage640x960.png */,
-				B4E4A6EE19CB80B8002B5AC6 /* LaunchImage640x1136.png */,
+				B4D6324E19AB6000003A7BE9 /* 07-map-marker.png */,
+				B4D6324C19AB5FB0003A7BE9 /* 103-map.png */,
+				B4C668A319A9C3CA00ACEE18 /* facebook.png */,
+				B4C6689D19A9C2CD00ACEE18 /* text-list.png */,
+				B44357C319A3E755002B8323 /* mountain.png */,
+				B4D175D0198C100D008DA3AE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4D57BA41A0268E2008D5478 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B4D175DB198C100D008DA3AE /* Images.xcassets */,
 				B4C95EAF19C836F800BBF135 /* Blomsterdalshogda.png */,
 				B4C95EB019C836F800BBF135 /* Endalen.png */,
 				B4C95EB119C836F800BBF135 /* Fuglefjella.png */,
@@ -211,16 +209,55 @@
 				B4C95EBA19C836F800BBF135 /* VardenBjorndalen.png */,
 				B4C95EBB19C836F800BBF135 /* VardenBolterdalen.png */,
 				B4C95EBC19C836F800BBF135 /* VardenPlataaberget.png */,
-				B45B8C1119C72379003F8B7A /* mountain_small.png */,
-				B4D6325019AB60E7003A7BE9 /* info.png */,
-				B4D6324E19AB6000003A7BE9 /* 07-map-marker.png */,
-				B4D6324C19AB5FB0003A7BE9 /* 103-map.png */,
-				B4C668A319A9C3CA00ACEE18 /* facebook.png */,
-				B4C6689D19A9C2CD00ACEE18 /* text-list.png */,
-				B44357C319A3E755002B8323 /* mountain.png */,
-				B4D175D0198C100D008DA3AE /* Info.plist */,
 			);
-			name = "Supporting Files";
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B4D57BA51A0268F9008D5478 /* Geodata */ = {
+			isa = PBXGroup;
+			children = (
+				B4C523A819D1831B00CD44C2 /* ToppturSvalbard.geojson */,
+			);
+			name = Geodata;
+			sourceTree = "<group>";
+		};
+		B4D57BCA1A03840B008D5478 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B4216C6119A29BC900BC8725 /* Main.storyboard */,
+				B4C8973519D1649300B19933 /* Launch Screen.xib */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		B4D57BCB1A038423008D5478 /* Summit */ = {
+			isa = PBXGroup;
+			children = (
+				B4D175F5198C1BF3008DA3AE /* SummitManager.swift */,
+				B4CC1CB91991F64A0059B5AD /* Summit.swift */,
+				B4520F4B19917CEF00268F05 /* SummitCell.swift */,
+				B4D6324619AB338A003A7BE9 /* SummitPointAnnotation.swift */,
+				B4C936FB199803AF0078BFC7 /* VisitCell.swift */,
+			);
+			name = Summit;
+			sourceTree = "<group>";
+		};
+		B4D57BCC1A03848D008D5478 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				B4D175D3198C100D008DA3AE /* ToppTurSvalbard.xcdatamodeld */,
+				B4D175F7198C1C4C008DA3AE /* PersistenceHelper.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		B4D57BCD1A0384AC008D5478 /* Photo and Video */ = {
+			isa = PBXGroup;
+			children = (
+				B4CFB23F19ACA4D2005F9AAF /* PhotoThumbnail.swift */,
+				B469C0F719C4B381005C9596 /* ImageVideoPicker.swift */,
+			);
+			name = "Photo and Video";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +277,7 @@
 			);
 			name = ToppTurSvalbard;
 			productName = ToppTurSvalbard;
-			productReference = B4D175CC198C100D008DA3AE /* Topptur.app */;
+			productReference = B4D57BA21A026885008D5478 /* Topptur.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B4D175E0198C100D008DA3AE /* ToppTurSvalbardTests */ = {
@@ -258,7 +295,7 @@
 			);
 			name = ToppTurSvalbardTests;
 			productName = ToppTurSvalbardTests;
-			productReference = B4D175E1198C100D008DA3AE /* ToppTurSvalbardTests.xctest */;
+			productReference = B4D57BA31A026885008D5478 /* ToppTurSvalbardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -331,19 +368,15 @@
 				B4216C6319A29BC900BC8725 /* Main.storyboard in Resources */,
 				B44357C419A3E755002B8323 /* mountain.png in Resources */,
 				B4C668A419A9C3CA00ACEE18 /* facebook.png in Resources */,
-				B4D6325119AB60E7003A7BE9 /* info.png in Resources */,
 				B4C95EC719C836F800BBF135 /* Trollstein.png in Resources */,
 				B4C95EC519C836F800BBF135 /* Sukkertoppen.png in Resources */,
 				B4D175DC198C100D008DA3AE /* Images.xcassets in Resources */,
 				B4C95EC819C836F800BBF135 /* VardenBjorndalen.png in Resources */,
-				B4E4A6F219CB8126002B5AC6 /* LaunchImage640x960.png in Resources */,
 				B4C95ECA19C836F800BBF135 /* VardenPlataaberget.png in Resources */,
 				B4C95EBE19C836F800BBF135 /* Endalen.png in Resources */,
 				B4C6689E19A9C2CD00ACEE18 /* text-list.png in Resources */,
-				B45B8C1219C72379003F8B7A /* mountain_small.png in Resources */,
 				B4EEFFF119D1CF7B00526376 /* AppIcon72x72.png in Resources */,
 				B4C95EBD19C836F800BBF135 /* Blomsterdalshogda.png in Resources */,
-				B4E4A6F019CB80B8002B5AC6 /* LaunchImage640x1136.png in Resources */,
 				B4C523A919D1831B00CD44C2 /* ToppturSvalbard.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
