@@ -41,6 +41,11 @@ INFO_HEADER_1 = "Utviklet av";
 INFO_HEADER_2 = "Informasjon og data hentet fra";
 INFO_HEADER_3 = "DNT sine betegnelser for fotturer";
 
+CURRENT_LOCATION_RESTRICTED_ACCESS = "Begrenset tilgang til lokasjon"
+CURRENT_LOCATION_USER_DENIED = "Bruker avslå tilgang til lokasjon"
+CURRENT_LOCATION_NOT_DETERMINED = "Status ikke avgjort"
+CURRENT_LOCATION_ALLOWED = "Godkjent tilgang til lokasjon"
+
 NSLOCATIONALWAYSUSAGEDESCRIPTION = "";
 
 SUKKERTOPPEN_DESC = "Sukkertoppen er den nærmeste topptrimposten til Longyearbyen. Den ligger like bak (sørøst for) sentrum. Den vanligste ruta til toppen er å starte turen i Gruvedalen og følge ryggen oppover på venstre side sett nedenfra. Vær oppmerksom på løse steiner og at det av og til er hardt og isete øverst under toppen før snøen er smeltet. Det er gamle gruveminner etter Gruve 2b flere steder under Sukkertoppen, disse er automatisk fredet. Kassen står på varden på den første flaten.Fra Sukkertoppen kan du fortsette opp på platået, og det er fint og en litt lenger tur å gå ned Vannledningsdalen mot vest eller Steintippdalen mot øst. Det er også mulig å gå videre fra Sukkertoppen, innover platået og til Trollsteinen, eller rundt Gruvedalen og over til Lindholmhøgda.";

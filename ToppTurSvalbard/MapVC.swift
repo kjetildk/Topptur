@@ -52,6 +52,9 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         tileOverlay.canReplaceMapContent = true
         self.mapView.addOverlay(tileOverlay)
         
+        //Load the track for this summit
+        loadGPXTracks(summit.name)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -86,8 +89,8 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             var locationObj = locationArray.lastObject as CLLocation
             var coord = locationObj.coordinate
             
-            println(coord.latitude)
-            println(coord.longitude)
+            //println(coord.latitude)
+            //println(coord.longitude)
         }
     }
     
@@ -96,13 +99,13 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         
         switch status {
         case CLAuthorizationStatus.Restricted:
-            locationStatus = "Restricted Access to location"
+            locationStatus = NSLocalizedString("CURRENT_LOCATION_RESTRICTED_ACCESS",comment:"Restricted Access to location")
         case CLAuthorizationStatus.Denied:
-            locationStatus = "User denied access to location"
+            locationStatus = NSLocalizedString("CURRENT_LOCATION_USER_DENIED",comment:"User denied access to location")
         case CLAuthorizationStatus.NotDetermined:
-            locationStatus = "Status not determined"
+            locationStatus = NSLocalizedString("CURRENT_LOCATION_NOT_DETERMINED",comment:"Status not determined")
         default:
-            locationStatus = "Allowed to location Access"
+            locationStatus = NSLocalizedString("CURRENT_LOCATION_ALLOWED",comment:"Allowed to location Access")
             shouldIAllow = true
         }
         NSNotificationCenter.defaultCenter().postNotificationName("LabelHasbeenUpdated", object: nil)
@@ -144,16 +147,45 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     }
     
     func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
-        println("rendererForOverlay");
         
         if (overlay is MKPolyline) {
-            var pr = MKPolylineRenderer(overlay: overlay);
-            pr.strokeColor = UIColor.blueColor().colorWithAlphaComponent(0.5);
-            pr.lineWidth = 5;
-            return pr;
+            var lineView:MKPolylineRenderer = MKPolylineRenderer(overlay: overlay)
+            lineView.strokeColor = UIColor.blueColor()
+            return lineView
         }
         
         return nil
+    }
+
+    func loadGPXTracks(filename:NSString){
+        
+        let gpx:GPXRoot = GPXParser.parseGPXAtPath(NSBundle.mainBundle().pathForResource(filename, ofType: "GPX")!)
+        
+        let tracks = gpx.tracks as [GPXTrack]
+        var pointsToUse: [CLLocationCoordinate2D] = []
+        
+        for oneTrack in tracks{
+            pointsToUse.reserveCapacity(oneTrack.tracksegments.count)
+            
+            let segments = oneTrack.tracksegments as [GPXTrackSegment]
+            
+            for segment in segments {
+                
+                let trackpoints = segment.trackpoints as [GPXTrackPoint]
+                
+                for trackpoint in trackpoints{
+                    
+                    pointsToUse.append(CLLocationCoordinate2DMake( Double(trackpoint.latitude), Double(trackpoint.longitude)))
+                }
+            }
+            
+            //Add track to map
+            let myPolyline:MKPolyline = MKPolyline(coordinates: &pointsToUse, count: pointsToUse.count)
+            self.mapView.addOverlay(myPolyline)
+            
+            //clean up before next track
+            pointsToUse.removeAll(keepCapacity: false)
+        }
     }
 
 }

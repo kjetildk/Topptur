@@ -40,6 +40,12 @@ INFO_HEADER_1 = "Developed by";
 INFO_HEADER_2 = "Information and data collected from";
 INFO_HEADER_3 = "DNT designations for hiking";
 
+
+CURRENT_LOCATION_RESTRICTED_ACCESS = "Restricted Access to location"
+CURRENT_LOCATION_USER_DENIED = "User denied access to location"
+CURRENT_LOCATION_NOT_DETERMINED = "Status not determined"
+CURRENT_LOCATION_ALLOWED = "Allowed to location Access"
+
 NSLOCATIONALWAYSUSAGEDESCRIPTION = "";
 
 SUKKERTOPPEN_DESC = "Sukkertoppen is the nearest top trim post to Longyearbyen. It is located just behind (north of) downtown. The most common route to the top is to start your trip in Gruvedalen and follow back up on the left side viewed from below. Be aware of loose stones and that it sometimes is hard and icy at the top of the top before the snow has melted. There are old mining memories Mine 2b several places under Sukkertoppen, these are automatically protected. The box is on the boulevard on the first flaten.Fra loaf can keep up on the plateau, and it is nice and a slightly longer walk to go down Vannledningsdalen to the west or Steintippdalen to the east. It is also possible to move on from Sukkertoppen, inland plateau and Trollsteinen, or around Gruvedalen and to Lindholmhøgda.";
