@@ -20,7 +20,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
 
         self.navigationItem.title = NSLocalizedString("APPLICATION_TITLE",comment:"Toppturer på Svalbard")
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -124,5 +123,5 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             mapVC.summit = summit
         }
     }
-
+    
 }

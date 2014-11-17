@@ -43,6 +43,8 @@ class MainMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
             //Make a pin for the loicaiton
             self.mapView.addAnnotation(SummitPointAnnotation(summit: summit))
         }
+        
+        loadGPXTracks("Topptur")
 
     }
 
@@ -82,6 +84,20 @@ class MainMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
         
         return pinView
     }
+    
+    func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer!{
+        
+        if overlay is MKPolyline {
+            
+            var lineView:MKPolylineRenderer = MKPolylineRenderer(overlay: overlay)
+            lineView.strokeColor = UIColor.blueColor()
+            return lineView
+            
+        }
+        
+        return nil
+    }
+
     
     func initLocationManager() {
         seenError = false
@@ -139,15 +155,37 @@ class MainMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
         }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func loadGPXTracks(filename:NSString){
+        
+        let gpx:GPXRoot = GPXParser.parseGPXAtPath(NSBundle.mainBundle().pathForResource(filename, ofType: "GPX")!)
+        
+        let tracks = gpx.tracks as [GPXTrack]
+        var pointsToUse: [CLLocationCoordinate2D] = []
+        
+        for oneTrack in tracks{
+            
+            pointsToUse.reserveCapacity(oneTrack.tracksegments.count)
+            NSLog("New oneTrack: %d",pointsToUse.count)
+            
+            let segments = oneTrack.tracksegments as [GPXTrackSegment]
+            
+            for segment in segments {
+                NSLog("New segment")
+                
+                let trackpoints = segment.trackpoints as [GPXTrackPoint]
+        
+                for trackpoint in trackpoints{
+                   
+                    pointsToUse.append(CLLocationCoordinate2DMake( Double(trackpoint.latitude), Double(trackpoint.longitude)))
+                }
+            }
+            
+            //Add track to map
+            let myPolyline:MKPolyline = MKPolyline(coordinates: &pointsToUse, count: pointsToUse.count)
+            self.mapView.addOverlay(myPolyline)
+            
+            //clean up before next track
+            pointsToUse.removeAll(keepCapacity: false)
+        }
     }
-    */
-
 }

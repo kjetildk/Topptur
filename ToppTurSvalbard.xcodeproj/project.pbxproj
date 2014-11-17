@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9382535C54D42FC1B542B057 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E32483AE741A77F052FAC12E /* libPods.a */; };
+		B418751A1A0CCFA000802DCE /* MineTracks.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B41875191A0CCFA000802DCE /* MineTracks.GPX */; };
 		B4216C6319A29BC900BC8725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4216C6119A29BC900BC8725 /* Main.storyboard */; };
 		B44357C419A3E755002B8323 /* mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = B44357C319A3E755002B8323 /* mountain.png */; };
 		B4520F4C19917CEF00268F05 /* SummitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4520F4B19917CEF00268F05 /* SummitCell.swift */; };
@@ -42,6 +44,9 @@
 		B4D175F4198C1215008DA3AE /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175F3198C1215008DA3AE /* DetailVC.swift */; };
 		B4D175F6198C1BF3008DA3AE /* SummitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175F5198C1BF3008DA3AE /* SummitManager.swift */; };
 		B4D175F8198C1C4C008DA3AE /* PersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175F7198C1C4C008DA3AE /* PersistenceHelper.swift */; };
+		B4D2A3191A10C10200107BB0 /* Topptur.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4D2A3181A10C10200107BB0 /* Topptur.GPX */; };
+		B4D2A31B1A10C95600107BB0 /* Lindholmshøgda.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4D2A31A1A10C95600107BB0 /* Lindholmshøgda.GPX */; };
+		B4D2A31D1A10CB1000107BB0 /* Sukkertoppen.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4D2A31C1A10CB1000107BB0 /* Sukkertoppen.GPX */; };
 		B4D6324119AB1C55003A7BE9 /* MainMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D6324019AB1C55003A7BE9 /* MainMapVC.swift */; };
 		B4D6324719AB338A003A7BE9 /* SummitPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D6324619AB338A003A7BE9 /* SummitPointAnnotation.swift */; };
 		B4D6324919AB3B1A003A7BE9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D6324819AB3B1A003A7BE9 /* CoreLocation.framework */; };
@@ -66,12 +71,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		927B464433E3DAF468879A76 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9BB14E605E8C81C51782C672 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B41875191A0CCFA000802DCE /* MineTracks.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MineTracks.GPX; sourceTree = "<group>"; };
 		B4216C6219A29BC900BC8725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B44357C319A3E755002B8323 /* mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mountain.png; path = "iconbeast-lite/iconbeast lite - png/mountain.png"; sourceTree = "<group>"; };
 		B4520F4B19917CEF00268F05 /* SummitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummitCell.swift; sourceTree = "<group>"; };
 		B45B8C1419C72660003F8B7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		B45B8C1619C726A2003F8B7A /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Main.strings; sourceTree = "<group>"; };
 		B469C0F719C4B381005C9596 /* ImageVideoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVideoPicker.swift; sourceTree = "<group>"; };
+		B47C47821A0B7FE0002F5B7E /* ToppTurSvalbardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToppTurSvalbardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48C6D4C19AB911E009AFB4B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		B4C523A819D1831B00CD44C2 /* ToppturSvalbard.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToppturSvalbard.geojson; sourceTree = "<group>"; };
 		B4C6689D19A9C2CD00ACEE18 /* text-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "text-list.png"; path = "iconbeast-lite/iconbeast lite - png/text-list.png"; sourceTree = "<group>"; };
@@ -104,13 +113,16 @@
 		B4D175F3198C1215008DA3AE /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		B4D175F5198C1BF3008DA3AE /* SummitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummitManager.swift; sourceTree = "<group>"; };
 		B4D175F7198C1C4C008DA3AE /* PersistenceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceHelper.swift; sourceTree = "<group>"; };
+		B4D2A3181A10C10200107BB0 /* Topptur.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Topptur.GPX; sourceTree = "<group>"; };
+		B4D2A31A1A10C95600107BB0 /* Lindholmshøgda.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Lindholmshøgda.GPX"; sourceTree = "<group>"; };
+		B4D2A31C1A10CB1000107BB0 /* Sukkertoppen.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Sukkertoppen.GPX; sourceTree = "<group>"; };
 		B4D57BA21A026885008D5478 /* Topptur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Topptur.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4D57BA31A026885008D5478 /* ToppTurSvalbardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ToppTurSvalbardTests.xctest; path = "/Users/kjetildk/Google Drive/Mine Apper/Topptur/ToppturApp/build/Debug-iphoneos/ToppTurSvalbardTests.xctest"; sourceTree = "<absolute>"; };
 		B4D6324019AB1C55003A7BE9 /* MainMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMapVC.swift; sourceTree = "<group>"; };
 		B4D6324619AB338A003A7BE9 /* SummitPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummitPointAnnotation.swift; sourceTree = "<group>"; };
 		B4D6324819AB3B1A003A7BE9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B4D6324C19AB5FB0003A7BE9 /* 103-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "103-map.png"; path = "PNG icons/103-map.png"; sourceTree = "<group>"; };
 		B4D6324E19AB6000003A7BE9 /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "07-map-marker.png"; path = "PNG icons/07-map-marker.png"; sourceTree = "<group>"; };
+		B4DBA8B21A0B71F30075BE39 /* ToppTurSvalbard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToppTurSvalbard-Bridging-Header.h"; sourceTree = "<group>"; };
 		B4DCF59519A9157000C3B7F2 /* DescriptionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionVC.swift; sourceTree = "<group>"; };
 		B4DCF59919A92E8E00C3B7F2 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		B4DE042C19A0BE69004EF7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -119,6 +131,7 @@
 		B4E4A6E719CAF1A8002B5AC6 /* InfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		B4EEFFF019D1CF7B00526376 /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon72x72.png; sourceTree = "<group>"; };
 		B4FB189B19B73AB8000994AB /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		E32483AE741A77F052FAC12E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +142,7 @@
 				B48C6D4D19AB911E009AFB4B /* Photos.framework in Frameworks */,
 				B4D6324919AB3B1A003A7BE9 /* CoreLocation.framework in Frameworks */,
 				B4D01AF719A23C8C00CA44B3 /* MapKit.framework in Frameworks */,
+				9382535C54D42FC1B542B057 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,20 +156,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71EBEC545A31FAEEA7712637 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D2AD51DB2C6D83C8CD5D8F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				927B464433E3DAF468879A76 /* Pods.debug.xcconfig */,
+				9BB14E605E8C81C51782C672 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B47C47831A0B802D002F5B7E /* Indexing headers */ = {
+			isa = PBXGroup;
+			children = (
+				B4DBA8B21A0B71F30075BE39 /* ToppTurSvalbard-Bridging-Header.h */,
+			);
+			name = "Indexing headers";
+			sourceTree = "<group>";
+		};
 		B4D175C3198C100D008DA3AE = {
 			isa = PBXGroup;
 			children = (
-				B48C6D4C19AB911E009AFB4B /* Photos.framework */,
-				B4D6324819AB3B1A003A7BE9 /* CoreLocation.framework */,
-				B4D01AF619A23C8C00CA44B3 /* MapKit.framework */,
 				B4D175CE198C100D008DA3AE /* ToppTurSvalbard */,
 				B4D57BA21A026885008D5478 /* Topptur.app */,
+				B47C47821A0B7FE0002F5B7E /* ToppTurSvalbardTests.xctest */,
+				7D2AD51DB2C6D83C8CD5D8F3 /* Pods */,
+				71EBEC545A31FAEEA7712637 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		B4D175CE198C100D008DA3AE /* ToppTurSvalbard */ = {
 			isa = PBXGroup;
 			children = (
+				B47C47831A0B802D002F5B7E /* Indexing headers */,
+				B4DBA8AF1A0B71A60075BE39 /* Frameworks */,
 				B4D57BCD1A0384AC008D5478 /* Photo and Video */,
 				B4D57BA41A0268E2008D5478 /* Images */,
 				B4D57BA51A0268F9008D5478 /* Geodata */,
@@ -216,6 +256,10 @@
 		B4D57BA51A0268F9008D5478 /* Geodata */ = {
 			isa = PBXGroup;
 			children = (
+				B4D2A31C1A10CB1000107BB0 /* Sukkertoppen.GPX */,
+				B4D2A31A1A10C95600107BB0 /* Lindholmshøgda.GPX */,
+				B4D2A3181A10C10200107BB0 /* Topptur.GPX */,
+				B41875191A0CCFA000802DCE /* MineTracks.GPX */,
 				B4C523A819D1831B00CD44C2 /* ToppturSvalbard.geojson */,
 			);
 			name = Geodata;
@@ -260,6 +304,18 @@
 			name = "Photo and Video";
 			sourceTree = "<group>";
 		};
+		B4DBA8AF1A0B71A60075BE39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E32483AE741A77F052FAC12E /* libPods.a */,
+				B48C6D4C19AB911E009AFB4B /* Photos.framework */,
+				B4D6324819AB3B1A003A7BE9 /* CoreLocation.framework */,
+				B4D01AF619A23C8C00CA44B3 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,9 +323,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4D175EB198C100D008DA3AE /* Build configuration list for PBXNativeTarget "ToppTurSvalbard" */;
 			buildPhases = (
+				81C2E0CD90E90B80DA8A4ABA /* Check Pods Manifest.lock */,
 				B4D175C8198C100D008DA3AE /* Sources */,
 				B4D175C9198C100D008DA3AE /* Frameworks */,
 				B4D175CA198C100D008DA3AE /* Resources */,
+				57ABC17B795B71DE3AD17651 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,7 +353,7 @@
 			);
 			name = ToppTurSvalbardTests;
 			productName = ToppTurSvalbardTests;
-			productReference = B4D57BA31A026885008D5478 /* ToppTurSvalbardTests.xctest */;
+			productReference = B47C47821A0B7FE0002F5B7E /* ToppTurSvalbardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -358,14 +416,18 @@
 				B4D6324D19AB5FB0003A7BE9 /* 103-map.png in Resources */,
 				B4C95EC119C836F800BBF135 /* MorenaLongyearbreen.png in Resources */,
 				B4C95EC219C836F800BBF135 /* Nordenskjold.png in Resources */,
+				B418751A1A0CCFA000802DCE /* MineTracks.GPX in Resources */,
+				B4D2A3191A10C10200107BB0 /* Topptur.GPX in Resources */,
 				B4D6324F19AB6000003A7BE9 /* 07-map-marker.png in Resources */,
 				B4C95EC919C836F800BBF135 /* VardenBolterdalen.png in Resources */,
 				B4C95EC419C836F800BBF135 /* Sneheim.png in Resources */,
 				B4C95EC319C836F800BBF135 /* Sarkofagen.png in Resources */,
 				B4C8973619D1649300B19933 /* Launch Screen.xib in Resources */,
 				B4C95EC619C836F800BBF135 /* Sverdruphammaren.png in Resources */,
+				B4D2A31B1A10C95600107BB0 /* Lindholmshøgda.GPX in Resources */,
 				B4C95EBF19C836F800BBF135 /* Fuglefjella.png in Resources */,
 				B4216C6319A29BC900BC8725 /* Main.storyboard in Resources */,
+				B4D2A31D1A10CB1000107BB0 /* Sukkertoppen.GPX in Resources */,
 				B44357C419A3E755002B8323 /* mountain.png in Resources */,
 				B4C668A419A9C3CA00ACEE18 /* facebook.png in Resources */,
 				B4C95EC719C836F800BBF135 /* Trollstein.png in Resources */,
@@ -389,6 +451,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57ABC17B795B71DE3AD17651 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81C2E0CD90E90B80DA8A4ABA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4D175C8198C100D008DA3AE /* Sources */ = {
@@ -494,6 +589,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -529,6 +625,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -536,32 +633,49 @@
 		};
 		B4D175EC198C100D008DA3AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 927B464433E3DAF468879A76 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ToppTurSvalbard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Topptur;
 				PROVISIONING_PROFILE = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToppTurSvalbard/ToppTurSvalbard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B4D175ED198C100D008DA3AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BB14E605E8C81C51782C672 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ToppTurSvalbard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Topptur;
 				PROVISIONING_PROFILE = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToppTurSvalbard/ToppTurSvalbard-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
