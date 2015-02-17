@@ -19,44 +19,54 @@
 		B4C668A419A9C3CA00ACEE18 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C668A319A9C3CA00ACEE18 /* facebook.png */; };
 		B4C8973619D1649300B19933 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C8973519D1649300B19933 /* Launch Screen.xib */; };
 		B4C936FC199803AF0078BFC7 /* VisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C936FB199803AF0078BFC7 /* VisitCell.swift */; };
-		B4C95EBD19C836F800BBF135 /* Blomsterdalshogda.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EAF19C836F800BBF135 /* Blomsterdalshogda.png */; };
-		B4C95EBE19C836F800BBF135 /* Endalen.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EB019C836F800BBF135 /* Endalen.png */; };
-		B4C95EBF19C836F800BBF135 /* Fuglefjella.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EB119C836F800BBF135 /* Fuglefjella.png */; };
-		B4C95EC019C836F800BBF135 /* Lindholmhogda.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EB219C836F800BBF135 /* Lindholmhogda.png */; };
-		B4C95EC119C836F800BBF135 /* MorenaLongyearbreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EB319C836F800BBF135 /* MorenaLongyearbreen.png */; };
-		B4C95EC219C836F800BBF135 /* Nordenskjold.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EB419C836F800BBF135 /* Nordenskjold.png */; };
-		B4C95EC319C836F800BBF135 /* Sarkofagen.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EB519C836F800BBF135 /* Sarkofagen.png */; };
-		B4C95EC419C836F800BBF135 /* Sneheim.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EB619C836F800BBF135 /* Sneheim.png */; };
-		B4C95EC519C836F800BBF135 /* Sukkertoppen.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EB719C836F800BBF135 /* Sukkertoppen.png */; };
-		B4C95EC619C836F800BBF135 /* Sverdruphammaren.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EB819C836F800BBF135 /* Sverdruphammaren.png */; };
-		B4C95EC719C836F800BBF135 /* Trollstein.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EB919C836F800BBF135 /* Trollstein.png */; };
-		B4C95EC819C836F800BBF135 /* VardenBjorndalen.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EBA19C836F800BBF135 /* VardenBjorndalen.png */; };
-		B4C95EC919C836F800BBF135 /* VardenBolterdalen.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EBB19C836F800BBF135 /* VardenBolterdalen.png */; };
-		B4C95ECA19C836F800BBF135 /* VardenPlataaberget.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C95EBC19C836F800BBF135 /* VardenPlataaberget.png */; };
 		B4CC1CBA1991F64A0059B5AD /* Summit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CC1CB91991F64A0059B5AD /* Summit.swift */; };
 		B4CEA54F19955B3F00F6411A /* EditVisitDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CEA54E19955B3F00F6411A /* EditVisitDateVC.swift */; };
 		B4CFB24019ACA4D2005F9AAF /* PhotoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CFB23F19ACA4D2005F9AAF /* PhotoThumbnail.swift */; };
 		B4D01AF719A23C8C00CA44B3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D01AF619A23C8C00CA44B3 /* MapKit.framework */; };
-		B4D15FF31A2506BF00B7E6F2 /* 9.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4D15FF21A2506BF00B7E6F2 /* 9.GPX */; };
-		B4D15FF51A25071000B7E6F2 /* Topptur.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4D15FF41A25071000B7E6F2 /* Topptur.GPX */; };
 		B4D175D2198C100D008DA3AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175D1198C100D008DA3AE /* AppDelegate.swift */; };
 		B4D175DC198C100D008DA3AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D175DB198C100D008DA3AE /* Images.xcassets */; };
 		B4D175F2198C11C8008DA3AE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175F1198C11C8008DA3AE /* MainVC.swift */; };
 		B4D175F4198C1215008DA3AE /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175F3198C1215008DA3AE /* DetailVC.swift */; };
 		B4D175F6198C1BF3008DA3AE /* SummitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175F5198C1BF3008DA3AE /* SummitManager.swift */; };
 		B4D175F8198C1C4C008DA3AE /* PersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D175F7198C1C4C008DA3AE /* PersistenceHelper.swift */; };
-		B4D2A31B1A10C95600107BB0 /* 11.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4D2A31A1A10C95600107BB0 /* 11.GPX */; };
-		B4D2A31D1A10CB1000107BB0 /* 1.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4D2A31C1A10CB1000107BB0 /* 1.GPX */; };
 		B4D6324119AB1C55003A7BE9 /* MainMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D6324019AB1C55003A7BE9 /* MainMapVC.swift */; };
 		B4D6324719AB338A003A7BE9 /* SummitPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D6324619AB338A003A7BE9 /* SummitPointAnnotation.swift */; };
 		B4D6324919AB3B1A003A7BE9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D6324819AB3B1A003A7BE9 /* CoreLocation.framework */; };
 		B4D6324D19AB5FB0003A7BE9 /* 103-map.png in Resources */ = {isa = PBXBuildFile; fileRef = B4D6324C19AB5FB0003A7BE9 /* 103-map.png */; };
 		B4D6324F19AB6000003A7BE9 /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = B4D6324E19AB6000003A7BE9 /* 07-map-marker.png */; };
-		B4DAB37C1A23779000513F23 /* 12.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4DAB37B1A23779000513F23 /* 12.GPX */; };
 		B4DCF59619A9157000C3B7F2 /* DescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCF59519A9157000C3B7F2 /* DescriptionVC.swift */; };
 		B4DCF59A19A92E8E00C3B7F2 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCF59919A92E8E00C3B7F2 /* MapVC.swift */; };
 		B4DE042B19A0BE69004EF7C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4DE042D19A0BE69004EF7C3 /* Localizable.strings */; };
 		B4E4A6E819CAF1A8002B5AC6 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4A6E719CAF1A8002B5AC6 /* InfoVC.swift */; };
+		B4EB801B1A93CFE80038137F /* 1.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB800D1A93CFE80038137F /* 1.GPX */; };
+		B4EB801C1A93CFE80038137F /* 2.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB800E1A93CFE80038137F /* 2.GPX */; };
+		B4EB801D1A93CFE80038137F /* 3.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB800F1A93CFE80038137F /* 3.GPX */; };
+		B4EB801E1A93CFE80038137F /* 4.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80101A93CFE80038137F /* 4.GPX */; };
+		B4EB801F1A93CFE80038137F /* 5.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80111A93CFE80038137F /* 5.GPX */; };
+		B4EB80201A93CFE80038137F /* 6.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80121A93CFE80038137F /* 6.GPX */; };
+		B4EB80211A93CFE80038137F /* 7.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80131A93CFE80038137F /* 7.GPX */; };
+		B4EB80221A93CFE80038137F /* 8.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80141A93CFE80038137F /* 8.GPX */; };
+		B4EB80231A93CFE80038137F /* 9.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80151A93CFE80038137F /* 9.GPX */; };
+		B4EB80241A93CFE80038137F /* 10.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80161A93CFE80038137F /* 10.GPX */; };
+		B4EB80251A93CFE80038137F /* 11.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80171A93CFE80038137F /* 11.GPX */; };
+		B4EB80261A93CFE80038137F /* 12.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80181A93CFE80038137F /* 12.GPX */; };
+		B4EB80281A93CFE80038137F /* 14.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB801A1A93CFE80038137F /* 14.GPX */; };
+		B4EB802A1A93D1570038137F /* 13.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80291A93D1570038137F /* 13.GPX */; };
+		B4EB802C1A93D1B60038137F /* Topptur.GPX in Resources */ = {isa = PBXBuildFile; fileRef = B4EB802B1A93D1B60038137F /* Topptur.GPX */; };
+		B4EB803D1A93DAD00038137F /* Blomsterdalshogda.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB802F1A93DAD00038137F /* Blomsterdalshogda.png */; };
+		B4EB803E1A93DAD00038137F /* Endalen.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80301A93DAD00038137F /* Endalen.png */; };
+		B4EB803F1A93DAD00038137F /* Fuglefjella.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80311A93DAD00038137F /* Fuglefjella.png */; };
+		B4EB80401A93DAD00038137F /* Lindholmhogda.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80321A93DAD00038137F /* Lindholmhogda.png */; };
+		B4EB80411A93DAD00038137F /* MorenaLongyearbreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80331A93DAD00038137F /* MorenaLongyearbreen.png */; };
+		B4EB80421A93DAD00038137F /* Nordenskjold.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80341A93DAD00038137F /* Nordenskjold.png */; };
+		B4EB80431A93DAD00038137F /* Sarkofagen.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80351A93DAD00038137F /* Sarkofagen.png */; };
+		B4EB80441A93DAD00038137F /* Sneheim.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80361A93DAD00038137F /* Sneheim.png */; };
+		B4EB80451A93DAD00038137F /* Sukkertoppen.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80371A93DAD00038137F /* Sukkertoppen.png */; };
+		B4EB80461A93DAD00038137F /* Sverdruphammaren.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80381A93DAD00038137F /* Sverdruphammaren.png */; };
+		B4EB80471A93DAD00038137F /* Trollstein.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB80391A93DAD00038137F /* Trollstein.png */; };
+		B4EB80481A93DAD00038137F /* VardenBjorndalen.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB803A1A93DAD00038137F /* VardenBjorndalen.png */; };
+		B4EB80491A93DAD00038137F /* VardenBolterdalen.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB803B1A93DAD00038137F /* VardenBolterdalen.png */; };
+		B4EB804A1A93DAD00038137F /* VardenPlataaberget.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EB803C1A93DAD00038137F /* VardenPlataaberget.png */; };
 		B4EEFFF119D1CF7B00526376 /* AppIcon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EEFFF019D1CF7B00526376 /* AppIcon72x72.png */; };
 		B4FB189C19B73AB8000994AB /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB189B19B73AB8000994AB /* TabBarVC.swift */; };
 /* End PBXBuildFile section */
@@ -88,26 +98,10 @@
 		B4C668A319A9C3CA00ACEE18 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = "iconbeast-lite/iconbeast lite - png/facebook.png"; sourceTree = "<group>"; };
 		B4C8973519D1649300B19933 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		B4C936FB199803AF0078BFC7 /* VisitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitCell.swift; sourceTree = "<group>"; };
-		B4C95EAF19C836F800BBF135 /* Blomsterdalshogda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blomsterdalshogda.png; sourceTree = "<group>"; };
-		B4C95EB019C836F800BBF135 /* Endalen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Endalen.png; sourceTree = "<group>"; };
-		B4C95EB119C836F800BBF135 /* Fuglefjella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fuglefjella.png; sourceTree = "<group>"; };
-		B4C95EB219C836F800BBF135 /* Lindholmhogda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lindholmhogda.png; sourceTree = "<group>"; };
-		B4C95EB319C836F800BBF135 /* MorenaLongyearbreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MorenaLongyearbreen.png; sourceTree = "<group>"; };
-		B4C95EB419C836F800BBF135 /* Nordenskjold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nordenskjold.png; sourceTree = "<group>"; };
-		B4C95EB519C836F800BBF135 /* Sarkofagen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sarkofagen.png; sourceTree = "<group>"; };
-		B4C95EB619C836F800BBF135 /* Sneheim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sneheim.png; sourceTree = "<group>"; };
-		B4C95EB719C836F800BBF135 /* Sukkertoppen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sukkertoppen.png; sourceTree = "<group>"; };
-		B4C95EB819C836F800BBF135 /* Sverdruphammaren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sverdruphammaren.png; sourceTree = "<group>"; };
-		B4C95EB919C836F800BBF135 /* Trollstein.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trollstein.png; sourceTree = "<group>"; };
-		B4C95EBA19C836F800BBF135 /* VardenBjorndalen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VardenBjorndalen.png; sourceTree = "<group>"; };
-		B4C95EBB19C836F800BBF135 /* VardenBolterdalen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VardenBolterdalen.png; sourceTree = "<group>"; };
-		B4C95EBC19C836F800BBF135 /* VardenPlataaberget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VardenPlataaberget.png; sourceTree = "<group>"; };
 		B4CC1CB91991F64A0059B5AD /* Summit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Summit.swift; sourceTree = "<group>"; };
 		B4CEA54E19955B3F00F6411A /* EditVisitDateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditVisitDateVC.swift; sourceTree = "<group>"; };
 		B4CFB23F19ACA4D2005F9AAF /* PhotoThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoThumbnail.swift; sourceTree = "<group>"; };
 		B4D01AF619A23C8C00CA44B3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		B4D15FF21A2506BF00B7E6F2 /* 9.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 9.GPX; sourceTree = "<group>"; };
-		B4D15FF41A25071000B7E6F2 /* Topptur.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Topptur.GPX; sourceTree = "<group>"; };
 		B4D175D0198C100D008DA3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4D175D1198C100D008DA3AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4D175DB198C100D008DA3AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -115,15 +109,12 @@
 		B4D175F3198C1215008DA3AE /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		B4D175F5198C1BF3008DA3AE /* SummitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummitManager.swift; sourceTree = "<group>"; };
 		B4D175F7198C1C4C008DA3AE /* PersistenceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceHelper.swift; sourceTree = "<group>"; };
-		B4D2A31A1A10C95600107BB0 /* 11.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 11.GPX; sourceTree = "<group>"; };
-		B4D2A31C1A10CB1000107BB0 /* 1.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 1.GPX; sourceTree = "<group>"; };
 		B4D57BA21A026885008D5478 /* Topptur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Topptur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D6324019AB1C55003A7BE9 /* MainMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMapVC.swift; sourceTree = "<group>"; };
 		B4D6324619AB338A003A7BE9 /* SummitPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummitPointAnnotation.swift; sourceTree = "<group>"; };
 		B4D6324819AB3B1A003A7BE9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B4D6324C19AB5FB0003A7BE9 /* 103-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "103-map.png"; path = "PNG icons/103-map.png"; sourceTree = "<group>"; };
 		B4D6324E19AB6000003A7BE9 /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "07-map-marker.png"; path = "PNG icons/07-map-marker.png"; sourceTree = "<group>"; };
-		B4DAB37B1A23779000513F23 /* 12.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 12.GPX; sourceTree = "<group>"; };
 		B4DBA8B21A0B71F30075BE39 /* ToppTurSvalbard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToppTurSvalbard-Bridging-Header.h"; sourceTree = "<group>"; };
 		B4DC4FFC1A397C35004D0188 /* ToppTurSvalbard 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ToppTurSvalbard 2.xcdatamodel"; sourceTree = "<group>"; };
 		B4DCF59519A9157000C3B7F2 /* DescriptionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionVC.swift; sourceTree = "<group>"; };
@@ -132,6 +123,35 @@
 		B4DE043119A0BF2B004EF7C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B4DE043319A0C069004EF7C3 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B4E4A6E719CAF1A8002B5AC6 /* InfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		B4EB800D1A93CFE80038137F /* 1.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 1.GPX; sourceTree = "<group>"; };
+		B4EB800E1A93CFE80038137F /* 2.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2.GPX; sourceTree = "<group>"; };
+		B4EB800F1A93CFE80038137F /* 3.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 3.GPX; sourceTree = "<group>"; };
+		B4EB80101A93CFE80038137F /* 4.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 4.GPX; sourceTree = "<group>"; };
+		B4EB80111A93CFE80038137F /* 5.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 5.GPX; sourceTree = "<group>"; };
+		B4EB80121A93CFE80038137F /* 6.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 6.GPX; sourceTree = "<group>"; };
+		B4EB80131A93CFE80038137F /* 7.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 7.GPX; sourceTree = "<group>"; };
+		B4EB80141A93CFE80038137F /* 8.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 8.GPX; sourceTree = "<group>"; };
+		B4EB80151A93CFE80038137F /* 9.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 9.GPX; sourceTree = "<group>"; };
+		B4EB80161A93CFE80038137F /* 10.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 10.GPX; sourceTree = "<group>"; };
+		B4EB80171A93CFE80038137F /* 11.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 11.GPX; sourceTree = "<group>"; };
+		B4EB80181A93CFE80038137F /* 12.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 12.GPX; sourceTree = "<group>"; };
+		B4EB801A1A93CFE80038137F /* 14.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 14.GPX; sourceTree = "<group>"; };
+		B4EB80291A93D1570038137F /* 13.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 13.GPX; sourceTree = "<group>"; };
+		B4EB802B1A93D1B60038137F /* Topptur.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Topptur.GPX; sourceTree = "<group>"; };
+		B4EB802F1A93DAD00038137F /* Blomsterdalshogda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blomsterdalshogda.png; sourceTree = "<group>"; };
+		B4EB80301A93DAD00038137F /* Endalen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Endalen.png; sourceTree = "<group>"; };
+		B4EB80311A93DAD00038137F /* Fuglefjella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fuglefjella.png; sourceTree = "<group>"; };
+		B4EB80321A93DAD00038137F /* Lindholmhogda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lindholmhogda.png; sourceTree = "<group>"; };
+		B4EB80331A93DAD00038137F /* MorenaLongyearbreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MorenaLongyearbreen.png; sourceTree = "<group>"; };
+		B4EB80341A93DAD00038137F /* Nordenskjold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nordenskjold.png; sourceTree = "<group>"; };
+		B4EB80351A93DAD00038137F /* Sarkofagen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sarkofagen.png; sourceTree = "<group>"; };
+		B4EB80361A93DAD00038137F /* Sneheim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sneheim.png; sourceTree = "<group>"; };
+		B4EB80371A93DAD00038137F /* Sukkertoppen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sukkertoppen.png; sourceTree = "<group>"; };
+		B4EB80381A93DAD00038137F /* Sverdruphammaren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sverdruphammaren.png; sourceTree = "<group>"; };
+		B4EB80391A93DAD00038137F /* Trollstein.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trollstein.png; sourceTree = "<group>"; };
+		B4EB803A1A93DAD00038137F /* VardenBjorndalen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VardenBjorndalen.png; sourceTree = "<group>"; };
+		B4EB803B1A93DAD00038137F /* VardenBolterdalen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VardenBolterdalen.png; sourceTree = "<group>"; };
+		B4EB803C1A93DAD00038137F /* VardenPlataaberget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VardenPlataaberget.png; sourceTree = "<group>"; };
 		B4EEFFF019D1CF7B00526376 /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon72x72.png; sourceTree = "<group>"; };
 		B4FB189B19B73AB8000994AB /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		E32483AE741A77F052FAC12E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,20 +258,20 @@
 			isa = PBXGroup;
 			children = (
 				B4D175DB198C100D008DA3AE /* Images.xcassets */,
-				B4C95EAF19C836F800BBF135 /* Blomsterdalshogda.png */,
-				B4C95EB019C836F800BBF135 /* Endalen.png */,
-				B4C95EB119C836F800BBF135 /* Fuglefjella.png */,
-				B4C95EB219C836F800BBF135 /* Lindholmhogda.png */,
-				B4C95EB319C836F800BBF135 /* MorenaLongyearbreen.png */,
-				B4C95EB419C836F800BBF135 /* Nordenskjold.png */,
-				B4C95EB519C836F800BBF135 /* Sarkofagen.png */,
-				B4C95EB619C836F800BBF135 /* Sneheim.png */,
-				B4C95EB719C836F800BBF135 /* Sukkertoppen.png */,
-				B4C95EB819C836F800BBF135 /* Sverdruphammaren.png */,
-				B4C95EB919C836F800BBF135 /* Trollstein.png */,
-				B4C95EBA19C836F800BBF135 /* VardenBjorndalen.png */,
-				B4C95EBB19C836F800BBF135 /* VardenBolterdalen.png */,
-				B4C95EBC19C836F800BBF135 /* VardenPlataaberget.png */,
+				B4EB802F1A93DAD00038137F /* Blomsterdalshogda.png */,
+				B4EB80301A93DAD00038137F /* Endalen.png */,
+				B4EB80311A93DAD00038137F /* Fuglefjella.png */,
+				B4EB80321A93DAD00038137F /* Lindholmhogda.png */,
+				B4EB80331A93DAD00038137F /* MorenaLongyearbreen.png */,
+				B4EB80341A93DAD00038137F /* Nordenskjold.png */,
+				B4EB80351A93DAD00038137F /* Sarkofagen.png */,
+				B4EB80361A93DAD00038137F /* Sneheim.png */,
+				B4EB80371A93DAD00038137F /* Sukkertoppen.png */,
+				B4EB80381A93DAD00038137F /* Sverdruphammaren.png */,
+				B4EB80391A93DAD00038137F /* Trollstein.png */,
+				B4EB803A1A93DAD00038137F /* VardenBjorndalen.png */,
+				B4EB803B1A93DAD00038137F /* VardenBolterdalen.png */,
+				B4EB803C1A93DAD00038137F /* VardenPlataaberget.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -259,11 +279,21 @@
 		B4D57BA51A0268F9008D5478 /* Geodata */ = {
 			isa = PBXGroup;
 			children = (
-				B4D15FF41A25071000B7E6F2 /* Topptur.GPX */,
-				B4D2A31C1A10CB1000107BB0 /* 1.GPX */,
-				B4D15FF21A2506BF00B7E6F2 /* 9.GPX */,
-				B4D2A31A1A10C95600107BB0 /* 11.GPX */,
-				B4DAB37B1A23779000513F23 /* 12.GPX */,
+				B4EB802B1A93D1B60038137F /* Topptur.GPX */,
+				B4EB800D1A93CFE80038137F /* 1.GPX */,
+				B4EB800E1A93CFE80038137F /* 2.GPX */,
+				B4EB800F1A93CFE80038137F /* 3.GPX */,
+				B4EB80101A93CFE80038137F /* 4.GPX */,
+				B4EB80111A93CFE80038137F /* 5.GPX */,
+				B4EB80121A93CFE80038137F /* 6.GPX */,
+				B4EB80131A93CFE80038137F /* 7.GPX */,
+				B4EB80141A93CFE80038137F /* 8.GPX */,
+				B4EB80151A93CFE80038137F /* 9.GPX */,
+				B4EB80161A93CFE80038137F /* 10.GPX */,
+				B4EB80171A93CFE80038137F /* 11.GPX */,
+				B4EB80181A93CFE80038137F /* 12.GPX */,
+				B4EB80291A93D1570038137F /* 13.GPX */,
+				B4EB801A1A93CFE80038137F /* 14.GPX */,
 				B4C523A819D1831B00CD44C2 /* ToppturSvalbard.geojson */,
 			);
 			name = Geodata;
@@ -415,35 +445,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4C95EC019C836F800BBF135 /* Lindholmhogda.png in Resources */,
+				B4EB80281A93CFE80038137F /* 14.GPX in Resources */,
+				B4EB80491A93DAD00038137F /* VardenBolterdalen.png in Resources */,
+				B4EB803D1A93DAD00038137F /* Blomsterdalshogda.png in Resources */,
+				B4EB80401A93DAD00038137F /* Lindholmhogda.png in Resources */,
+				B4EB80261A93CFE80038137F /* 12.GPX in Resources */,
+				B4EB80211A93CFE80038137F /* 7.GPX in Resources */,
 				B4DE042B19A0BE69004EF7C3 /* Localizable.strings in Resources */,
-				B4DAB37C1A23779000513F23 /* 12.GPX in Resources */,
 				B4D6324D19AB5FB0003A7BE9 /* 103-map.png in Resources */,
-				B4C95EC119C836F800BBF135 /* MorenaLongyearbreen.png in Resources */,
-				B4C95EC219C836F800BBF135 /* Nordenskjold.png in Resources */,
+				B4EB80251A93CFE80038137F /* 11.GPX in Resources */,
 				B4D6324F19AB6000003A7BE9 /* 07-map-marker.png in Resources */,
-				B4C95EC919C836F800BBF135 /* VardenBolterdalen.png in Resources */,
-				B4C95EC419C836F800BBF135 /* Sneheim.png in Resources */,
-				B4C95EC319C836F800BBF135 /* Sarkofagen.png in Resources */,
+				B4EB801E1A93CFE80038137F /* 4.GPX in Resources */,
+				B4EB803E1A93DAD00038137F /* Endalen.png in Resources */,
+				B4EB80451A93DAD00038137F /* Sukkertoppen.png in Resources */,
+				B4EB801B1A93CFE80038137F /* 1.GPX in Resources */,
+				B4EB802A1A93D1570038137F /* 13.GPX in Resources */,
 				B4C8973619D1649300B19933 /* Launch Screen.xib in Resources */,
-				B4C95EC619C836F800BBF135 /* Sverdruphammaren.png in Resources */,
-				B4D2A31B1A10C95600107BB0 /* 11.GPX in Resources */,
-				B4C95EBF19C836F800BBF135 /* Fuglefjella.png in Resources */,
+				B4EB801D1A93CFE80038137F /* 3.GPX in Resources */,
+				B4EB80231A93CFE80038137F /* 9.GPX in Resources */,
+				B4EB80421A93DAD00038137F /* Nordenskjold.png in Resources */,
+				B4EB801F1A93CFE80038137F /* 5.GPX in Resources */,
+				B4EB80461A93DAD00038137F /* Sverdruphammaren.png in Resources */,
+				B4EB804A1A93DAD00038137F /* VardenPlataaberget.png in Resources */,
 				B4216C6319A29BC900BC8725 /* Main.storyboard in Resources */,
-				B4D2A31D1A10CB1000107BB0 /* 1.GPX in Resources */,
 				B44357C419A3E755002B8323 /* mountain.png in Resources */,
 				B4C668A419A9C3CA00ACEE18 /* facebook.png in Resources */,
-				B4D15FF51A25071000B7E6F2 /* Topptur.GPX in Resources */,
-				B4C95EC719C836F800BBF135 /* Trollstein.png in Resources */,
-				B4C95EC519C836F800BBF135 /* Sukkertoppen.png in Resources */,
+				B4EB80441A93DAD00038137F /* Sneheim.png in Resources */,
+				B4EB801C1A93CFE80038137F /* 2.GPX in Resources */,
 				B4D175DC198C100D008DA3AE /* Images.xcassets in Resources */,
-				B4C95EC819C836F800BBF135 /* VardenBjorndalen.png in Resources */,
-				B4C95ECA19C836F800BBF135 /* VardenPlataaberget.png in Resources */,
-				B4C95EBE19C836F800BBF135 /* Endalen.png in Resources */,
+				B4EB80201A93CFE80038137F /* 6.GPX in Resources */,
+				B4EB80431A93DAD00038137F /* Sarkofagen.png in Resources */,
+				B4EB80481A93DAD00038137F /* VardenBjorndalen.png in Resources */,
+				B4EB80411A93DAD00038137F /* MorenaLongyearbreen.png in Resources */,
+				B4EB80221A93CFE80038137F /* 8.GPX in Resources */,
+				B4EB803F1A93DAD00038137F /* Fuglefjella.png in Resources */,
+				B4EB80471A93DAD00038137F /* Trollstein.png in Resources */,
+				B4EB80241A93CFE80038137F /* 10.GPX in Resources */,
 				B4C6689E19A9C2CD00ACEE18 /* text-list.png in Resources */,
 				B4EEFFF119D1CF7B00526376 /* AppIcon72x72.png in Resources */,
-				B4C95EBD19C836F800BBF135 /* Blomsterdalshogda.png in Resources */,
-				B4D15FF31A2506BF00B7E6F2 /* 9.GPX in Resources */,
+				B4EB802C1A93D1B60038137F /* Topptur.GPX in Resources */,
 				B4C523A919D1831B00CD44C2 /* ToppturSvalbard.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

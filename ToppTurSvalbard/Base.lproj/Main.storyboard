@@ -1038,12 +1038,17 @@ Cgo
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blomsterdalshogda.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-MV-PRc">
-                                        <rect key="frame" x="136" y="8" width="310" height="155"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Endalen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-MV-PRc">
+                                        <rect key="frame" x="8" y="8" width="584" height="155"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="155" id="PSo-BJ-Y6s"/>
+                                            <constraint firstAttribute="height" constant="155" id="Nxf-ln-ejW"/>
                                             <constraint firstAttribute="width" constant="310" id="fUj-tz-oQa"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="fUj-tz-oQa"/>
+                                            </mask>
+                                        </variation>
                                         <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
                                             <rect key="frame" x="264" y="72" width="72" height="72"/>
                                         </variation>
@@ -1059,20 +1064,21 @@ Cgo
                                     </textView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="tzH-i3-IvI" firstAttribute="top" secondItem="Uby-MV-PRc" secondAttribute="bottom" constant="16" id="10i-Fa-Dx5"/>
                                     <constraint firstAttribute="centerX" secondItem="YPs-UG-g2Z" secondAttribute="centerX" id="6bm-4R-9Ni"/>
-                                    <constraint firstItem="i1R-yw-Exb" firstAttribute="bottom" secondItem="Uby-MV-PRc" secondAttribute="bottom" constant="37" id="7DJ-Hn-XHd"/>
-                                    <constraint firstItem="Hxg-76-VNZ" firstAttribute="bottom" secondItem="Uby-MV-PRc" secondAttribute="bottom" constant="324" id="D1c-KD-fl0"/>
+                                    <constraint firstItem="Hxg-76-VNZ" firstAttribute="top" secondItem="tzH-i3-IvI" secondAttribute="bottom" constant="8" symbolic="YES" id="AN0-8g-lJC"/>
+                                    <constraint firstItem="Uby-MV-PRc" firstAttribute="top" secondItem="PIY-GK-a98" secondAttribute="topMargin" id="FWg-i7-3jg"/>
                                     <constraint firstAttribute="trailing" secondItem="Hxg-76-VNZ" secondAttribute="trailing" constant="8" id="MhV-Uv-ZfU"/>
                                     <constraint firstItem="Hxg-76-VNZ" firstAttribute="top" secondItem="YPs-UG-g2Z" secondAttribute="bottom" constant="8" id="TQ9-SX-dmY"/>
                                     <constraint firstItem="Hxg-76-VNZ" firstAttribute="leading" secondItem="PIY-GK-a98" secondAttribute="leading" constant="8" id="cGW-wY-bWv"/>
-                                    <constraint firstItem="Uby-MV-PRc" firstAttribute="bottom" secondItem="tzH-i3-IvI" secondAttribute="bottom" constant="-37" id="fvm-kJ-AGe"/>
-                                    <constraint firstItem="Uby-MV-PRc" firstAttribute="bottom" secondItem="YPs-UG-g2Z" secondAttribute="bottom" constant="-37" id="gAB-jL-ohE"/>
-                                    <constraint firstAttribute="centerX" secondItem="Uby-MV-PRc" secondAttribute="centerX" constant="9" id="gBV-hq-6pJ"/>
+                                    <constraint firstItem="Hxg-76-VNZ" firstAttribute="top" secondItem="i1R-yw-Exb" secondAttribute="bottom" constant="8" symbolic="YES" id="ld2-c2-sHv"/>
+                                    <constraint firstItem="Uby-MV-PRc" firstAttribute="leading" secondItem="tzH-i3-IvI" secondAttribute="leading" id="lec-Ch-9dW"/>
                                     <constraint firstAttribute="bottom" secondItem="Hxg-76-VNZ" secondAttribute="bottom" id="lzP-03-H5p"/>
                                     <constraint firstItem="tzH-i3-IvI" firstAttribute="leading" secondItem="PIY-GK-a98" secondAttribute="leading" constant="8" id="mm3-jC-u8l"/>
                                     <constraint firstAttribute="centerX" secondItem="Hxg-76-VNZ" secondAttribute="centerX" id="pUl-2s-Bdo"/>
                                     <constraint firstAttribute="trailing" secondItem="i1R-yw-Exb" secondAttribute="trailing" constant="8" id="sdO-O8-Udz"/>
-                                    <constraint firstItem="Uby-MV-PRc" firstAttribute="top" secondItem="PIY-GK-a98" secondAttribute="top" constant="8" id="vDl-l0-7Tg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uby-MV-PRc" secondAttribute="bottom" constant="324" id="xND-fc-l6w"/>
+                                    <constraint firstItem="Uby-MV-PRc" firstAttribute="trailing" secondItem="i1R-yw-Exb" secondAttribute="trailing" id="xdd-cL-kRl"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="pee-0u-37u" id="8eD-rv-ryL"/>
@@ -1106,7 +1112,7 @@ Cgo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPS-Dt-oP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4222" y="1899"/>
+            <point key="canvasLocation" x="4191" y="1935"/>
         </scene>
         <!--Toppturer-->
         <scene sceneID="Peh-vb-kfL">
@@ -1189,14 +1195,14 @@ Cgo
         <image name="AppIcon72x72.png" width="72" height="72"/>
         <image name="BarIconInfo" width="22" height="22"/>
         <image name="BarIconMap" width="22" height="22"/>
-        <image name="Blomsterdalshogda.png" width="329" height="147"/>
+        <image name="Endalen.png" width="600" height="348"/>
         <image name="TabIconList" width="25" height="22"/>
         <image name="TabIconMountain" width="32" height="32"/>
         <image name="TabIconTarget" width="32" height="32"/>
         <image name="mountain.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dfC-gV-ol0"/>
+        <segue reference="ipB-Im-rVP"/>
         <segue reference="itA-Re-vQA"/>
     </inferredMetricsTieBreakers>
 </document>
