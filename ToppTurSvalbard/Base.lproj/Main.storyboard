@@ -1076,6 +1076,7 @@ Cgo
                                     <constraint firstAttribute="bottom" secondItem="Hxg-76-VNZ" secondAttribute="bottom" id="lzP-03-H5p"/>
                                     <constraint firstItem="tzH-i3-IvI" firstAttribute="leading" secondItem="PIY-GK-a98" secondAttribute="leading" constant="8" id="mm3-jC-u8l"/>
                                     <constraint firstAttribute="centerX" secondItem="Hxg-76-VNZ" secondAttribute="centerX" id="pUl-2s-Bdo"/>
+                                    <constraint firstItem="Uby-MV-PRc" firstAttribute="top" secondItem="PIY-GK-a98" secondAttribute="top" constant="8" id="sDe-mb-xWF"/>
                                     <constraint firstAttribute="trailing" secondItem="i1R-yw-Exb" secondAttribute="trailing" constant="8" id="sdO-O8-Udz"/>
                                     <constraint firstAttribute="bottom" secondItem="Uby-MV-PRc" secondAttribute="bottom" constant="324" id="xND-fc-l6w"/>
                                     <constraint firstItem="Uby-MV-PRc" firstAttribute="trailing" secondItem="i1R-yw-Exb" secondAttribute="trailing" id="xdd-cL-kRl"/>
