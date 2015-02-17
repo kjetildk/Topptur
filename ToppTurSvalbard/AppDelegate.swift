@@ -17,16 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
         
-        //var fetchedResultsController: NSFetchedResultsController
-        
-        //if( fetchedResultsController != nil ){
-        //    println("There are data in the database")
-        //}
-        
-        //let fetchResult = NSFetchRequest()
-        //let entity = NSEntityDescription.entityForName("summit", inManagedObjectContext: self.managedObjectContext)
-        //fetchResult.entity = entity
-        
         return true
     }
 
@@ -51,8 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication!) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
+ 
         self.saveContext()
     }
+    
+    
 
     // MARK: - Core Data stack
 
@@ -62,6 +55,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return urls[urls.count-1] as NSURL
     }()
 
+    // Returns the managed object model for the application.
+    // If the model doesn't already exist, it is created from the application's model.
     lazy var managedObjectModel: NSManagedObjectModel = {
         // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
         let modelURL = NSBundle.mainBundle().URLForResource("ToppTurSvalbard", withExtension: "momd")
@@ -75,7 +70,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("ToppTurSvalbard.sqlite")
         var error: NSError? = nil
         var failureReason = "There was an error creating or loading the application's saved data."
-        if coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil, error: &error) == nil {
+        
+        //Add by me :-)
+        var options: NSDictionary = ([NSMigratePersistentStoresAutomaticallyOption: true,
+        NSInferMappingModelAutomaticallyOption: true])
+        
+        if coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: options, error: &error) == nil {
             coordinator = nil
             // Report any error we got.
             let dict = NSMutableDictionary()
@@ -116,6 +116,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    
 }
 

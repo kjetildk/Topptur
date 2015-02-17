@@ -41,14 +41,14 @@ INFO_HEADER_2 = "Information and data collected from";
 INFO_HEADER_3 = "DNT designations for hiking";
 
 
-CURRENT_LOCATION_RESTRICTED_ACCESS = "Restricted Access to location"
-CURRENT_LOCATION_USER_DENIED = "User denied access to location"
-CURRENT_LOCATION_NOT_DETERMINED = "Status not determined"
-CURRENT_LOCATION_ALLOWED = "Allowed to location Access"
+CURRENT_LOCATION_RESTRICTED_ACCESS = "Restricted Access to location";
+CURRENT_LOCATION_USER_DENIED = "User denied access to location";
+CURRENT_LOCATION_NOT_DETERMINED = "Status not determined";
+CURRENT_LOCATION_ALLOWED = "Allowed to location Access";
 
 NSLOCATIONALWAYSUSAGEDESCRIPTION = "";
 
-SUKKERTOPPEN_DESC = "Sukkertoppen is the nearest top trim post to Longyearbyen. It is located just behind (north of) downtown. The most common route to the top is to start your trip in Gruvedalen and follow back up on the left side viewed from below. Be aware of loose stones and that it sometimes is hard and icy at the top of the top before the snow has melted. There are old mining memories Mine 2b several places under Sukkertoppen, these are automatically protected. The box is on the boulevard on the first flaten.Fra loaf can keep up on the plateau, and it is nice and a slightly longer walk to go down Vannledningsdalen to the west or Steintippdalen to the east. It is also possible to move on from Sukkertoppen, inland plateau and Trollsteinen, or around Gruvedalen and to Lindholmhøgda.";
+SUKKERTOPPEN_DESC = "Sukkertoppen is the nearest top trim post to Longyearbyen. It is located just behind (north of) downtown. The most common route to the top is to start your trip in Gruvedalen and follow back up on the left side viewed from below. Be aware of loose stones and that it sometimes is hard and icy at the top of the top before the snow has melted. There are old mining memories Mine 2b several places under Sukkertoppen, these are automatically protected. The box is on the boulevard on the first flaten. From Sukkertoppen you can keep up onto the plateau, and it is nice and a slightly longer walk to go down Vannledningsdalen to the west or Steintippdalen to the east. It is also possible to move on from Sukkertoppen, inland plateau and Trollsteinen, or around Gruvedalen and cross over to Lindholmhøgda.";
 
 SARKOFAGEN_DESC = "The trip to Sarkofagen is common to start from New Town. Here you have to cross the river while walking southward up the moraine to the right of Larsbreen, under Sarkofagen. It is relatively clear path through morena. When you get to level of the glacier plateau, turn right (back) and follow the ridge on the Sarkofagen. From the Varden with Checkout is a great view down the Longyear Valley, the city and the advent and Hiorthfjellet. Go back the same way, or cross Larsbreen and go against Trollsteinen see tour description 3 It is also possible to go through Longyearbreen and get the mailbox in Morena traveling up or down.";
 
@@ -73,6 +73,8 @@ LINDHOLMHOGDA_DESC = "Northwestern tip of Lindholm Høgda go to from the center,
 BLOMSTERDALSHOGDA_DESC = "It's nice to start the walk from the funicular center and follow the Burma Road onto the road to the Mine 3 Derfrat walk up the ridge to the left of Blomsterdalen seen from below. It's gentle slope, before going steeply up towards the last state where cairns says. Until the snow melts, it's easiest to keep right up to cairns. At the top there are several vard formations (cultural). The box is located approximately 100 meters further up the ravine on a small hill. Here is a nice view to the fjord. The tour can be combined with a trip nr 9, Varden on Platåberget. Follow the height of the wing / ramp between the two destination.";
 
 ENDALEN_DESC = "This is a nice winter walk, especially after being run Løyp into Endalen. The trip can either be started by the main road through Adventdalen or by running into mine 5th Post Kassa is approximately 4.4 kilometers by Mining 5th Summer route goes up from the riverbed.";
+
+GRUVEFJELLET_DESC = "This is a new summit and the correct route will be updated a soon as possible.\n\nTHE HEIGHT VIEW IS NOT CORRECT AND THE POSITION MIGHT BE INCORRECT!";
 
 SVERDRUPHAMAREN_DESC = "Main Route: Start from the house, go through Tverrdalen and on Platåberget. Then go north towards Nina Varden / posts and continue in that direction until you reach a dalsøkk.Kryss this and turn east toward New Town / gruve2 mountain. Varden is a few meters down on the edge. Another option is to combine 'Varden' (Suggestion 9) and Sverdruphammarn. After going up to the Varden continue up a small level until you're up on the plateau and follow the edge backwards along Longyeardalen until you hit the canyon walls, then the beacon seen slightly to the left in the direction New Town.";
 

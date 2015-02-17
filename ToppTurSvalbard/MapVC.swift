@@ -53,7 +53,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         self.mapView.addOverlay(tileOverlay)
         
         //Load the track for this summit
-        loadGPXTracks(summit.name)
+        loadGPXTracks(summit.id.description)
         
     }
 
@@ -159,7 +159,14 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     func loadGPXTracks(filename:NSString){
         
-        let gpx:GPXRoot = GPXParser.parseGPXAtPath(NSBundle.mainBundle().pathForResource(filename, ofType: "GPX")!)
+        let path = NSBundle.mainBundle().pathForResource(filename, ofType: "GPX")
+        
+        if (path == nil) {
+            //the gpx file do not exist ... return
+            return
+        }
+        
+        let gpx:GPXRoot = GPXParser.parseGPXAtPath(path)
         
         let tracks = gpx.tracks as [GPXTrack]
         var pointsToUse: [CLLocationCoordinate2D] = []

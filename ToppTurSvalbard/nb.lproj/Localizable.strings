@@ -41,14 +41,14 @@ INFO_HEADER_1 = "Utviklet av";
 INFO_HEADER_2 = "Informasjon og data hentet fra";
 INFO_HEADER_3 = "DNT sine betegnelser for fotturer";
 
-CURRENT_LOCATION_RESTRICTED_ACCESS = "Begrenset tilgang til lokasjon"
-CURRENT_LOCATION_USER_DENIED = "Bruker avslå tilgang til lokasjon"
-CURRENT_LOCATION_NOT_DETERMINED = "Status ikke avgjort"
-CURRENT_LOCATION_ALLOWED = "Godkjent tilgang til lokasjon"
+CURRENT_LOCATION_RESTRICTED_ACCESS = "Begrenset tilgang til lokasjon";
+CURRENT_LOCATION_USER_DENIED = "Bruker avslå tilgang til lokasjon";
+CURRENT_LOCATION_NOT_DETERMINED = "Status ikke avgjort";
+CURRENT_LOCATION_ALLOWED = "Godkjent tilgang til lokasjon";
 
 NSLOCATIONALWAYSUSAGEDESCRIPTION = "";
 
-SUKKERTOPPEN_DESC = "Sukkertoppen er den nærmeste topptrimposten til Longyearbyen. Den ligger like bak (sørøst for) sentrum. Den vanligste ruta til toppen er å starte turen i Gruvedalen og følge ryggen oppover på venstre side sett nedenfra. Vær oppmerksom på løse steiner og at det av og til er hardt og isete øverst under toppen før snøen er smeltet. Det er gamle gruveminner etter Gruve 2b flere steder under Sukkertoppen, disse er automatisk fredet. Kassen står på varden på den første flaten.Fra Sukkertoppen kan du fortsette opp på platået, og det er fint og en litt lenger tur å gå ned Vannledningsdalen mot vest eller Steintippdalen mot øst. Det er også mulig å gå videre fra Sukkertoppen, innover platået og til Trollsteinen, eller rundt Gruvedalen og over til Lindholmhøgda.";
+SUKKERTOPPEN_DESC = "Sukkertoppen er den nærmeste topptrimposten til Longyearbyen. Den ligger like bak (sørøst for) sentrum. Den vanligste ruta til toppen er å starte turen i Gruvedalen og følge ryggen oppover på venstre side sett nedenfra. Vær oppmerksom på løse steiner og at det av og til er hardt og isete øverst under toppen før snøen er smeltet. Det er gamle gruveminner etter Gruve 2b flere steder under Sukkertoppen, disse er automatisk fredet. Kassen står på varden på den første flaten. Fra Sukkertoppen kan du fortsette opp på platået, og det er fint og en litt lenger tur å gå ned Vannledningsdalen mot vest eller Steintippdalen mot øst. Det er også mulig å gå videre fra Sukkertoppen, innover platået og til Trollsteinen, eller rundt Gruvedalen og over til Lindholmhøgda.";
 
 SARKOFAGEN_DESC = "Turen til Sarkofagen er vanlig å starte fra Nybyen. Her må du krysse elva mens du går sørøstover opp i morenen til høyre for Larsbreen, under Sarkofagen. Det er forholdsvis tydelig sti gjennom morena. Når du kommer opp på høyde med breplatået, svinger du mot høyre (tilbake) og følger ryggen ut på Sarkofagen. Fra Varden med kassen er det flott utsikt nedover Longyeardalen, over byen og mot Adventfjorden og Hiorthfjellet. Gå tilbake samme vei, eller kryss Larsbreen og gå mot Trollsteinen, se turbeskrivelse 3. Det er og mulig å gå via Longyearbreen og få med postkassa i Morena på tur opp eller ned.";
 
@@ -73,6 +73,8 @@ LINDHOLMHOGDA_DESC = "Nordvestspissen av Lindholmhøgda går du til fra sentrum
 BLOMSTERDALSHOGDA_DESC = "Det er fint å starte turen fra taubanesentralen og følge Burmaveien ut mot vegen opp til Gruve 3. Derfrat går man opp fjellryggen til venstre for Blomsterdalen sett nedenfra. Det er slak stigning, før man går bratt opp mot siste topp hvor vardene står. Inntil snøen smelter er det enklest å holde til høyre opp mot vardene. På toppen er det flere vardeformasjoner (kulturminner). Kassen er plassert ca. 100 meter videre opp mot skaret på en liten høyde. Her er det fin utsikt til Isfjorden. Turen kan med fordel kombineres med tur nr 9, Varden på Platåberget. Følg høyden på fløy/rampe mellom de to turmåla.";
 
 ENDALEN_DESC = "Dette er en fin vintertur, spesielt etter at det blir kjørt løyp inn Endalen. Turen kan enten startes ved hovedvegen gjennom Adventdalen eller ved å kjøre inn Gruve 5. Postkassa står ca 4,4 km etter Gruve 5. Sommertid går ruta opp fra elveleiet.";
+
+GRUVEFJELLET_DESC = "Dette er en ny topp i år og riktig rute vil bli oppdatert så fort vi har den tilgjengelig.\n\nGRAFEN ER IKKE RIKTIG OG POSISJONEN KAN VÆRE UNØYAKTIG!";
 
 SVERDRUPHAMAREN_DESC = "Hovedrute: Start fra Huset, gå via Tverrdalen og opp på Platåberget. Gå så nordøstover mot Ninavarden/stolpene og fortsett i den retningen til du kommer til et dalsøkk.Kryss dette og drei sørøst mot Nybyen/gruve2 fjellet. Varden står noen meter ned ute på kanten. Et annet alternativ er å kombinere 'Varden' (Tur nr 9) og Sverdruphammarn. Etter å ha gått opp til Varden fortsetter du opp et lite nivå til du er oppe på platået og følger kanten bakover langs Longyeardalen til du treffer dalsøkket, da vil varden sees litt ned til venstre i retning Nybyen.";
 

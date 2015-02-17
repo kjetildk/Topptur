@@ -163,14 +163,11 @@ class MainMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
         var pointsToUse: [CLLocationCoordinate2D] = []
         
         for oneTrack in tracks{
-            
             pointsToUse.reserveCapacity(oneTrack.tracksegments.count)
-            NSLog("New oneTrack: %d",pointsToUse.count)
             
             let segments = oneTrack.tracksegments as [GPXTrackSegment]
             
             for segment in segments {
-                NSLog("New segment")
                 
                 let trackpoints = segment.trackpoints as [GPXTrackPoint]
         

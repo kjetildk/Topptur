@@ -62,7 +62,7 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
             let formatter = NSDateFormatter()
             formatter.dateStyle = .FullStyle
             cell.visitDate = date
-            cell.textLabel.text = formatter.stringFromDate(date)
+            cell.textLabel?.text = formatter.stringFromDate(date)
         }
         return cell
     }

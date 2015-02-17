@@ -10,9 +10,9 @@ import UIKit
 import CoreData
 
 class PersistenceHelper: NSObject {
-   
+
     var appDel: AppDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
-    var context: NSManagedObjectContext
+    let context: NSManagedObjectContext
     
     override init() {
         context = appDel.managedObjectContext!
@@ -120,7 +120,5 @@ class PersistenceHelper: NSObject {
         
         return false
     }
-    
-    
     
 }

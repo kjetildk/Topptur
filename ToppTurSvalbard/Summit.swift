@@ -10,8 +10,9 @@ import UIKit
 import MapKit
 
 class Summit: NSObject {
+    var id:Int = 0
     var name:String = "Name"
-    var visitdates:[Visit] = [Visit]() //[NSDate] = [NSDate()]
+    var visitdates:[Visit] = [Visit]()
     var persistenceHelper:PersistenceHelper = PersistenceHelper()
     var latitude:CLLocationDegrees = 78.21063
     var longitude:CLLocationDegrees = 15.65408
@@ -38,7 +39,8 @@ class Summit: NSObject {
         }
     }
     
-    init(name:String,height:Int,distance:Int,terrain:SummitTerrain,difficulty:SummitDifficulty,sutibleFor:SummitSutibleFor,latitude:CLLocationDegrees,longitude:CLLocationDegrees,description:String,image:UIImage){
+    init(id:Int,name:String,height:Int,distance:Int,terrain:SummitTerrain,difficulty:SummitDifficulty,sutibleFor:SummitSutibleFor,latitude:CLLocationDegrees,longitude:CLLocationDegrees,description:String,image:UIImage){
+        self.id = id
         self.name = name
         self.height = height
         self.latitude = latitude
