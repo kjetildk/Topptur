@@ -3,16 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "map30@x2.png"
+      "filename" : "AppIcon72x72.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "map30@x3.png"
+      "filename" : "AppIcon72x72-1.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "AppIcon72x72-2.png"
     }
   ],
   "info" : {

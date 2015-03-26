@@ -15,6 +15,8 @@ class DescriptionVC: UIViewController {
     @IBOutlet weak var summitTerrain: UILabel!
     @IBOutlet weak var summitDifficulty: UILabel!
     @IBOutlet weak var summitSutibleFor: UILabel!
+    @IBOutlet weak var summitHeight: UILabel!
+    @IBOutlet weak var summitWinterImage: UIImageView!
     
     var summit:Summit?
     
@@ -26,10 +28,18 @@ class DescriptionVC: UIViewController {
         self.navigationItem.title = self.summit!.name
         
         self.summitDescription.text = self.summit!.desc
-        self.summitImage.image = self.summit!.image
-        self.summitTerrain.text = self.summit!.getTerrain()
-        self.summitDifficulty.text = self.summit!.getDifficulty()
-        self.summitSutibleFor.text = self.summit!.getSutibleFor()
+        self.summitDescription.scrollRangeToVisible(0)
+        
+        self.summitImage.image = self.summit!.imageGraph
+        self.summitHeight.text = self.summit!.getHeight()
+        
+        if(self.summit!.winter == false)
+        {
+            self.summitWinterImage.hidden = true
+        }
+        //self.summitTerrain.text = self.summit!.getTerrain()
+        //self.summitDifficulty.text = self.summit!.getDifficulty()
+        //self.summitSutibleFor.text = self.summit!.getSutibleFor()
         
     }
 

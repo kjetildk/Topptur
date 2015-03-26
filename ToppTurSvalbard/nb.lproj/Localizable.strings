@@ -39,7 +39,11 @@ SUTIBLEFOR_MOUNTAINSPORTENTHUSIASTS = "Fjellsportinteresserte";
 
 INFO_HEADER_1 = "Utviklet av";
 INFO_HEADER_2 = "Informasjon og data hentet fra";
-INFO_HEADER_3 = "DNT sine betegnelser for fotturer";
+INFO_HEADER_3 = "Du har følgende totale høydemeter";
+INFO_HEADER_4 = "Stor takk for bildebidrag";
+
+INFO_GALD = "av Galdhøpiggen";
+INFO_EVER = "av Mount Everest";
 
 CURRENT_LOCATION_RESTRICTED_ACCESS = "Begrenset tilgang til lokasjon";
 CURRENT_LOCATION_USER_DENIED = "Bruker avslå tilgang til lokasjon";

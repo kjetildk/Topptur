@@ -49,6 +49,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.summitVisitCount.text = "\(summitMgr.summits[indexPath.row].getVisitCount())/\(summitMgr.completed)"
         cell.summitHeight.text = summitMgr.summits[indexPath.row].getHeight()
         cell.summitFirstVisitDate.text = summitMgr.summits[indexPath.row].firstVisit()
+        cell.summitImageView.image = summitMgr.summits[indexPath.row].imageSummit
 //        cell.imageView.image = UIImage(named: "AppIcon72x72")
         
         if(summitMgr.getVisitCount(cell.summitName.text!) == 0){

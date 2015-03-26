@@ -20,65 +20,65 @@ class SummitManager:NSObject {
         super.init()
         
         summits.append(
-            Summit(id:1,name: "Sukkertoppen",height: 370,distance:0,terrain: .Hilly,difficulty: .Medium,sutibleFor: .MostPeople,
+            Summit(id:1,name: "Sukkertoppen",height: 370,distance:0,winter:true,terrain: .Hilly,difficulty: .Medium,sutibleFor: .MostPeople,
                 latitude: 78.21063,longitude: 15.65408,description:NSLocalizedString("SUKKERTOPPEN_DESC",comment:"Sukkertoppen"),
-                image:UIImage(named: "Sukkertoppen.png")!))
+                imageSummit:UIImage(named: "Sukkertoppen.jpg")!,imageGraph:UIImage(named: "SukkertoppenGraf.png")!))
         summits.append(
-            Summit(id:2,name: "Sarkofagen",height: 490,distance:0,terrain: .Hilly,difficulty: .Medium,sutibleFor: .MostPeople,
+            Summit(id:2,name: "Sarkofagen",height: 490,distance:0,winter:true,terrain: .Hilly,difficulty: .Medium,sutibleFor: .MostPeople,
                 latitude: 78.1902,longitude: 15.56362,description:NSLocalizedString("SARKOFAGEN_DESC",comment:"Sarkofagen"),
-                image:UIImage(named: "Sarkofagen.png")!))
+                imageSummit:UIImage(named: "Sarkofagen.jpg")!,imageGraph:UIImage(named: "SarkofagenGraf.png")!))
         summits.append(
-            Summit(id:3,name: "Trollsteinen",height: 850,distance:0,terrain: .Hilly,difficulty: .MoreDemanding,sutibleFor: .MostPeople,
+            Summit(id:3,name: "Trollsteinen",height: 850,distance:0,winter:true,terrain: .Hilly,difficulty: .MoreDemanding,sutibleFor: .MostPeople,
                 latitude: 78.1685,longitude: 15.58627,description:NSLocalizedString("TROLLSTEINEN_DESC",comment:"Trollsteinen"),
-                image:UIImage(named: "Trollstein.png")!))
+                imageSummit:UIImage(named: "Trollstein.jpg")!,imageGraph:UIImage(named: "TrollsteinGraf.png")!))
         summits.append(
-            Summit(id:4,name: "Nordenskiöld",height: 1050,distance:0,terrain: .Hilly,difficulty: .Intensive,sutibleFor: .MostPeople,
+            Summit(id:4,name: "Nordenskiöld",height: 1050,distance:0,winter:true,terrain: .Hilly,difficulty: .Intensive,sutibleFor: .MostPeople,
                 latitude: 78.17903,longitude: 15.42458,description:NSLocalizedString("NORDENSKJOLD_DESC",comment:"Nordenskiöld"),
-                image:UIImage(named: "Nordenskjold.png")!))
+                imageSummit:UIImage(named: "Nordenskjold.jpg")!,imageGraph:UIImage(named: "NordenskjoldGraf.png")!))
         summits.append(
-            Summit(id:5,name: "Varden i Bolterdalen",height: 175,distance:0,terrain: .Flat,difficulty: .Easy,sutibleFor: .Child,
+            Summit(id:5,name: "Varden i Bolterdalen",height: 175,distance:0,winter:true,terrain: .Flat,difficulty: .Easy,sutibleFor: .Child,
                 latitude: 78.13518,longitude: 16.00832,description:NSLocalizedString("BOLTERDALEN_DESC",comment:"Varden i Bolterdalen"),
-                image:UIImage(named: "VardenBolterdalen.png")!))
+                imageSummit:UIImage(named: "VardenBolterdalen.jpg")!,imageGraph:UIImage(named: "VardenBolterdalenGraf.png")!))
         summits.append(
-            Summit(id:6,name: "Morena ved Longyearbreen",height: 246,distance:0,terrain: .Flat,difficulty: .Easy,sutibleFor: .Child,
+            Summit(id:6,name: "Morena ved Longyearbreen",height: 246,distance:0,winter:false,terrain: .Flat,difficulty: .Easy,sutibleFor: .Child,
                 latitude: 78.19205,longitude: 15.53917,description:NSLocalizedString("MORENA_DESC",comment:"Morena ved Longyearbreen"),
-                image:UIImage(named: "MorenaLongyearbreen.png")!))
+                imageSummit:UIImage(named: "MorenaLongyearbreen.jpg")!,imageGraph:UIImage(named: "MorenaLongyearbreenGraf.png")!))
         summits.append(
-            Summit(id:7,name: "Varden i Bjørndalen",height: 89,distance:0,terrain: .Flat,difficulty: .Easy,sutibleFor: .Child,
+            Summit(id:7,name: "Varden i Bjørndalen",height: 89,distance:0,winter:false,terrain: .Flat,difficulty: .Easy,sutibleFor: .Child,
                 latitude: 78.2163,longitude: 15.34592,description:NSLocalizedString("BJORNDALEN_DESC",comment:"Varden i Bjørndalen"),
-                image:UIImage(named: "VardenBjorndalen.png")!))
+                imageSummit:UIImage(named: "VardenBjorndalen.jpg")!,imageGraph:UIImage(named: "VardenBjorndalenGraf.png")!))
         summits.append(
-            Summit(id:8,name: "Sneheim",height: 545,distance:0,terrain: .Hilly,difficulty: .MoreDemanding,sutibleFor: .MostPeople,
+            Summit(id:8,name: "Sneheim",height: 545,distance:0,winter:false,terrain: .Hilly,difficulty: .MoreDemanding,sutibleFor: .MostPeople,
                 latitude: 78.25927,longitude: 15.76723,description:NSLocalizedString("SNEHEIM_DESC",comment:"Sneheim"),
-                image:UIImage(named: "Sneheim.png")!))
+                imageSummit:UIImage(named: "Sneheim.jpg")!,imageGraph:UIImage(named: "SneheimGraf.png")!))
         summits.append(
-            Summit(id:9,name: "Varden ved Platåberget",height: 326,distance:0,terrain: .Hilly,difficulty: .Easy,sutibleFor: .MostPeople,
+            Summit(id:9,name: "Varden ved Platåberget",height: 326,distance:0,winter:true,terrain: .Hilly,difficulty: .Easy,sutibleFor: .MostPeople,
                 latitude: 78.2185,longitude: 15.59543,description:NSLocalizedString("PLATAABERGET_DESC",comment:"Varden ved Platåberget"),
-                image:UIImage(named: "VardenPlataaberget.png")!))
+                imageSummit:UIImage(named: "VardenPlataaberget.jpg")!,imageGraph:UIImage(named: "VardenPlataabergetGraf.png")!))
         summits.append(
-            Summit(id:10,name: "Fuglefjella",height: 437,distance:0,terrain: .Hilly,difficulty: .MoreDemanding,sutibleFor: .MostPeople,
+            Summit(id:10,name: "Fuglefjella",height: 437,distance:0,winter:false,terrain: .Hilly,difficulty: .MoreDemanding,sutibleFor: .MostPeople,
                 latitude: 78.21647,longitude: 15.27997,description:NSLocalizedString("FUGLEFJELLA_DESC",comment:"Fuglefjella"),
-                image:UIImage(named: "Fuglefjella.png")!))
+                imageSummit:UIImage(named: "Fuglefjella.jpg")!,imageGraph:UIImage(named: "FuglefjellaGraf.png")!))
         summits.append(
-            Summit(id:11,name: "Lindholmhøgda",height: 361,distance:0,terrain: .Hilly,difficulty: .Medium,sutibleFor: .Child,
+            Summit(id:11,name: "Lindholmhøgda",height: 361,distance:0,winter:false,terrain: .Hilly,difficulty: .Medium,sutibleFor: .Child,
                 latitude: 78.20385,longitude: 15.7028,description:NSLocalizedString("LINDHOLMHOGDA_DESC",comment:"Lindholmhøgda"),
-                image:UIImage(named: "Lindholmhogda.png")!))
+                imageSummit:UIImage(named: "Lindholmhogda.jpg")!,imageGraph:UIImage(named: "LindholmhogdaGraf.png")!))
         summits.append(
-            Summit(id:12,name: "Blomsterdalshøgda",height: 317,distance:0,terrain: .Hilly,difficulty: .Medium,sutibleFor: .Child,
+            Summit(id:12,name: "Blomsterdalshøgda",height: 317,distance:0,winter:false,terrain: .Hilly,difficulty: .Medium,sutibleFor: .Child,
                 latitude: 78.22653,longitude: 15.53115,description:NSLocalizedString("BLOMSTERDALSHOGDA_DESC",comment:"Blomsterdalshøgda"),
-                image:UIImage(named: "Blomsterdalshogda.png")!))
+                imageSummit:UIImage(named: "Blomsterdalshogda.jpg")!,imageGraph:UIImage(named: "BlomsterdalshogdaGraf.png")!))
         summits.append(
-            Summit(id:13,name: "Endalen",height: 190,distance:0,terrain: .Flat,difficulty: .Easy,sutibleFor: .Child,
+            Summit(id:13,name: "Endalen",height: 190,distance:0,winter:true,terrain: .Flat,difficulty: .Easy,sutibleFor: .Child,
                 latitude: 78.16238,longitude: 15.67135,description:NSLocalizedString("ENDALEN_DESC",comment:"Endalen"),
-                image:UIImage(named: "Endalen.png")!))
+                imageSummit:UIImage(named: "Endalen.jpg")!,imageGraph:UIImage(named: "EndalenGraf.png")!))
         summits.append(
-            Summit(id:14,name: "Varden på Sverdruphamaren",height: 456,distance:0,terrain: .Hilly,difficulty: .Medium,sutibleFor: .MostPeople,
+            Summit(id:14,name: "Varden på Sverdruphamaren",height: 456,distance:0,winter:false,terrain: .Hilly,difficulty: .Medium,sutibleFor: .MostPeople,
                 latitude: 78.20413,longitude: 15.55447,description:NSLocalizedString("SVERDRUPHAMAREN_DESC",comment:"Varden på Sverdruphamaren"),
-                image:UIImage(named: "Sverdruphammaren.png")!))
+                imageSummit:UIImage(named: "Sverdruphammaren.jpg")!,imageGraph:UIImage(named: "SverdruphammarenGraf.png")!))
         summits.append(
-            Summit(id:15,name: "Gruvefjellet",height: 467,distance:0,terrain: .Hilly,difficulty: .Medium,sutibleFor: .MostPeople,
+            Summit(id:15,name: "Gruvefjellet",height: 467,distance:0,winter:false,terrain: .Hilly,difficulty: .Medium,sutibleFor: .MostPeople,
                 latitude: 78.2041,longitude: 15.6292,description:NSLocalizedString("GRUVEFJELLET_DESC",comment:"Gruvefjellet"),
-                image:UIImage(named: "VardenPlataaberget.png")!))
+                imageSummit:UIImage(named: "dummy")!,imageGraph:UIImage(named: "VardenPlataabergetGraf.png")!))
         for index:Int in 0...(self.summits.count-1){
             if(summits[index].visitdates.count > 0){
                 self.completed++

@@ -38,8 +38,11 @@ SUTIBLEFOR_MOUNTAINSPORTENTHUSIASTS = "Mountainsports Enthusiasts";
 
 INFO_HEADER_1 = "Developed by";
 INFO_HEADER_2 = "Information and data collected from";
-INFO_HEADER_3 = "DNT designations for hiking";
+INFO_HEADER_3 = "Your total covered elevation";
+INFO_HEADER_4 = "Big thanks for pictures";
 
+INFO_GALD = "of Galdhøpiggen";
+INFO_EVER = "of Mount Everest";
 
 CURRENT_LOCATION_RESTRICTED_ACCESS = "Restricted Access to location";
 CURRENT_LOCATION_USER_DENIED = "User denied access to location";

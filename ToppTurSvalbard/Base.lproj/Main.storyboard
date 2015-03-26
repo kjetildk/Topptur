@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pgc-cg-aSZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pgc-cg-aSZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--InfoVC-->
@@ -58,349 +59,44 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="DNT sine betegnelser for fotturer" id="f3F-7o-rQG">
+                            <tableViewSection headerTitle="DU HAR GÅTT TOTALT ANTALL HØYDEMETER" id="8xG-t5-Hlw">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="270" id="mjz-4C-X5m">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="2yN-KB-gok" detailTextLabel="qpR-yP-kn7" style="IBUITableViewCellStyleSubtitle" id="VWh-iX-9eC">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mjz-4C-X5m" id="ZKg-gZ-bDy">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VWh-iX-9eC" id="d98-gR-Cji">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a98-Eh-Mus">
-                                                    <rect key="frame" x="13" y="11" width="579" height="248"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="251" id="PVz-4y-wgz"/>
-                                                    </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Vanskelighetsgrad">
-                                                            <attributes>
-                                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Lett">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> - dagsturer ut fra hytte eller lette dagsarrangement for alle. Turene kan vanligvis tilpasses deltagernes forutsetninger. Lett dagstursekk.
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Ganske lett">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> - dagsturer fra en hytte eller dagsetapper på 2 - 4 timer/ ca. 15 km. Lett dagstursekk eller sekk på 8–10 kg.
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Middels">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> - lengste dagsetappe på 5 timer/ ca. 20 km. Sekk på 8 –10 kg.
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Litt krevende">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> - lengste dagsetappe på 6 –7 timer/ ca. 25 km. Sekk på 8 –10 kg.
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Krevende">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> - lengste dagsetappe på 7–9 timer/ ca. 30 km. Sekk på 8 –10 kg.
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Ekstra krevende">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> - turer med lengre og tyngre dagsetapper enn 9 timer.
-
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Terreng">
-                                                            <attributes>
-                                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content">
-
-Terreng angir terrenget turen går i og er inndelt i følgende graderinger:
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Flatt">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> - betyr at turen går i flatt lende
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Kupert">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> -betyr at terrenget er småkupert
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Meget kupert">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content">- betyr at det vil være mye opp- og nedstigning
-
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Hvem passer turen for?">
-                                                            <attributes>
-                                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                                                <font key="NSOriginalFont" size="18" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Folk flest">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> - turer kurs og arrangement for voksne
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Barn">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> - turer, kurs og arrangement for aldersgruppen 0 til 12 år, både med og uten foreldre
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Ungdom">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> - turer, kurs og arrangement for aldersgruppen 13 til 26 år
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Senior">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment>
-                                                            <string key="content"> - turer og arrangement spesielt tilpasset for aldersgruppen 60+
-
-</string>
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="Fjellsportinteresserte">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content=" - turer, kurs og arrangement med aktiviteter innen fjellsport, som feks brevandring og klatring">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="PVz-4y-wgz"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="9E2-Kt-Gc2" id="FUb-p8-9WK"/>
-                                                    </connections>
-                                                </textView>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="1000 meter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2yN-KB-gok">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qpR-yP-kn7">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="a98-Eh-Mus" firstAttribute="bottom" secondItem="ZKg-gZ-bDy" secondAttribute="bottomMargin" id="4c6-Se-6Fh"/>
-                                                <constraint firstItem="a98-Eh-Mus" firstAttribute="leading" secondItem="ZKg-gZ-bDy" secondAttribute="leadingMargin" constant="5" id="93q-6s-PT3"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="a98-Eh-Mus" secondAttribute="bottom" constant="6" id="ABI-gn-bxk"/>
-                                                <constraint firstItem="a98-Eh-Mus" firstAttribute="trailing" secondItem="ZKg-gZ-bDy" secondAttribute="trailingMargin" id="Alb-WB-vRB"/>
-                                                <constraint firstItem="a98-Eh-Mus" firstAttribute="top" secondItem="ZKg-gZ-bDy" secondAttribute="topMargin" constant="3" id="CCf-xk-5Js"/>
-                                                <constraint firstItem="a98-Eh-Mus" firstAttribute="top" secondItem="ZKg-gZ-bDy" secondAttribute="topMargin" constant="3" id="Cc1-4i-Kh6"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="a98-Eh-Mus" secondAttribute="bottom" constant="2" id="EMf-hR-jlX"/>
-                                                <constraint firstItem="a98-Eh-Mus" firstAttribute="leading" secondItem="ZKg-gZ-bDy" secondAttribute="leadingMargin" constant="5" id="FWE-pP-6uM"/>
-                                                <constraint firstItem="a98-Eh-Mus" firstAttribute="leading" secondItem="ZKg-gZ-bDy" secondAttribute="leadingMargin" constant="5" id="Pqo-tm-ERa"/>
-                                                <constraint firstAttribute="centerX" secondItem="a98-Eh-Mus" secondAttribute="centerX" id="UJh-eO-p1i"/>
-                                                <constraint firstItem="a98-Eh-Mus" firstAttribute="trailing" secondItem="ZKg-gZ-bDy" secondAttribute="trailingMargin" id="W2e-3n-EyI"/>
-                                                <constraint firstItem="a98-Eh-Mus" firstAttribute="leading" secondItem="ZKg-gZ-bDy" secondAttribute="leadingMargin" constant="5" id="kVh-Xt-WIa"/>
-                                                <constraint firstItem="a98-Eh-Mus" firstAttribute="top" secondItem="ZKg-gZ-bDy" secondAttribute="topMargin" constant="3" id="lJ5-MJ-lqQ"/>
-                                                <constraint firstItem="a98-Eh-Mus" firstAttribute="trailing" secondItem="ZKg-gZ-bDy" secondAttribute="trailingMargin" id="vRd-Ub-8F3"/>
-                                                <constraint firstItem="a98-Eh-Mus" firstAttribute="top" secondItem="ZKg-gZ-bDy" secondAttribute="topMargin" constant="3" id="xF8-KX-Fgf"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="4c6-Se-6Fh"/>
-                                                    <exclude reference="ABI-gn-bxk"/>
-                                                    <exclude reference="Alb-WB-vRB"/>
-                                                    <exclude reference="CCf-xk-5Js"/>
-                                                    <exclude reference="Cc1-4i-Kh6"/>
-                                                    <exclude reference="FWE-pP-6uM"/>
-                                                    <exclude reference="Pqo-tm-ERa"/>
-                                                    <exclude reference="UJh-eO-p1i"/>
-                                                    <exclude reference="kVh-Xt-WIa"/>
-                                                    <exclude reference="lJ5-MJ-lqQ"/>
-                                                    <exclude reference="vRd-Ub-8F3"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="constraints">
-                                                    <exclude reference="93q-6s-PT3"/>
-                                                    <include reference="ABI-gn-bxk"/>
-                                                    <include reference="Alb-WB-vRB"/>
-                                                    <exclude reference="EMf-hR-jlX"/>
-                                                    <include reference="FWE-pP-6uM"/>
-                                                    <exclude reference="W2e-3n-EyI"/>
-                                                    <include reference="lJ5-MJ-lqQ"/>
-                                                    <exclude reference="xF8-KX-Fgf"/>
-                                                </mask>
-                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="STOR TAKK FOR BILDEBIDRAG" id="SOz-nz-5QG">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="LSl-Zz-PIj" style="IBUITableViewCellStyleDefault" id="bDi-yV-tkP">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bDi-yV-tkP" id="Bfm-s4-fRt">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Sophie Cordon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LSl-Zz-PIj">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -412,8 +108,9 @@ Cgo
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="bigText" destination="a98-Eh-Mus" id="p3z-Dn-UgS"/>
+                        <outlet property="compareHeight" destination="qpR-yP-kn7" id="zKE-nO-4Sn"/>
                         <outlet property="tableView" destination="BZ2-Dp-huV" id="1AO-WS-svC"/>
+                        <outlet property="totalHeight" destination="2yN-KB-gok" id="l7L-rr-YqZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xw-6P-mG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -462,7 +159,7 @@ Cgo
                                                         <rect key="frame" x="347" y="19" width="45" height="25"/>
                                                     </variation>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon72x72.png" translatesAutoresizingMaskIntoConstraints="NO" id="ffd-Kb-x0l">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy" translatesAutoresizingMaskIntoConstraints="NO" id="ffd-Kb-x0l">
                                                     <rect key="frame" x="11" y="6" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="vKU-xL-uzG"/>
@@ -545,7 +242,7 @@ Cgo
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="BarIconMap" id="Adq-3P-jIK">
                             <connections>
-                                <segue destination="Cw3-jk-GK3" kind="show" identifier="showMap" id="y0n-cS-WAc"/>
+                                <segue destination="Cw3-jk-GK3" kind="show" identifier="showMap" id="eXA-ie-dxE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1001,98 +698,75 @@ Cgo
                         <viewControllerLayoutGuide type="top" id="dVI-eM-YAg"/>
                         <viewControllerLayoutGuide type="bottom" id="CIt-Vb-9Kd"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eaJ-a0-ITJ">
+                    <view key="view" contentMode="scaleToFill" id="eaJ-a0-ITJ" userLabel="SummitDecriptionView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIY-GK-a98">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SutibleFor" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1R-yw-Exb">
-                                        <rect key="frame" x="489" y="179" width="103" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="UTr-Ur-mfE"/>
-                                            <constraint firstAttribute="width" constant="103" id="cKG-9v-bjm"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPs-UG-g2Z">
-                                        <rect key="frame" x="244" y="179" width="112" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="112" id="HwP-9E-Koh"/>
-                                            <constraint firstAttribute="height" constant="21" id="jCr-ZQ-6Gz"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terrain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzH-i3-IvI">
-                                        <rect key="frame" x="8" y="179" width="125" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="TyS-i8-FQD"/>
-                                            <constraint firstAttribute="width" constant="125" id="lcZ-jT-ocY"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Endalen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-MV-PRc">
-                                        <rect key="frame" x="8" y="8" width="584" height="155"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="155" id="Nxf-ln-ejW"/>
-                                            <constraint firstAttribute="width" constant="310" id="fUj-tz-oQa"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="fUj-tz-oQa"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="264" y="72" width="72" height="72"/>
-                                        </variation>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description..." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxg-76-VNZ">
-                                        <rect key="frame" x="8" y="208" width="584" height="279"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="16" y="152" width="568" height="271"/>
-                                        </variation>
-                                    </textView>
-                                </subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EndalenGraf.png" translatesAutoresizingMaskIntoConstraints="NO" id="1ar-WE-Bho">
+                                <rect key="frame" x="10" y="72" width="570" height="180"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description..." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxg-76-VNZ" userLabel="TextContainer">
+                                <rect key="frame" x="20" y="299" width="560" height="251"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="152" width="568" height="271"/>
+                                </variation>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="summer" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-xn-qVd">
+                                <rect key="frame" x="544" y="251" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstItem="tzH-i3-IvI" firstAttribute="top" secondItem="Uby-MV-PRc" secondAttribute="bottom" constant="16" id="10i-Fa-Dx5"/>
-                                    <constraint firstAttribute="centerX" secondItem="YPs-UG-g2Z" secondAttribute="centerX" id="6bm-4R-9Ni"/>
-                                    <constraint firstItem="Hxg-76-VNZ" firstAttribute="top" secondItem="tzH-i3-IvI" secondAttribute="bottom" constant="8" symbolic="YES" id="AN0-8g-lJC"/>
-                                    <constraint firstItem="Uby-MV-PRc" firstAttribute="top" secondItem="PIY-GK-a98" secondAttribute="topMargin" id="FWg-i7-3jg"/>
-                                    <constraint firstAttribute="trailing" secondItem="Hxg-76-VNZ" secondAttribute="trailing" constant="8" id="MhV-Uv-ZfU"/>
-                                    <constraint firstItem="Hxg-76-VNZ" firstAttribute="top" secondItem="YPs-UG-g2Z" secondAttribute="bottom" constant="8" id="TQ9-SX-dmY"/>
-                                    <constraint firstItem="Hxg-76-VNZ" firstAttribute="leading" secondItem="PIY-GK-a98" secondAttribute="leading" constant="8" id="cGW-wY-bWv"/>
-                                    <constraint firstItem="Hxg-76-VNZ" firstAttribute="top" secondItem="i1R-yw-Exb" secondAttribute="bottom" constant="8" symbolic="YES" id="ld2-c2-sHv"/>
-                                    <constraint firstItem="Uby-MV-PRc" firstAttribute="leading" secondItem="tzH-i3-IvI" secondAttribute="leading" id="lec-Ch-9dW"/>
-                                    <constraint firstAttribute="bottom" secondItem="Hxg-76-VNZ" secondAttribute="bottom" id="lzP-03-H5p"/>
-                                    <constraint firstItem="tzH-i3-IvI" firstAttribute="leading" secondItem="PIY-GK-a98" secondAttribute="leading" constant="8" id="mm3-jC-u8l"/>
-                                    <constraint firstAttribute="centerX" secondItem="Hxg-76-VNZ" secondAttribute="centerX" id="pUl-2s-Bdo"/>
-                                    <constraint firstItem="Uby-MV-PRc" firstAttribute="top" secondItem="PIY-GK-a98" secondAttribute="top" constant="8" id="sDe-mb-xWF"/>
-                                    <constraint firstAttribute="trailing" secondItem="i1R-yw-Exb" secondAttribute="trailing" constant="8" id="sdO-O8-Udz"/>
-                                    <constraint firstAttribute="bottom" secondItem="Uby-MV-PRc" secondAttribute="bottom" constant="324" id="xND-fc-l6w"/>
-                                    <constraint firstItem="Uby-MV-PRc" firstAttribute="trailing" secondItem="i1R-yw-Exb" secondAttribute="trailing" id="xdd-cL-kRl"/>
+                                    <constraint firstAttribute="width" constant="30" id="U29-i3-qs2"/>
+                                    <constraint firstAttribute="height" constant="30" id="wym-20-Pok"/>
                                 </constraints>
-                                <connections>
-                                    <outlet property="delegate" destination="pee-0u-37u" id="8eD-rv-ryL"/>
-                                </connections>
-                            </scrollView>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TO-Un-viB">
+                                <rect key="frame" x="20" y="260" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winter" translatesAutoresizingMaskIntoConstraints="NO" id="Nfi-wa-4hR">
+                                <rect key="frame" x="504" y="251" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="eNG-pd-n4R"/>
+                                    <constraint firstAttribute="height" constant="32" id="peg-yH-xBt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PIY-GK-a98" firstAttribute="leading" secondItem="eaJ-a0-ITJ" secondAttribute="leadingMargin" constant="-16" id="VAF-Jh-p5z"/>
-                            <constraint firstItem="CIt-Vb-9Kd" firstAttribute="top" secondItem="PIY-GK-a98" secondAttribute="bottom" id="lip-BD-0aP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PIY-GK-a98" secondAttribute="trailing" constant="-16" id="t7e-pP-Vot"/>
-                            <constraint firstItem="PIY-GK-a98" firstAttribute="top" secondItem="dVI-eM-YAg" secondAttribute="bottom" id="tgT-DL-raI"/>
+                            <constraint firstAttribute="trailing" secondItem="1ar-WE-Bho" secondAttribute="trailing" id="55d-Tj-hkB"/>
+                            <constraint firstItem="Hxg-76-VNZ" firstAttribute="top" secondItem="1ar-WE-Bho" secondAttribute="bottom" constant="47" id="5oK-UB-EZb"/>
+                            <constraint firstItem="eyD-xn-qVd" firstAttribute="top" secondItem="1ar-WE-Bho" secondAttribute="bottom" constant="-1" id="5zZ-vb-vn8"/>
+                            <constraint firstItem="3TO-Un-viB" firstAttribute="leading" secondItem="Hxg-76-VNZ" secondAttribute="leading" id="7J5-DX-X9A"/>
+                            <constraint firstAttribute="trailing" secondItem="Hxg-76-VNZ" secondAttribute="trailing" constant="20" id="7TB-R1-UgI"/>
+                            <constraint firstItem="CIt-Vb-9Kd" firstAttribute="top" secondItem="Hxg-76-VNZ" secondAttribute="bottom" constant="1" id="9QM-pR-TQf"/>
+                            <constraint firstItem="1ar-WE-Bho" firstAttribute="leading" secondItem="eaJ-a0-ITJ" secondAttribute="leading" constant="10" id="Brr-Av-fuf"/>
+                            <constraint firstItem="1ar-WE-Bho" firstAttribute="top" secondItem="dVI-eM-YAg" secondAttribute="bottom" constant="8" id="E10-iZ-TyN"/>
+                            <constraint firstItem="1ar-WE-Bho" firstAttribute="height" relation="lessThanOrEqual" secondItem="eaJ-a0-ITJ" secondAttribute="height" multiplier="0.3" id="LMv-Ru-qoV"/>
+                            <constraint firstItem="1ar-WE-Bho" firstAttribute="leading" secondItem="eaJ-a0-ITJ" secondAttribute="leading" id="OQY-gT-LnR"/>
+                            <constraint firstItem="Nfi-wa-4hR" firstAttribute="top" secondItem="1ar-WE-Bho" secondAttribute="bottom" constant="-1" id="RGr-un-ghI"/>
+                            <constraint firstAttribute="centerX" secondItem="1ar-WE-Bho" secondAttribute="centerX" constant="5" id="UNh-4l-WQa"/>
+                            <constraint firstItem="eyD-xn-qVd" firstAttribute="trailing" secondItem="eaJ-a0-ITJ" secondAttribute="trailingMargin" constant="-10" id="Ych-Dv-j27"/>
+                            <constraint firstItem="3TO-Un-viB" firstAttribute="top" secondItem="1ar-WE-Bho" secondAttribute="bottom" constant="8" id="e5r-Qc-Dgs"/>
+                            <constraint firstAttribute="centerX" secondItem="1ar-WE-Bho" secondAttribute="centerX" id="eng-9D-HIi"/>
+                            <constraint firstItem="Hxg-76-VNZ" firstAttribute="leading" secondItem="eaJ-a0-ITJ" secondAttribute="leading" constant="20" id="nrS-Co-QqJ"/>
+                            <constraint firstItem="Hxg-76-VNZ" firstAttribute="top" secondItem="1ar-WE-Bho" secondAttribute="bottom" constant="20" id="t8V-H3-iNe"/>
+                            <constraint firstItem="1ar-WE-Bho" firstAttribute="top" secondItem="dVI-eM-YAg" secondAttribute="bottom" constant="8" id="tcj-GZ-SER"/>
+                            <constraint firstItem="eyD-xn-qVd" firstAttribute="leading" secondItem="Nfi-wa-4hR" secondAttribute="trailing" constant="8" id="vzT-9c-ifV"/>
+                            <constraint firstAttribute="trailing" secondItem="1ar-WE-Bho" secondAttribute="trailing" constant="20" id="zMn-GW-Q3G"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="55d-Tj-hkB"/>
+                                <exclude reference="OQY-gT-LnR"/>
+                                <exclude reference="eng-9D-HIi"/>
+                                <exclude reference="tcj-GZ-SER"/>
+                                <exclude reference="t8V-H3-iNe"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="pee-0u-37u">
                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="80u-1M-Wr6">
@@ -1103,17 +777,15 @@ Cgo
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="SummitImage" destination="Uby-MV-PRc" id="Uxs-a4-uKx"/>
                         <outlet property="summitDescription" destination="Hxg-76-VNZ" id="MYO-rY-1zd"/>
-                        <outlet property="summitDifficulty" destination="YPs-UG-g2Z" id="S6w-Xm-Vao"/>
-                        <outlet property="summitImage" destination="Uby-MV-PRc" id="QaR-Hj-E8f"/>
-                        <outlet property="summitSutibleFor" destination="i1R-yw-Exb" id="d5P-0G-uSq"/>
-                        <outlet property="summitTerrain" destination="tzH-i3-IvI" id="Hmr-o3-QWA"/>
+                        <outlet property="summitHeight" destination="3TO-Un-viB" id="PjK-ED-IYm"/>
+                        <outlet property="summitImage" destination="1ar-WE-Bho" id="kwA-sg-gpH"/>
+                        <outlet property="summitWinterImage" destination="Nfi-wa-4hR" id="bgr-yz-3YS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPS-Dt-oP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4191" y="1935"/>
+            <point key="canvasLocation" x="4191" y="1945"/>
         </scene>
         <!--Toppturer-->
         <scene sceneID="Peh-vb-kfL">
@@ -1133,6 +805,39 @@ Cgo
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5A-6Z-8ee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1108" y="1138"/>
+        </scene>
+        <!--New MapVC-->
+        <scene sceneID="ecy-5D-8uj">
+            <objects>
+                <viewController id="Ssq-Pj-ZFa" customClass="NewMapVC" customModule="Topptur" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h2S-oZ-G8J"/>
+                        <viewControllerLayoutGuide type="bottom" id="l87-cG-aRC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X9u-Dx-3Oq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eue-Bf-gNL" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eue-Bf-gNL" firstAttribute="top" secondItem="X9u-Dx-3Oq" secondAttribute="top" id="QWu-GK-A3O"/>
+                            <constraint firstItem="eue-Bf-gNL" firstAttribute="bottom" secondItem="l87-cG-aRC" secondAttribute="top" id="rYw-zt-Gqm"/>
+                            <constraint firstItem="eue-Bf-gNL" firstAttribute="leading" secondItem="X9u-Dx-3Oq" secondAttribute="leading" id="vhn-ED-vXt"/>
+                            <constraint firstAttribute="trailing" secondItem="eue-Bf-gNL" secondAttribute="trailing" id="xFx-IZ-05d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="eue-Bf-gNL" id="69h-Vl-yS0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vTs-4Z-ZmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3411" y="427"/>
         </scene>
         <!--Visits-->
         <scene sceneID="pW5-T0-fPv">
@@ -1195,12 +900,15 @@ Cgo
     <resources>
         <image name="AppIcon72x72.png" width="72" height="72"/>
         <image name="BarIconInfo" width="22" height="22"/>
-        <image name="BarIconMap" width="22" height="22"/>
-        <image name="Endalen.png" width="600" height="348"/>
+        <image name="BarIconMap" width="44" height="44"/>
+        <image name="EndalenGraf.png" width="600" height="348"/>
         <image name="TabIconList" width="25" height="22"/>
         <image name="TabIconMountain" width="32" height="32"/>
         <image name="TabIconTarget" width="32" height="32"/>
+        <image name="dummy" width="72" height="72"/>
         <image name="mountain.png" width="30" height="30"/>
+        <image name="summer" width="200" height="200"/>
+        <image name="winter" width="600" height="533"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ipB-Im-rVP"/>

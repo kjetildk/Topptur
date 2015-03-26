@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-ArcGIS-Runtime-SDK-iOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TBXML.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8C111872D6AFA1E6345ACF13</key>
+		<key>4B3D00A5ECA311E48C38FA49</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8D4FE88B6C42280E079ABDEF</key>
+		<key>AB6E0594F1A4252302C1938C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D352C3F9431DB549C865CC8E</key>
+		<key>B8C4DEC6BD0077CCDE398FD2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF57093CD5A50461B86220E3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

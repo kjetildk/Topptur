@@ -22,7 +22,9 @@ class Summit: NSObject {
     var terrain:SummitTerrain = .Flat
     var difficulty:SummitDifficulty = .Easy
     var sutibleFor:SummitSutibleFor = .MostPeople
-    var image:UIImage?
+    var winter:Bool = false
+    var imageSummit:UIImage?
+    var imageGraph:UIImage?
     
     class Visit: NSObject{
         
@@ -39,10 +41,11 @@ class Summit: NSObject {
         }
     }
     
-    init(id:Int,name:String,height:Int,distance:Int,terrain:SummitTerrain,difficulty:SummitDifficulty,sutibleFor:SummitSutibleFor,latitude:CLLocationDegrees,longitude:CLLocationDegrees,description:String,image:UIImage){
+    init(id:Int,name:String,height:Int,distance:Int,winter:Bool,terrain:SummitTerrain,difficulty:SummitDifficulty,sutibleFor:SummitSutibleFor,latitude:CLLocationDegrees,longitude:CLLocationDegrees,description:String,imageSummit:UIImage,imageGraph:UIImage){
         self.id = id
         self.name = name
         self.height = height
+        self.winter = winter
         self.latitude = latitude
         self.longitude = longitude
         self.desc = description
@@ -50,7 +53,8 @@ class Summit: NSObject {
         self.terrain = terrain
         self.difficulty = difficulty
         self.sutibleFor = sutibleFor
-        self.image = image
+        self.imageSummit = imageSummit
+        self.imageGraph = imageGraph
         
         //clean up
         if(self.visitdates.count > 0){
