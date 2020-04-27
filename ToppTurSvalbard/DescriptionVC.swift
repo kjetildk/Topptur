@@ -17,6 +17,7 @@ class DescriptionVC: UIViewController {
     @IBOutlet weak var summitSutibleFor: UILabel!
     @IBOutlet weak var summitHeight: UILabel!
     @IBOutlet weak var summitWinterImage: UIImageView!
+    @IBOutlet weak var summitSummerImage: UIImageView!
     
     var summit:Summit?
     
@@ -28,27 +29,29 @@ class DescriptionVC: UIViewController {
         self.navigationItem.title = self.summit!.name
         
         self.summitDescription.text = self.summit!.desc
-        self.summitDescription.scrollRangeToVisible(0)
+        
+        self.summitDescription.scrollRangeToVisible(NSRange(location: summitDescription.text.count, length: 0))
         
         self.summitImage.image = self.summit!.imageGraph
         self.summitHeight.text = self.summit!.getHeight()
         
         if(self.summit!.winter == false)
         {
-            self.summitWinterImage.hidden = true
+            self.summitWinterImage.isHidden = true
         }
+        
+        if(self.summit!.summer == false)
+        {
+            self.summitSummerImage.isHidden = true
+        }
+        
         //self.summitTerrain.text = self.summit!.getTerrain()
         //self.summitDifficulty.text = self.summit!.getDifficulty()
         //self.summitSutibleFor.text = self.summit!.getSutibleFor()
         
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        //view.backgroundColor = UIColor.darkGrayColor()
     }
     
-
     /*
     // MARK: - Navigation
 

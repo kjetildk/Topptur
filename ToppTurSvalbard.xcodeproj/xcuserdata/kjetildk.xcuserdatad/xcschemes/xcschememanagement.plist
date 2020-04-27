@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>JBChart.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>JBChartView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>ToppTurSvalbard.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +28,26 @@
 			<true/>
 		</dict>
 		<key>B4D175E0198C100D008DA3AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4FEFD8F1B49868400C87F2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4FEFD991B49868400C87F2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4FEFDB51B49879900C87F2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4FEFDBF1B49879900C87F2F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

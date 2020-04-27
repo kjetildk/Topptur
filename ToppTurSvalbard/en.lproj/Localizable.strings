@@ -1,15 +1,16 @@
-/* 
-  Localizable.strings
-  ToppTurSvalbard
+/*
+ Localizable.strings
+ ToppTurSvalbard
+ 
+ Created by Kjetil Dahl Knutsen on 17.08.14.
+ Copyright (c) 2014 publisoft. All rights reserved.
+ */
 
-  Created by Kjetil Dahl Knutsen on 17.08.14.
-  Copyright (c) 2014 publisoft. All rights reserved.
-*/
-
-
-
+APPLICATION_NAME = "Summiting";
 APPLICATION_TITLE = "Summits on Svalbard";
 SUMMIT_FIRST_VISIT = "Not visited";
+
+NSLocationUsageDescription = "needs Location access for tracking your position to show your position in the map!";
 
 TAKE_PICTURE = "Take Picture";
 
@@ -40,16 +41,38 @@ INFO_HEADER_1 = "Developed by";
 INFO_HEADER_2 = "Information and data collected from";
 INFO_HEADER_3 = "Your total covered elevation";
 INFO_HEADER_4 = "Big thanks for pictures";
+INFO_HEADER_5 = "Purchase App without advertisement";
+INFO_HEADER_6 = "Delete data";
+
+INFO_FOOTER_1 = "Version";
+
+SHOW_RATE_ME_1 = "Rate Us";
+SHOW_RATE_ME_2 = "Thanks for using SUMMITING";
+SHOW_RATE_ME_3 = "Rate SUMMITING";
+SHOW_RATE_ME_4 = "No Thanks";
+SHOW_RATE_ME_5 = "Maybe Later";
 
 INFO_GALD = "of Galdhøpiggen";
 INFO_EVER = "of Mount Everest";
+INFO_DELETE_BUTTON = "Delete all your trips and start over";
+INFO_DELETE_ALERT = "All of your trips will be deleted. Are you sure?";
+INFO_DELETE_CANCEL = "Cancel";
+INFO_PURCHASE_BUTTON = "Purchase";
+
+DETAILS_VISITS = "Your visits";
+DETAILS_TEXT_1 = "You have not visited this summit yet";
+DETAILS_TEXT_2 = "You have visited this summit ";
+DETAILS_TEXT_3 = " time";
+DETAILS_TEXT_4 = " times";
+DETAILS_TEXT_MESSAGE = "Double-tap to add today's visit";
+
+TRACKER_FOCUS = "Focus on:";
+TRACKER_MY_POSITION = "My position";
 
 CURRENT_LOCATION_RESTRICTED_ACCESS = "Restricted Access to location";
 CURRENT_LOCATION_USER_DENIED = "User denied access to location";
 CURRENT_LOCATION_NOT_DETERMINED = "Status not determined";
 CURRENT_LOCATION_ALLOWED = "Allowed to location Access";
-
-NSLOCATIONALWAYSUSAGEDESCRIPTION = "";
 
 SUKKERTOPPEN_DESC = "Sukkertoppen is the nearest top trim post to Longyearbyen. It is located just behind (north of) downtown. The most common route to the top is to start your trip in Gruvedalen and follow back up on the left side viewed from below. Be aware of loose stones and that it sometimes is hard and icy at the top of the top before the snow has melted. There are old mining memories Mine 2b several places under Sukkertoppen, these are automatically protected. The box is on the boulevard on the first flaten. From Sukkertoppen you can keep up onto the plateau, and it is nice and a slightly longer walk to go down Vannledningsdalen to the west or Steintippdalen to the east. It is also possible to move on from Sukkertoppen, inland plateau and Trollsteinen, or around Gruvedalen and cross over to Lindholmhøgda.";
 
@@ -59,7 +82,7 @@ TROLLSTEINEN_DESC = "The trip to Trollsteinen go easily from New Town. The route
 
 NORDENSKJOLD_DESC = "Nordenskiöldtoppen is the highest peak in the vicinity of Longyearbyen. People go on the top of the New Town and Sverdrupbyen via Tverrdalen or Skjæringa and over Platåberget. On top of Tverrdalen continue to the southwest through the moraine. In summer it is common to follow the East ridge of Store towards the top, but it's also nice to go down the west ridge. While there is still snow yesterday snowmobile trail and the most common route of skiing on the glacier and up the west ridge of the installations and the cabin on top. Great skiing, great opportunities for skiing in the different flanks.";
 
-BOLTERDALEN_DESC = "Park at the kennel to Base Camp or up in the bend where the old road goes to Mine 7 Follow høgdedraga inwards by more than 3 km are obvious cairn.";
+BOLTERDALEN_DESC = "NOTE! THIS SUMMIT IS NOT PART OF TOPPTRIMMEN 2016! Park at the kennel to Base Camp or up in the bend where the old road goes to Mine 7 Follow høgdedraga inwards by more than 3 km are obvious cairn.";
 
 MORENA_DESC = "Go from New Town, follow the old road south, past the former dog yard at Mine 4 You have to cross a tilførselelv to Longyear river before following stepped up the moraine under Longyearbreen. The box stands on a large rock visible, right on the moraine. The distance from New Town to this hiking destination is 1.7 km. When you pass the old dog yard is about 850 meters left to checkout. The walk follows the rocky terrain, but is easy and can be fitted together with fossil picking, exciting for both children and adults.";
 
@@ -77,8 +100,16 @@ BLOMSTERDALSHOGDA_DESC = "It's nice to start the walk from the funicular center 
 
 ENDALEN_DESC = "This is a nice winter walk, especially after being run Løyp into Endalen. The trip can either be started by the main road through Adventdalen or by running into mine 5th Post Kassa is approximately 4.4 kilometers by Mining 5th Summer route goes up from the riverbed.";
 
-GRUVEFJELLET_DESC = "This is a new summit and the correct route will be updated a soon as possible.\n\nTHE HEIGHT VIEW IS NOT CORRECT AND THE POSITION MIGHT BE INCORRECT!";
+GRUVEFJELLET_DESC = "Start your tour at Perleporten (the Pearly gate) and follow the Vannledningsdalen upwards. When you almost reach the top of the valley follow the climb southwards and up to the plateau. Then go outwards Gruvefjellet. The box is attached on the brink with a good view of Longyearbyen and Nybyen. One can also see the mine 2b from above. The trip can be combined with going either back down the Sukkertoppen or further south to Trollstein and then Sarkofagen.";
 
 SVERDRUPHAMAREN_DESC = "Main Route: Start from the house, go through Tverrdalen and on Platåberget. Then go north towards Nina Varden / posts and continue in that direction until you reach a dalsøkk.Kryss this and turn east toward New Town / gruve2 mountain. Varden is a few meters down on the edge. Another option is to combine 'Varden' (Suggestion 9) and Sverdruphammarn. After going up to the Varden continue up a small level until you're up on the plateau and follow the edge backwards along Longyeardalen until you hit the canyon walls, then the beacon seen slightly to the left in the direction New Town.";
+
+TENOREN_DESC = "På sommeren må man ta båt eller padle med kajakk over til andre siden av Adventfjorden for å gå til Tenoren (656 m.o.h.). Senere på høsten, når Adventelva har tørket, kan man krysse Adventdalen til fots. Starter man fra Hiorthamn følger man fjellet mot Mälardalen, krysser elva fra Mälardalen og følger fjellet videre mot Tenoren. \n\nPostkassen på Tenoren står på toppen av fjellet. Vær obs på at det er ganske bratt på toppen, og en alternativ oppstigning kan være å følge fjellet rundt på høyresiden (mot øst) for å komme seg helt til postkassen på toppen. Nedkomst samme vei, eventuelt følge ryggen mot Bassen østover for så å sleppe seg ned mot Adventdalen. \n\nDette er en lang dagstur. Kombiner den gjerne med overnatting i Hiorthamn før dere padler tilbake til Longyearbyen med kajakk dagen etterpå.";
+
+LARS_DESC = "The trip to Lars Hiertafjellet starts like the top trip to Sarkofagen, which is to start from Nybyen. Her you have to cross the river as you walk southeastwards up tomorrow to the right of Larsbreen under Sarkofagen. There is a fairly clear path through the morena. When you get up at the height with Breplatå, continue south towards the mountain ridge to Lars Hiertafjellet. The mountain ridge can be a bit steep so look up for loose rocks. From Varden with the box is a great view down the Longyear Valley, across the city and towards Adventfjorden and south towards Fardalen and the Coles Valley. Go back same road, or either cross Larsbreen and walk towards Trollsteinen, see tour description for Trollsteinen, or continue one the mountain ridge towards Trollsteinen. It is also  possible to go through Longyearbreen and get a mailbox in Morena on a trip up or down.\n\nElevation profile may differ.";
+
+JANSSON_DESC = "The box is set up on the east wall of the old cabin to Norsar. This is for pedestrians or skiers, it is NOT allowed to drive the scooter there. The trip is approx. 9 km one way and it is nice to start at Camp Barentz.";
+
+DUMMY_DESC = "NOTE! POSITION MAY BE WRONG.\n\nRoute description is not defined yet.";
 
 INFO_DNT_TEXT = "Difficulty\n\nEasy - day trips from the cabin or light dagsarrangement for everyone. The tours can usually be adapted to participants' assumptions. Fresh daypack. \n Pretty easy - day tours from a hut or Stages on 2-4 hour / about 15 km. Light day pack or bag of 8-10 kg.\nMedium - longest day trip of 5 hours / about 20 km. Bag of 8 -10 kg.\nMore demanding - the longest day trip on 6 -7 hours / about 25 km. Bag of 8 -10 kg.\nDemanding - longest day trip of 7-9 hours / about 30 km. Bag of 8 -10 kg.\nExtra demanding - trips with longer and heavier Stages than 9 hours.\n\nTerrain\n\n\nRough terrain indicates the route runs through and is divided into the following grades:\n\nFlatt - means that the tour is easy terrain\nHilly -Does that the terrain is hilly\n Very kupert- means it will be much ascent and descent\n\nWho is this trip for?\n\nMost people - tours courses and events for adults\nChildren - trips, courses and events for the age group 0 to 12 years, with or without parents\nYouth - trips, courses and events for the age group 13 to 26 years\nSenior - trips and events specifically tailored for the age group 60 +\nMountaineers - trips, courses and events with activities in mountain sports, as eg glacier climbing";

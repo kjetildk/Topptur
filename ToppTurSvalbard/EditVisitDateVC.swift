@@ -7,43 +7,82 @@
 //
 
 import UIKit
-import Photos
+//import Photos
 //import MobileCoreServices
 
-class EditVisitDateVC: UITableViewController {
-
-    @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var selectedDate: UILabel!
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
     
-    var visitDate:NSDate = NSDate()
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+class EditVisitDateVC: UIViewController , /*UITableViewController,*/ UITextFieldDelegate {
+
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var selectedDate: UILabel!
+    @IBOutlet weak var commentText: UITextField!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    
+    var visitDate:Date = Date()
     var index:Int = 0
     var newItem:Bool = false
     var summit:Summit?
     
-    var imagePicker:ImageVideoPicker?
+    //var imagePicker:ImageVideoPicker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = self.summit!.name
-        self.visitDate =  self.summit!.getVisitDate(self.index)
+        self.visitDate =  self.summit!.getVisitDate(index: self.index)
         
         //update the date picker
         self.datePicker.date = self.visitDate
         
-        let formatter = NSDateFormatter()
-        formatter.dateStyle = .FullStyle
+        let formatter = DateFormatter()
+        formatter.dateStyle = .full
         
-        self.selectedDate.text = formatter.stringFromDate(self.visitDate)
+        self.selectedDate.text = formatter.string(from: self.visitDate)
+        self.commentText.text = self.summit!.getVisitComment(index: self.index)
+        
+        self.commentText.delegate = self
         
         if(!self.newItem){
-            self.imgView.image = self.summit!.visitdates[self.index].photo
+            //self.imgView.image = self.summit!.visitdates[self.index].photo
         }
+        
+        self.hideKeyboardWhenTappedAround()
+        
+        //let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+        //view.addGestureRecognizer(tap)
+        
+        //NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: self.view.window)
+        //NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: self.view.window)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
 
-    override func viewWillAppear(animated: Bool) {
-
+    }
+    
+    //Calls this function when the tap is recognized.
+    /*func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        //self.commentText.endEditing(true)
+        
+        self.commentText.resignFirstResponder()
+    }*/
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        //NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: self.view.window)
+        //NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: self.view.window)
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,93 +90,85 @@ class EditVisitDateVC: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.commentText.resignFirstResponder()
+        
+        return true
+    }
+    
+    /*override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.commentText.endEditing(true)
+    }
+
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool
+    {
+        if text == "\n"
+        {
+            
+            self.commentText.endEditing(true)
+            return false
+        }
+        else
+        {
+            return true
+        }
+    }*/
+    
 //SELF ADDED FUNCTIONS
     
-    @IBAction func datePickerChanged(sender: AnyObject) {
+    
+    /*func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            
+            scrollView.setContentOffset( CGPoint(x: 0, y: keyboardSize.height), animated: true)
+            /*if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height
+            }*/
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        //if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            
+            scrollView.setContentOffset( CGPoint(x: 0, y: 0), animated: true)
+            /*if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height
+            }*/
+        //}
+    }*/
+    
+    
+    @IBAction func datePickerChanged(_ sender: AnyObject) {
         self.visitDate = sender.date!!
         
-        let formatter = NSDateFormatter()
-        formatter.dateStyle = .FullStyle
+        let formatter = DateFormatter()
+        formatter.dateStyle = .full
         
-        self.selectedDate.text = formatter.stringFromDate(self.visitDate)
-        
+        self.selectedDate.text = formatter.string(from: self.visitDate)
     }
-    
-    //Open the Topptur Album library
-    @IBAction func btnPhotoAlbum(sender: AnyObject) {
+
+    @IBAction func btnSave(_ sender: AnyObject) {
         
-        //var picker: UIImagePickerController = UIImagePickerController()
-        //picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        //picker.delegate = self
-        //picker.allowsEditing = false
-        //self.presentViewController(picker, animated: true, completion: nil)
-        
-        //self.imagePicker = ImageVideoPicker(frame: self.view.frame, superVC: self) { (capturedImage) -> Void in
-        self.imagePicker = ImageVideoPicker(frame: self.imgView.frame, superVC: self) { (capturedImage) -> Void in
-            ///
-            
-            if let captureImage = capturedImage{
-                //you did it.....
-                
-                //load new image for this visit
-                self.imgView.image = captureImage
-                
-            }
-            
-        }
-        
-    }
-    
-    //Open the Camera
-    @IBAction func btnCamera(sender: AnyObject) {
-/*        if(UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)){
-            //load the camera interface
-            var picker: UIImagePickerController = UIImagePickerController()
-            picker.sourceType = UIImagePickerControllerSourceType.Camera
-            picker.delegate = self
-            picker.allowsEditing = false
-            self.presentViewController(picker, animated: true, completion: nil)
-            
-        }else{
-            //no camera available
-            var alert = UIAlertController(title: "Error", message: "There is no camera available", preferredStyle: .Alert)
-            alert.addAction(UIAlertAction(title: "Okay", style: .Default, handler: {(alertAction)in
-                alert.dismissViewControllerAnimated(true, completion: nil)
-            }))
-            self.presentViewController(alert, animated: true, completion: nil)
-        }*/
-    }
-    
-    @IBAction func btnSave(sender: AnyObject) {
-        
-        println("summitMgr.changeVisit(\(self.title), index:\(self.index), newdate:\(self.datePicker.date))")
+        //print("summitMgr.changeVisit(\(self.title), index:\(self.index), newdate:\(self.datePicker.date))")
         
         //update changes
-        summitMgr.updateVisit(self.title!, index:self.index, newdate:self.datePicker.date, photo:self.imgView.image)
+        summitMgr.updateVisit(self.title!, comment:self.commentText.text!, index:self.index, newdate:self.datePicker.date, photo:nil)
         
         //End this view and return to previous view
-        self.view.endEditing(true)
-        self.navigationController?.popViewControllerAnimated(true)
+        self.commentText.endEditing(true)
+        self.navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func btnCancel(sender: AnyObject) {
+    @IBAction func btnCancel(_ sender: AnyObject) {
         
         if(self.newItem){
             summitMgr.removeVisit(self.title!, index:self.index)
         }
         
         //End this view and return to previous view
-        self.view.endEditing(true)
-        self.navigationController?.popViewControllerAnimated(true)
+        self.commentText.endEditing(true)
+        self.navigationController?.popViewController(animated: true)
     }
-    
-    @IBAction func btnExport(sender: AnyObject) {
-        println("Export")
-    }
-    
-    @IBAction func btnTrash(sender: AnyObject) {
-        println("Trash")
 
-    }
     
 }

@@ -4,22 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-ArcGIS-Runtime-SDK-iOS.xcscheme</key>
+		<key>Pods-ToppTurSvalbard.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-TBXML.xcscheme</key>
+		<key>TBXML.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-iOS-GPX-Framework.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods.xcscheme</key>
+		<key>iOS-GPX-Framework.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4B3D00A5ECA311E48C38FA49</key>
+		<key>5D328194A192FC7CDA4B3C03B1B5A91E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AB6E0594F1A4252302C1938C</key>
+		<key>8E2F3D67DFE57B59FB29830C51EBDADD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8C4DEC6BD0077CCDE398FD2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FF57093CD5A50461B86220E3</key>
+		<key>A8B4CEE5444509AFCC0E89D5DEDCD11F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

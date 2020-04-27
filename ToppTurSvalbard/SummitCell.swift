@@ -19,16 +19,17 @@ class SummitCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.summitImageView.layer.masksToBounds = false
         self.summitImageView.layer.cornerRadius = self.summitImageView.frame.size.width / 2
         self.summitImageView.clipsToBounds = true
-        self.summitImageView.layer.borderWidth = 1.0
-        self.summitImageView.layer.borderColor = UIColor.blackColor().CGColor
+        self.summitImageView.layer.borderWidth = 0.7
+        self.summitImageView.layer.borderColor = UIColor.gray.cgColor
         
         self.summitVisitCount.layer.cornerRadius = 8
         self.summitVisitCount.clipsToBounds = true
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state

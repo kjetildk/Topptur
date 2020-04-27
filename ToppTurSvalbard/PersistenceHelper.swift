@@ -11,55 +11,66 @@ import CoreData
 
 class PersistenceHelper: NSObject {
 
-    var appDel: AppDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
+    var appDel: AppDelegate = (UIApplication.shared.delegate as! AppDelegate)
     let context: NSManagedObjectContext
     
     override init() {
-        context = appDel.managedObjectContext!
+        context = appDel.managedObjectContext
     }
     
-    func list(entity: String, summit: String) -> NSArray {
+    func list(entity: String, summit: String) -> [Any] {
         
-        var request = NSFetchRequest(entityName: entity)
+        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity)
+        //let request = NSFetchRequest(entityName: entity)
         request.returnsObjectsAsFaults = false
         
         request.predicate = NSPredicate(format: "name = %@", summit)
         
-        var results: NSArray = context.executeFetchRequest(request, error: nil)!
+        let results: [Any] = try! context.fetch(request)
         
         return results
     }
     
     func save(entity: String, parameters: Dictionary<String,AnyObject> ) -> Bool {
         
-        var newEntity = NSEntityDescription.insertNewObjectForEntityForName(entity, inManagedObjectContext: context) as NSManagedObject
+        let newEntity = NSEntityDescription.insertNewObject(forEntityName: entity, into: context) 
         
         for( key, value) in parameters{
             newEntity.setValue(value, forKey: key)
         }
         
-        return context.save(nil)
+        do {
+            try context.save()
+            return true
+        } catch _ {
+            return false
+        }
     }
     
-    func update(entity: String, name:String, value: NSDate, newdate:NSDate) -> Bool {
+    func update(entity: String, name:String, value: Date, newdate:Date, comment:String) -> Bool {
         
-        var request = NSFetchRequest(entityName: entity)
+        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity)
+        //let request = NSFetchRequest(entityName: entity)
         request.returnsObjectsAsFaults = false
         
-        let resultPredicate1:NSPredicate = NSPredicate(format: "name = %@", name)!
-        let resultPredicate2:NSPredicate = NSPredicate(format: "visitdate = %@", value)!
+        let resultPredicate1:NSPredicate = NSPredicate(format: "name = %@", name)
+        let resultPredicate2:NSPredicate = NSPredicate(format: "visitdate = %@", value as CVarArg)
         
-        var compound = NSCompoundPredicate.andPredicateWithSubpredicates([resultPredicate1, resultPredicate2])
+        let compound = NSCompoundPredicate(andPredicateWithSubpredicates: [resultPredicate1, resultPredicate2])
         request.predicate = compound
         
-        var error:NSError?
-        var results: NSArray = context.executeFetchRequest(request, error: &error)!
+        let results: [Any] = try! context.fetch(request)
         
         if(results.count > 0){
             //update result
-            var res = results[0] as NSManagedObject
+            let res = results[0] as! NSManagedObject
             res.setValue(newdate, forKey: "visitdate")
-            context.save(nil)
+            res.setValue(comment, forKey: "comment")
+            
+            do {
+                try context.save()
+            } catch _ {
+            }
             
             return true
         }
@@ -67,28 +78,31 @@ class PersistenceHelper: NSObject {
         return false
     }
     
-    func update(entity: String, name:String, value: NSDate, photo:UIImage) -> Bool {
+    func update(entity: String, name:String, value: Date, photo:UIImage) -> Bool {
         
-        var request = NSFetchRequest(entityName: entity)
+        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity)
+        //let request = NSFetchRequest(entityName: entity)
         request.returnsObjectsAsFaults = false
         
-        let resultPredicate1:NSPredicate = NSPredicate(format: "name = %@", name)!
-        let resultPredicate2:NSPredicate = NSPredicate(format: "visitdate = %@", value)!
+        let resultPredicate1:NSPredicate = NSPredicate(format: "name = %@", name)
+        let resultPredicate2:NSPredicate = NSPredicate(format: "visitdate = %@", value as CVarArg)
         
-        var compound = NSCompoundPredicate.andPredicateWithSubpredicates([resultPredicate1, resultPredicate2])
+        let compound = NSCompoundPredicate(andPredicateWithSubpredicates: [resultPredicate1, resultPredicate2])
         request.predicate = compound
         
-        var error:NSError?
-        var results: NSArray = context.executeFetchRequest(request, error: &error)!
+        let results: [Any] = try! context.fetch(request)
         
         if(results.count > 0){
             //update result
-            var res = results[0] as NSManagedObject
+            let res = results[0] as! NSManagedObject
             res.setValue(UIImagePNGRepresentation(photo), forKey: "photo")
             
-            println("Saving photo")
-            context.save(nil)
-            println("PNG photo is saved!")
+            print("Saving photo")
+            do {
+                try context.save()
+            } catch _ {
+            }
+            print("PNG photo is saved!")
             
             return true
         }
@@ -96,24 +110,28 @@ class PersistenceHelper: NSObject {
         return false
     }
     
-    func remove(entity: String, name:String, value: NSDate) -> Bool {
+    func remove(entity: String, name:String, value: Date) -> Bool {
         
-        var request = NSFetchRequest(entityName: entity)
+        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity)
+        //let request = NSFetchRequest(entityName: entity)
         request.returnsObjectsAsFaults = false
         
-        let resultPredicate1:NSPredicate = NSPredicate(format: "name = %@", name)!
-        let resultPredicate2:NSPredicate = NSPredicate(format: "visitdate = %@", value)!
+        let resultPredicate1:NSPredicate = NSPredicate(format: "name = %@", name)
+        let resultPredicate2:NSPredicate = NSPredicate(format: "visitdate = %@", value as CVarArg)
         
-        var compound = NSCompoundPredicate.andPredicateWithSubpredicates([resultPredicate1, resultPredicate2])
+        let compound = NSCompoundPredicate(andPredicateWithSubpredicates: [resultPredicate1, resultPredicate2])
         request.predicate = compound
         
-        var results: NSArray = context.executeFetchRequest(request, error: nil)!
+        let results: [Any] = try! context.fetch(request)
         
         if(results.count > 0){
             
-            var res = results[0] as NSManagedObject
-            context.deleteObject(res)
-            context.save(nil)
+            let res = results[0] as! NSManagedObject
+            context.delete(res)
+            do {
+                try context.save()
+            } catch _ {
+            }
             
             return true
         }

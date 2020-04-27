@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  ToppTurSvalbard
+
+  Created by Kjetil Dahl Knutsen on 13.07.2017.
+  Copyright © 2017 publisoft. All rights reserved.
+*/
+
+
+NSLocationUsageDescription = "needs Location access for tracking your position to show your position in the map!";
+
+

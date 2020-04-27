@@ -1,15 +1,16 @@
-/* 
-  Localizable.strings
-  ToppTurSvalbard
+/*
+ Localizable.strings
+ ToppTurSvalbard
+ 
+ Created by Kjetil Dahl Knutsen on 17.08.14.
+ Copyright (c) 2014 publisoft. All rights reserved.
+ */
 
-  Created by Kjetil Dahl Knutsen on 17.08.14.
-  Copyright (c) 2014 publisoft. All rights reserved.
-*/
-
-
-
+APPLICATION_NAME = "Topptur";
 APPLICATION_TITLE = "Toppturer på Svalbard";
 SUMMIT_FIRST_VISIT = "Ikke besøkt";
+
+NSLocationUsageDescription = "trenger tilgang til din Lokasjon for å kunne vise din plassering i kartet!";
 
 
 TAKE_PICTURE = "Ta bilde";
@@ -41,16 +42,38 @@ INFO_HEADER_1 = "Utviklet av";
 INFO_HEADER_2 = "Informasjon og data hentet fra";
 INFO_HEADER_3 = "Du har følgende totale høydemeter";
 INFO_HEADER_4 = "Stor takk for bildebidrag";
+INFO_HEADER_5 = "Kjøp App uten reklame";
+INFO_HEADER_6 = "Slett data";
+
+INFO_FOOTER_1 = "Versjon";
+
+SHOW_RATE_ME_1 = "Vurder meg";
+SHOW_RATE_ME_2 = "Takk for at du bruker TOPPTUR";
+SHOW_RATE_ME_3 = "Vurder TOPPTUR";
+SHOW_RATE_ME_4 = "Nei takk";
+SHOW_RATE_ME_5 = "Kanskje seinere";
 
 INFO_GALD = "av Galdhøpiggen";
 INFO_EVER = "av Mount Everest";
+INFO_DELETE_BUTTON = "Slette alle dine turer og start på nytt";
+INFO_DELETE_ALERT = "Alle dine turer vil bli slettet. Er du sikker?";
+INFO_DELETE_CANCEL = "Avbryt";
+INFO_PURCHASE_BUTTON = "Kjøp";
+
+DETAILS_VISITS = "Dine besøk";
+DETAILS_TEXT_1 = "Du har ikke besøkt denne toppen ennå";
+DETAILS_TEXT_2 = "Du har besøkt toppen ";
+DETAILS_TEXT_3 = " gang";
+DETAILS_TEXT_4 = " ganger";
+DETAILS_TEXT_MESSAGE = "Dobbelttrykk for å legge til dagens besøk";
+
+TRACKER_FOCUS = "Fokuser på:";
+TRACKER_MY_POSITION = "Min posisjon";
 
 CURRENT_LOCATION_RESTRICTED_ACCESS = "Begrenset tilgang til lokasjon";
 CURRENT_LOCATION_USER_DENIED = "Bruker avslå tilgang til lokasjon";
 CURRENT_LOCATION_NOT_DETERMINED = "Status ikke avgjort";
 CURRENT_LOCATION_ALLOWED = "Godkjent tilgang til lokasjon";
-
-NSLOCATIONALWAYSUSAGEDESCRIPTION = "";
 
 SUKKERTOPPEN_DESC = "Sukkertoppen er den nærmeste topptrimposten til Longyearbyen. Den ligger like bak (sørøst for) sentrum. Den vanligste ruta til toppen er å starte turen i Gruvedalen og følge ryggen oppover på venstre side sett nedenfra. Vær oppmerksom på løse steiner og at det av og til er hardt og isete øverst under toppen før snøen er smeltet. Det er gamle gruveminner etter Gruve 2b flere steder under Sukkertoppen, disse er automatisk fredet. Kassen står på varden på den første flaten. Fra Sukkertoppen kan du fortsette opp på platået, og det er fint og en litt lenger tur å gå ned Vannledningsdalen mot vest eller Steintippdalen mot øst. Det er også mulig å gå videre fra Sukkertoppen, innover platået og til Trollsteinen, eller rundt Gruvedalen og over til Lindholmhøgda.";
 
@@ -60,7 +83,7 @@ TROLLSTEINEN_DESC = "Turen til Trollsteinen går du lettest fra Nybyen. Ruta pa
 
 NORDENSKJOLD_DESC = "Nordenskiöldtoppen er den høyeste toppen i nærområdet til Longyearbyen. Folk går på denne toppen fra Nybyen og Sverdrupbyen via Tverrdalen eller fra Skjæringa og over Platåberget. På toppen av Tverrdalen fortsetter du mot sørvest gjennom morenen. På sommeren er det vanligst å følge østryggen mot toppen, men det er også fint å gå ned vestryggen. Mens det ennå er snø, går skuterløypa og den mest brukte ruta på ski over breen og opp vestryggen til installasjonene og hytta på toppen. Fin skitur, store muligheter for skikjøring i de ulike flankene.";
 
-BOLTERDALEN_DESC = "Parker ved hundegården til Basecamp eller oppe i svingen der gamlevegen går til Gruve 7. Følg høgdedraga innover, etter vel 3 km står tydeleg varde.";
+BOLTERDALEN_DESC = "MERK! DENNE ER IKKE MED I TOPPTRIMMEN 2016! Parker ved hundegården til Basecamp eller oppe i svingen der gamlevegen går til Gruve 7. Følg høgdedraga innover, etter vel 3 km står tydeleg varde.";
 
 MORENA_DESC = "Gå fra Nybyen, følg gammel vei sørvestover forbi den tidligere hundegården ved Gruve 4. Du må krysse en tilførselelv til Longyearelva før du følger tråkket opp i morenen under Longyearbreen. Kassen står ved en stor stein godt synlig, midt på morenen. Avstanden fra Nybyen til dette turmålet er 1,7 km. Når du passerer den gamle hundegården er det ca 850 meter igjen til kassen. Turen går i steinete terreng, men er lett og kan om ønskelig kombineres med fossilplukking, spennende for både barn og voksne.";
 
@@ -74,12 +97,20 @@ FUGLEFJELLA_DESC = "Start turen der veien slutter i Bjørndalen, ved anlegget kn
 
 LINDHOLMHOGDA_DESC = "Nordvestspissen av Lindholmhøgda går du til fra sentrum, eventuelt fra hundegården eller fra vegen ved Kuhaugen. Følg taubanetraseen innover Adventdalen fra Blåmyra langs nordsida av Sukkertoppen til Gruvedalen (Steintippdalen). Her må du gå et stykke opp langs dalen, for det er bratt rett under taubanetraseen. Kryss elva og følg eggen opp langs Lindholmfjellet. Det er veldig bratt og ulendt på høyre side, hold derfor til venstre opp mot toppen. Det er tre 'høyder', og kassen står på den tredje, 363 moh. Det kan være vanskelig å komme seg helt opp på toppen av fjellet (445 moh), og derfor er ikke kassen plassert der. En alternativ rute er å gå fra 'Kuhaugen' ovenfor hundegården ved isdammen og følge eggen opp.";
 
-BLOMSTERDALSHOGDA_DESC = "Det er fint å starte turen fra taubanesentralen og følge Burmaveien ut mot vegen opp til Gruve 3. Derfrat går man opp fjellryggen til venstre for Blomsterdalen sett nedenfra. Det er slak stigning, før man går bratt opp mot siste topp hvor vardene står. Inntil snøen smelter er det enklest å holde til høyre opp mot vardene. På toppen er det flere vardeformasjoner (kulturminner). Kassen er plassert ca. 100 meter videre opp mot skaret på en liten høyde. Her er det fin utsikt til Isfjorden. Turen kan med fordel kombineres med tur nr 9, Varden på Platåberget. Følg høyden på fløy/rampe mellom de to turmåla.";
+BLOMSTERDALSHOGDA_DESC = "Det er fint å starte turen fra taubanesentralen og følge Burmaveien ut mot vegen opp til Gruve 3. Derfra går man opp fjellryggen til venstre for Blomsterdalen sett nedenfra. Det er slak stigning, før man går bratt opp mot siste topp hvor vardene står. Inntil snøen smelter er det enklest å holde til høyre opp mot vardene. På toppen er det flere vardeformasjoner (kulturminner). Kassen er plassert ca. 100 meter videre opp mot skaret på en liten høyde. Her er det fin utsikt til Isfjorden. Turen kan med fordel kombineres med tur nr 9, Varden på Platåberget. Følg høyden på fløy/rampe mellom de to turmåla.";
 
 ENDALEN_DESC = "Dette er en fin vintertur, spesielt etter at det blir kjørt løyp inn Endalen. Turen kan enten startes ved hovedvegen gjennom Adventdalen eller ved å kjøre inn Gruve 5. Postkassa står ca 4,4 km etter Gruve 5. Sommertid går ruta opp fra elveleiet.";
 
-GRUVEFJELLET_DESC = "Dette er en ny topp i år og riktig rute vil bli oppdatert så fort vi har den tilgjengelig.\n\nGRAFEN ER IKKE RIKTIG OG POSISJONEN KAN VÆRE UNØYAKTIG!";
+GRUVEFJELLET_DESC = "Start turen ved Perleporten og følg Vannledningsdalen oppover. Når du nesten når toppen av dalen følg stigningen sydover og opp til platået. Gå deretter utover  Gruvefjellet. Kassen er festet ute på pynten med god utsikt over Longyearbyen og Nybyen. Man kan også se gruve 2b ovenfra. Turen kan kombineres med å gå enten tilbake og ned Sukkertoppen eller videre sørover og til Trollstein og deretter Sarkofagen.";
 
 SVERDRUPHAMAREN_DESC = "Hovedrute: Start fra Huset, gå via Tverrdalen og opp på Platåberget. Gå så nordøstover mot Ninavarden/stolpene og fortsett i den retningen til du kommer til et dalsøkk.Kryss dette og drei sørøst mot Nybyen/gruve2 fjellet. Varden står noen meter ned ute på kanten. Et annet alternativ er å kombinere 'Varden' (Tur nr 9) og Sverdruphammarn. Etter å ha gått opp til Varden fortsetter du opp et lite nivå til du er oppe på platået og følger kanten bakover langs Longyeardalen til du treffer dalsøkket, da vil varden sees litt ned til venstre i retning Nybyen.";
+
+TENOREN_DESC = "På sommeren må man ta båt eller padle med kajakk over til andre siden av Adventfjorden for å gå til Tenoren (656 m.o.h.). Senere på høsten, når Adventelva har tørket, kan man krysse Adventdalen til fots. Starter man fra Hiorthamn følger man fjellet mot Mälardalen, krysser elva fra Mälardalen og følger fjellet videre mot Tenoren. \n\nPostkassen på Tenoren står på toppen av fjellet. Vær obs på at det er ganske bratt på toppen, og en alternativ oppstigning kan være å følge fjellet rundt på høyresiden (mot øst) for å komme seg helt til postkassen på toppen. Nedkomst samme vei, eventuelt følge ryggen mot Bassen østover for så å sleppe seg ned mot Adventdalen. \n\nDette er en lang dagstur. Kombiner den gjerne med overnatting i Hiorthamn før dere padler tilbake til Longyearbyen med kajakk dagen etterpå.";
+
+LARS_DESC = "Turen til Lars Hiertafjellet starter likt som toppturen til Sarkofagen, som er å starte fra Nybyen. Her må du krysse elva mens du går sørøstover opp i morenen til høyre for Larsbreen, under Sarkofagen. Det er forholdsvis tydelig sti gjennom morena. Når du kommer opp på høyde med breplatået, fortsetter du sørover mot eggen opp til Lars Hiertafjellet. Eggen kan være litt bratt så pass på løse steiner. Fra Varden med kassen er det flott utsikt nedover Longyeardalen, over byen og mot Adventfjorden og sørover mot Fardalen og Colesdalen. Gå tilbake samme vei, eller enten kryss Larsbreen og gå mot Trollsteinen, se turbeskrivelse for Trollsteinen, eller følg fjellryggen videre mot Trollsteinen. Det er og mulig å gå via Longyearbreen og få med postkassa i Morena på tur opp eller ned.\n\nHøydeprofil kan avvike.";
+
+JANSSON_DESC = "Kassen er satt opp på østveggen av den gamle hytta til Norsar. Dette er for gående eller skigåere, det er IKKE lov å kjøre scooter dit. Turen er ca. 9 km en vei og det er fint å starte ved Camp Barentz.";
+
+DUMMY_DESC = "MERK! POSISJON KAN VÆRE FEIL.\n\nTurbeskrivelse kommer.";
 
 INFO_DNT_TEXT = "Vanskelighetsgrad\n\nLett - dagsturer ut fra hytte eller lette dagsarrangement for alle. Turene kan vanligvis tilpasses deltagernes forutsetninger. Lett dagstursekk.\nGanske lett - dagsturer fra en hytte eller dagsetapper på 2 - 4 timer/ ca. 15 km. Lett dagstursekk eller sekk på 8–10 kg.\nMiddels - lengste dagsetappe på 5 timer/ ca. 20 km. Sekk på 8 –10 kg.\nLitt krevende - lengste dagsetappe på 6 –7 timer/ ca. 25 km. Sekk på 8 –10 kg.\nKrevende - lengste dagsetappe på 7–9 timer/ ca. 30 km. Sekk på 8 –10 kg.\nEkstra krevende - turer med lengre og tyngre dagsetapper enn 9 timer.\n\nTerreng\n\n\nTerreng angir terrenget turen går i og er inndelt i følgende graderinger:\n\nFlatt - betyr at turen går i flatt lende\nKupert -betyr at terrenget er småkupert\nMeget kupert- betyr at det vil være mye opp- og nedstigning\n\nHvem passer turen for?\n\nFolk flest - turer kurs og arrangement for voksne\nBarn - turer, kurs og arrangement for aldersgruppen 0 til 12 år, både med og uten foreldre\nUngdom - turer, kurs og arrangement for aldersgruppen 13 til 26 år\nSenior - turer og arrangement spesielt tilpasset for aldersgruppen 60+\nFjellsportinteresserte - turer, kurs og arrangement med aktiviteter innen fjellsport, som feks brevandring og klatring";

@@ -24,10 +24,14 @@ class NewMapVC : UIViewController, AGSMapViewLayerDelegate {
         // Set the client ID
         var error:NSError? = nil
         let clientID = self.clientID
-        AGSRuntimeEnvironment.setClientID(clientID, error: &error)
+        do {
+            try AGSRuntimeEnvironment.setClientID(clientID)
+        } catch let error1 as NSError {
+            error = error1
+        }
         if error != nil{
             // We had a problem using our client ID
-            println("Error using client ID : \(error?.localizedDescription)")
+            print("Error using client ID : \(error?.localizedDescription)")
         }
         
         //Add a basemap tiled layer

@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ToppTurSvalbard/DescriptionVC.swift"
-            timestampString = "448995884.585731"
+            timestampString = "487968019.022256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "DescriptionVC"
-            landmarkType = "3">
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -24,6 +24,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "Topptur.DescriptionVC.summitHeight.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
                   moduleName = "Topptur"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kjetildk/Google%20Drive/Mine%20Apper/Topptur/ToppturApp/ToppTurSvalbard/DescriptionVC.swift"
                   timestampString = "448995884.689768"
                   startingColumnNumber = "9223372036854775807"
@@ -38,6 +39,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "Topptur.DescriptionVC.summitHeight.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
                   moduleName = "Topptur"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kjetildk/Google%20Drive/Mine%20Apper/Topptur/ToppturApp/ToppTurSvalbard/DescriptionVC.swift"
                   timestampString = "448995884.690827"
                   startingColumnNumber = "9223372036854775807"
@@ -52,6 +54,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "Topptur.DescriptionVC.summitHeight.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
                   moduleName = "Topptur"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kjetildk/Google%20Drive/Mine%20Apper/Topptur/ToppturApp/ToppTurSvalbard/DescriptionVC.swift"
                   timestampString = "448995884.691"
                   startingColumnNumber = "9223372036854775807"
@@ -66,6 +69,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "Topptur.DescriptionVC.init (Topptur.DescriptionVC.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Topptur.DescriptionVC"
                   moduleName = "Topptur"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kjetildk/Google%20Drive/Mine%20Apper/Topptur/ToppturApp/ToppTurSvalbard/DescriptionVC.swift"
                   timestampString = "448995884.691193"
                   startingColumnNumber = "9223372036854775807"
@@ -80,6 +84,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "Topptur.DescriptionVC.init (Topptur.DescriptionVC.Type)() -&gt; Topptur.DescriptionVC"
                   moduleName = "Topptur"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kjetildk/Google%20Drive/Mine%20Apper/Topptur/ToppturApp/ToppTurSvalbard/DescriptionVC.swift"
                   timestampString = "448995884.691336"
                   startingColumnNumber = "9223372036854775807"
@@ -94,6 +99,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "Topptur.DescriptionVC.init (Topptur.DescriptionVC.Type)(coder : ObjectiveC.NSCoder) -&gt; Topptur.DescriptionVC"
                   moduleName = "Topptur"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kjetildk/Google%20Drive/Mine%20Apper/Topptur/ToppturApp/ToppTurSvalbard/DescriptionVC.swift"
                   timestampString = "448995884.691478"
                   startingColumnNumber = "9223372036854775807"
@@ -103,22 +109,6 @@
                   offsetFromSymbolStart = "306">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ToppTurSvalbard/InfoVC.swift"
-            timestampString = "449015878.398986"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

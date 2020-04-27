@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class Summit: NSObject {
+class Summit { //: NSObject {
     var id:Int = 0
     var name:String = "Name"
     var visitdates:[Visit] = [Visit]()
@@ -19,26 +19,38 @@ class Summit: NSObject {
     var height:Int = 0
     var desc:String = ""
     var distance:Int = 0
-    var terrain:SummitTerrain = .Flat
-    var difficulty:SummitDifficulty = .Easy
-    var sutibleFor:SummitSutibleFor = .MostPeople
+    var terrain:SummitTerrain = .flat
+    var difficulty:SummitDifficulty = .easy
+    var sutibleFor:SummitSutibleFor = .mostPeople
     var winter:Bool = false
+    var summer:Bool = true
     var imageSummit:UIImage?
     var imageGraph:UIImage?
     
     class Visit: NSObject{
         
-        var visitDate:NSDate = NSDate()
-        var photo:UIImage = UIImage(named: "AppIcon72x72.png")!
+        var visitComment:String = ""
+        var visitDate:Date = Date()
+        //var photo:UIImage = UIImage(named: "AppIcon72x72.png")!
         
-        init(visitDate:NSDate, photo:NSData){
+        init(visitComment:String, visitDate:Date, photo:Data){
             self.visitDate = visitDate
-            self.photo = UIImage(data: photo)!
+            self.visitComment = visitComment
+            //self.photo = UIImage(data: photo)!
         }
         
-        func addPhoto(photo:UIImage){
-            self.photo = photo
+        func addPhoto(_ photo:UIImage){
+            //self.photo = photo
         }
+    }
+    
+    
+    convenience init(id:Int,name:String,height:Int,distance:Int,winter:Bool,summer:Bool,terrain:SummitTerrain,difficulty:SummitDifficulty,sutibleFor:SummitSutibleFor,latitude:CLLocationDegrees, longitude:CLLocationDegrees,description:String,imageSummit:UIImage,imageGraph:UIImage){
+        
+        self.init(id:id, name:name, height:height, distance:distance, winter:winter, terrain:terrain,difficulty:difficulty, sutibleFor:sutibleFor, latitude:latitude, longitude:longitude, description:description,imageSummit:imageSummit,imageGraph:imageGraph)
+    
+        self.summer = summer
+        
     }
     
     init(id:Int,name:String,height:Int,distance:Int,winter:Bool,terrain:SummitTerrain,difficulty:SummitDifficulty,sutibleFor:SummitSutibleFor,latitude:CLLocationDegrees,longitude:CLLocationDegrees,description:String,imageSummit:UIImage,imageGraph:UIImage){
@@ -55,15 +67,22 @@ class Summit: NSObject {
         self.sutibleFor = sutibleFor
         self.imageSummit = imageSummit
         self.imageGraph = imageGraph
+        self.summer = true
         
         //clean up
         if(self.visitdates.count > 0){
-            visitdates.removeAll(keepCapacity: true)
+            visitdates.removeAll(keepingCapacity: true)
         }
         //get all the visit dates in core data
-        var tempSummits:NSArray = persistenceHelper.list("Summit",summit:name)
-        for res:AnyObject in tempSummits {
-            visitdates.append(Visit(visitDate: res.valueForKey("visitdate") as NSDate,photo: res.valueForKey("photo") as NSData))
+        let tempSummits:[Any] = persistenceHelper.list(entity: "Summit",summit:name)
+        for res:Any in tempSummits {
+            
+            var comment = (res as AnyObject).value(forKey: "comment")
+            if(comment == nil){
+                comment = "" 
+            }
+            
+            visitdates.append(Visit(visitComment: comment as! String, visitDate: (res as AnyObject).value(forKey: "visitdate") as! Date,photo: (res as AnyObject).value(forKey: "photo") as! Data))
         }
     }
     
@@ -76,39 +95,55 @@ class Summit: NSObject {
         return count
     }
     
-    func getVisitDate(index:Int) -> NSDate{
+    func getVisitDate(index:Int) -> Date{
         return self.visitdates[index].visitDate
     }
     
-    func addVisit(visitdate:NSDate) ->Int{
+    func getVisitComment(index:Int) -> String{
+        return self.visitdates[index].visitComment
+    }
+    
+    func addVisit(visitDate:Date,visitComment:String) ->Int{
         
-        var dicSummit:Dictionary<String, AnyObject> = Dictionary<String, AnyObject>()
+        var dicSummit:Dictionary<String, Any> = Dictionary<String, Any>()
         dicSummit["name"] = name as String
-        dicSummit["visitdate"] = visitdate as NSDate
-        dicSummit["photo"] = UIImagePNGRepresentation(UIImage(named:"AppIcon72x72.png")) as NSData
+        dicSummit["comment"] = visitComment as String
+        dicSummit["visitdate"] = visitDate as Date
+        dicSummit["photo"] = UIImagePNGRepresentation(UIImage(named:"AppIcon72x72.png")!)! as Data
         
         //Update core data and this current list for this object
-        if(persistenceHelper.save("Summit", parameters: dicSummit)){
-            self.visitdates.append(Visit(visitDate: visitdate, photo: UIImagePNGRepresentation(UIImage(named:"AppIcon72x72.png"))))
+        if(persistenceHelper.save(entity: "Summit", parameters: dicSummit as Dictionary<String, AnyObject>)){
+            self.visitdates.append(Visit(visitComment: visitComment,visitDate: visitDate, photo: UIImagePNGRepresentation(UIImage(named:"AppIcon72x72.png")!)!))
         }
         
         return self.visitdates.count
     }
     
+    //Remove all visits for current summit
+    func removeAllVisits() {
+        var result: Int = 0
+        for visit in self.visitdates{
+            
+            result += removeVisit(self.visitdates.index(of: visit)!)
+            
+        }
+    }
+    
     //Remove for both core data and current list
-    func removeVisit(index:Int)->Int{
+    func removeVisit(_ index:Int)->Int{
         
-        if(persistenceHelper.remove("Summit", name: name, value: self.visitdates[index].visitDate)){
-            self.visitdates.removeAtIndex(index)
+        if(persistenceHelper.remove(entity: "Summit", name: name, value: self.visitdates[index].visitDate)){
+            self.visitdates.remove(at: index)
         }
         
         return self.visitdates.count
     }
     
     //Update core data and this current list for this object
-    func updateVisit(index:Int, newdate:NSDate){
-        if(persistenceHelper.update("Summit", name: name, value: self.visitdates[index].visitDate, newdate: newdate)){
+    func updateVisit(_ index:Int, newdate:Date, comment:String){
+        if(persistenceHelper.update(entity: "Summit", name: name, value: self.visitdates[index].visitDate, newdate: newdate, comment: comment)){
             self.visitdates[index].visitDate = newdate
+            self.visitdates[index].visitComment = comment
         }
     }
     
@@ -131,19 +166,19 @@ class Summit: NSObject {
             
             let date = self.visitdates[0].visitDate
             
-            let formatter = NSDateFormatter()
-            formatter.dateStyle = .LongStyle
-            formatter.stringFromDate(date)
+            let formatter = DateFormatter()
+            formatter.dateStyle = .long
+            formatter.string(from: date)
             
-            firstVisitDate = formatter.stringFromDate(date)
+            firstVisitDate = formatter.string(from: date)
         }
         
         return firstVisitDate
     }
     
-    func updatePhotoAtIndex(index:Int,photo:UIImage){
+    func updatePhotoAtIndex(_ index:Int,photo:UIImage){
         
-        if(persistenceHelper.update("Summit", name: name, value: self.visitdates[index].visitDate, photo:photo)){
+        if(persistenceHelper.update(entity: "Summit", name: name, value: self.visitdates[index].visitDate, photo:photo)){
         
             self.visitdates[index].addPhoto(photo)
         }
@@ -154,11 +189,9 @@ class Summit: NSObject {
         var terrainText:String = "Flatt"
         
         switch(self.terrain){
-            case .Flat: terrainText = NSLocalizedString("TERRAIN_FLAT",comment:"Flatt")
-            case .Hilly: terrainText = NSLocalizedString("TERRAIN_HILLY",comment:"Kupert")
-            case .Hilly: terrainText = NSLocalizedString("TERRAIN_VERYHILLY",comment:"Meget kupert")
-            default:
-            terrainText = NSLocalizedString("TERRAIN_FLAT",comment:"Flatt")
+            case .flat: terrainText = NSLocalizedString("TERRAIN_FLAT",comment:"Flatt")
+            case .hilly: terrainText = NSLocalizedString("TERRAIN_HILLY",comment:"Kupert")
+            case .veryHilly: terrainText = NSLocalizedString("TERRAIN_VERYHILLY",comment:"Meget kupert")
         }
         
         return terrainText
@@ -169,14 +202,12 @@ class Summit: NSObject {
         var difficultyText:String = "Flatt"
         
         switch(self.difficulty){
-        case .Easy: difficultyText = NSLocalizedString("DIFFICULTY_EASY",comment:"Lett")
-        case .QuiteEasy: difficultyText = NSLocalizedString("DIFFICULTY_QUITEEASY",comment:"Ganske lett")
-        case .Medium: difficultyText = NSLocalizedString("DIFFICULTY_MEDIUM",comment:"Middels")
-        case .MoreDemanding: difficultyText = NSLocalizedString("DIFFICULTY_MOREDEMANDING",comment:"Litt krevende")
-        case .Intensive: difficultyText = NSLocalizedString("DIFFICULTY_INTENSIVE",comment:"Krevende")
-        case .ExtraDemanding: difficultyText = NSLocalizedString("DIFFICULTY_EXSTRADEMANDING",comment:"Ekstra krevende")
-        default:
-            difficultyText = NSLocalizedString("DIFFICULTY_EASY",comment:"Lett")
+            case .easy: difficultyText = NSLocalizedString("DIFFICULTY_EASY",comment:"Lett")
+            case .quiteEasy: difficultyText = NSLocalizedString("DIFFICULTY_QUITEEASY",comment:"Ganske lett")
+            case .medium: difficultyText = NSLocalizedString("DIFFICULTY_MEDIUM",comment:"Middels")
+            case .moreDemanding: difficultyText = NSLocalizedString("DIFFICULTY_MOREDEMANDING",comment:"Litt krevende")
+            case .intensive: difficultyText = NSLocalizedString("DIFFICULTY_INTENSIVE",comment:"Krevende")
+            case .extraDemanding: difficultyText = NSLocalizedString("DIFFICULTY_EXSTRADEMANDING",comment:"Ekstra krevende")
         }
 
         
@@ -188,13 +219,11 @@ class Summit: NSObject {
         var sutibleForText:String = "Flatt"
         
         switch(self.sutibleFor){
-        case .MostPeople: sutibleForText = NSLocalizedString("SUTIBLEFOR_MOSTPEOPLE",comment:"Folk flest")
-        case .Child: sutibleForText = NSLocalizedString("SUTIBLEFOR_CHILD",comment:"Barn")
-        case .Youth: sutibleForText = NSLocalizedString("SUTIBLEFOR_YOUTH",comment:"Ungdom")
-        case .Senior: sutibleForText = NSLocalizedString("SUTIBLEFOR_SENIOR",comment:"Senior")
-        case .MountainSportsEnthusiasts: sutibleForText = NSLocalizedString("SUTIBLEFOR_MOUNTAINSPORTENTHUSIASTS",comment:"Fjellsportinteresserte")
-        default:
-            sutibleForText = NSLocalizedString("SUTIBLEFOR_",comment:"Folk flest")
+        case .mostPeople: sutibleForText = NSLocalizedString("SUTIBLEFOR_MOSTPEOPLE",comment:"Folk flest")
+        case .child: sutibleForText = NSLocalizedString("SUTIBLEFOR_CHILD",comment:"Barn")
+        case .youth: sutibleForText = NSLocalizedString("SUTIBLEFOR_YOUTH",comment:"Ungdom")
+        case .senior: sutibleForText = NSLocalizedString("SUTIBLEFOR_SENIOR",comment:"Senior")
+        case .mountainSportsEnthusiasts: sutibleForText = NSLocalizedString("SUTIBLEFOR_MOUNTAINSPORTENTHUSIASTS",comment:"Fjellsportinteresserte")
         }
 
         
@@ -210,9 +239,9 @@ class Summit: NSObject {
 2. Kupert -betyr at terrenget er småkupert
 3. Meget kupert- betyr at det vil være mye opp- og nedstigning*/
 enum SummitTerrain : UInt {
-    case Flat
-    case Hilly
-    case VeryHilly
+    case flat
+    case hilly
+    case veryHilly
 }
 
 /*Vanskelighetsgrad
@@ -228,12 +257,12 @@ Graderinger for sommerturer:
 5. Krevende - lengste dagsetappe på 7–9 timer/ ca. 30 km. Sekk på 8 –10 kg.
 6. Ekstra krevende - turer med lengre og tyngre dagsetapper enn 9 timer.*/
 enum SummitDifficulty : UInt {
-    case Easy
-    case QuiteEasy
-    case Medium
-    case MoreDemanding
-    case Intensive
-    case ExtraDemanding
+    case easy
+    case quiteEasy
+    case medium
+    case moreDemanding
+    case intensive
+    case extraDemanding
 }
 
 /*Hvem passer turen for?
@@ -244,9 +273,9 @@ Ungdom - turer, kurs og arrangement for aldersgruppen 13 til 26 år
 Senior - turer og arrangement spesielt tilpasset for aldersgruppen 60+
 Fjellsportinteresserte - turer, kurs og arrangement med aktiviteter innen fjellsport, som feks brevandring og klatring*/
 enum SummitSutibleFor : UInt {
-    case MostPeople
-    case Child
-    case Youth
-    case Senior
-    case MountainSportsEnthusiasts
+    case mostPeople
+    case child
+    case youth
+    case senior
+    case mountainSportsEnthusiasts
 }

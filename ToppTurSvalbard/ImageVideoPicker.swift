@@ -15,7 +15,7 @@ class ImageVideoPicker: UIView,UIActionSheetDelegate, UIImagePickerControllerDel
     
     var originVC:UIViewController?
     
-    typealias imageCaptureClosure = (capturedImage:UIImage?)->Void
+    typealias imageCaptureClosure = (_ capturedImage:UIImage?)->Void
     
     var imageCompletionClosure:imageCaptureClosure?
     
@@ -34,7 +34,7 @@ class ImageVideoPicker: UIView,UIActionSheetDelegate, UIImagePickerControllerDel
     
     
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         self.originVC = nil
         self.imageCompletionClosure = nil
         super.init(coder: aDecoder)
@@ -45,92 +45,92 @@ class ImageVideoPicker: UIView,UIActionSheetDelegate, UIImagePickerControllerDel
     //MARK:- Private Methods
     
     func showImagePickerActionSheet(){
-        var actionSheet = UIAlertController(title: " ", message:NSLocalizedString("TAKE_PICTURE",comment:"Take Picture"), preferredStyle: UIAlertControllerStyle.ActionSheet)
-        actionSheet.addAction(UIAlertAction(title: NSLocalizedString("CANCEL",comment:"Cancel"), style: UIAlertActionStyle.Cancel, handler:handleCancelAction))
-        actionSheet.addAction(UIAlertAction(title: NSLocalizedString("CAMERA",comment:"Camera"), style: UIAlertActionStyle.Default, handler:handleCameraAction))
-        actionSheet.addAction(UIAlertAction(title: NSLocalizedString("PHOTO_LIBRARY",comment:"Photo library"), style: UIAlertActionStyle.Destructive, handler:handlePhotoLibAction))
+        let actionSheet = UIAlertController(title: " ", message:NSLocalizedString("TAKE_PICTURE",comment:"Take Picture"), preferredStyle: UIAlertControllerStyle.actionSheet)
+        actionSheet.addAction(UIAlertAction(title: NSLocalizedString("CANCEL",comment:"Cancel"), style: UIAlertActionStyle.cancel, handler:handleCancelAction))
+        actionSheet.addAction(UIAlertAction(title: NSLocalizedString("CAMERA",comment:"Camera"), style: UIAlertActionStyle.default, handler:handleCameraAction))
+        actionSheet.addAction(UIAlertAction(title: NSLocalizedString("PHOTO_LIBRARY",comment:"Photo library"), style: UIAlertActionStyle.destructive, handler:handlePhotoLibAction))
         
-        self.originVC!.presentViewController(actionSheet, animated: true, completion: nil)
+        self.originVC!.present(actionSheet, animated: true, completion: nil)
     }
     
-    private func handleCancelAction(alertAction:UIAlertAction!){
-        self.imageCompletionClosure!(capturedImage:nil)
-        self.originVC!.dismissViewControllerAnimated(true, completion:nil)
+    fileprivate func handleCancelAction(_ alertAction:UIAlertAction!){
+        self.imageCompletionClosure!(nil)
+        self.originVC!.dismiss(animated: true, completion:nil)
         
     }
     
-    private func handleCameraAction(alertAction:UIAlertAction!){
+    fileprivate func handleCameraAction(_ alertAction:UIAlertAction!){
         
         self.startCameraControllerFromViewController(self.originVC, usingDelegate:self)
     }
     
-    private func handlePhotoLibAction(alertAction:UIAlertAction!){
+    fileprivate func handlePhotoLibAction(_ alertAction:UIAlertAction!){
         self.startPhotoLibraryControllerFromViewController(self.originVC, usingDelegate:self)
     }
     
-    private func startPhotoLibraryControllerFromViewController<T where T: UINavigationControllerDelegate,T: UIImagePickerControllerDelegate>(controller:UIViewController?,
-        usingDelegate delegate: T?)->Bool{
+    fileprivate func startPhotoLibraryControllerFromViewController<T>(_ controller:UIViewController?,
+        usingDelegate delegate: T?)->Bool where T: UINavigationControllerDelegate,T: UIImagePickerControllerDelegate{
             
-            if((UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary) == false)||(controller == nil)||(delegate == nil)){
+            if((UIImagePickerController.isSourceTypeAvailable(.photoLibrary) == false)||(controller == nil)||(delegate == nil)){
                 return false
                 
             }
             
-            var libraryUI = UIImagePickerController()
+            let libraryUI = UIImagePickerController()
             libraryUI.delegate = delegate
-            controller!.presentViewController(libraryUI, animated: true, completion:nil)
+            controller!.present(libraryUI, animated: true, completion:nil)
             
             return true
     }
     
     
     
-    private func startCameraControllerFromViewController<T where T: UINavigationControllerDelegate,T: UIImagePickerControllerDelegate>(controller:UIViewController?, usingDelegate delegate:T?)->Bool
+    fileprivate func startCameraControllerFromViewController<T>(_ controller:UIViewController?, usingDelegate delegate:T?)->Bool where T: UINavigationControllerDelegate,T: UIImagePickerControllerDelegate
     {
-        if((UIImagePickerController.isSourceTypeAvailable(.Camera) == false)||(controller == nil)||(delegate == nil)){
+        if((UIImagePickerController.isSourceTypeAvailable(.camera) == false)||(controller == nil)||(delegate == nil)){
             return false
             
         }
         
-        var cameraUI = UIImagePickerController()
+        let cameraUI = UIImagePickerController()
         cameraUI.delegate = delegate
-        cameraUI.sourceType = .Camera
+        cameraUI.sourceType = .camera
         // Displays a control that allows the user to choose picture or
         // movie capture, if both are available:
-        cameraUI.mediaTypes = UIImagePickerController.availableMediaTypesForSourceType(.Camera)!
+        cameraUI.mediaTypes = UIImagePickerController.availableMediaTypes(for: .camera)!
         
         // Hides the controls for moving & scaling pictures, or for
         // trimming movies. To instead show the controls, use YES.
         cameraUI.allowsEditing = false
         cameraUI.delegate = delegate
         
-        controller!.presentViewController(cameraUI, animated: true, completion:nil)
+        controller!.present(cameraUI, animated: true, completion:nil)
         
         return true
     }
     
     //MARK: - UIImagePickerControllerDelegate delegate methods
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]!)
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
     {
         
-        let tempImage = info[UIImagePickerControllerOriginalImage] as UIImage
+        let tempImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         
         if (self.imageCompletionClosure != nil)
         {
-            self.imageCompletionClosure!(capturedImage: tempImage)
+            self.imageCompletionClosure!(tempImage)
             
         }
-        picker.dismissViewControllerAnimated(true,completion:nil)
+        picker.dismiss(animated: true,completion:nil)
         
     }
     
-    func imagePickerControllerDidCancel(picker:UIImagePickerController)
+    func imagePickerControllerDidCancel(_ picker:UIImagePickerController)
     {
         if (self.imageCompletionClosure != nil)
         {
-            self.imageCompletionClosure!(capturedImage: nil)
+            self.imageCompletionClosure!(nil)
         }
         
-        picker.dismissViewControllerAnimated(true,completion:nil)
+        picker.dismiss(animated: true,completion:nil)
     }
 }

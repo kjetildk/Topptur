@@ -19,108 +19,106 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let defaults = UserDefaults.standard
+        
         self.navigationItem.title = NSLocalizedString("APPLICATION_TITLE",comment:"Toppturer på Svalbard")
+        
+        
+        let launchCount = defaults.integer(forKey: "LaunchCount")
+        if(launchCount == 5)
+        {
+            if(defaults.bool(forKey: "neverRate") != true)
+            {
+                showRateMe()
+            }
+            defaults.set(0, forKey: "LaunchCount")
+        }
     }
 
+    func showRateMe() {
+        
+        let url = "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=920734035&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8"
+        //"https://itunes.apple.com/no/app/topptur/id920734035?l=nb&mt=8"
+        
+        let alert = UIAlertController(title: NSLocalizedString("SHOW_RATE_ME_1",comment:"Rate us"), message: NSLocalizedString("SHOW_RATE_ME_2",comment:"Rate us"), preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("SHOW_RATE_ME_3",comment:"Rate us"), style: UIAlertActionStyle.default, handler: { alertAction in
+            UIApplication.shared.open(URL(string : url)!, options: [:], completionHandler: nil)
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: NSLocalizedString("SHOW_RATE_ME_4",comment:"Rate us"), style: UIAlertActionStyle.default, handler: { alertAction in
+            UserDefaults.standard.set(true, forKey: "neverRate")
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: NSLocalizedString("SHOW_RATE_ME_5",comment:"Rate us"), style: UIAlertActionStyle.default, handler: { alertAction in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.navigationItem.hidesBackButton = false
         table.reloadData()
     }
     
     //This is for the tableview actions
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return summitMgr.summits.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell:SummitCell = tableView.dequeueReusableCellWithIdentifier("SummitCell") as SummitCell
+        let cell:SummitCell = tableView.dequeueReusableCell(withIdentifier: "SummitCell") as! SummitCell
         
         //cell.initCell(summitMgr.summits[indexPath.row],completed: summitMgr.completed)
         
-        cell.summitName.text = summitMgr.summits[indexPath.row].name
-        cell.summitVisitCount.text = "\(summitMgr.summits[indexPath.row].getVisitCount())/\(summitMgr.completed)"
-        cell.summitHeight.text = summitMgr.summits[indexPath.row].getHeight()
-        cell.summitFirstVisitDate.text = summitMgr.summits[indexPath.row].firstVisit()
-        cell.summitImageView.image = summitMgr.summits[indexPath.row].imageSummit
-//        cell.imageView.image = UIImage(named: "AppIcon72x72")
+        let summit = summitMgr.summits[(indexPath as NSIndexPath).row]
         
-        if(summitMgr.getVisitCount(cell.summitName.text!) == 0){
-            cell.summitVisitCount.backgroundColor = UIColor.whiteColor()
+        cell.summitName.text = summit.name
+        cell.summitVisitCount.text = "\(summit.getVisitCount())/\(summitMgr.completed)"
+        cell.summitHeight.text = summit.getHeight()
+        cell.summitFirstVisitDate.text = summit.firstVisit()
+        cell.summitImageView.image = summit.imageSummit
+
+        if(summit.getVisitCount() == 0){
+            cell.summitVisitCount.backgroundColor = UIColor.white
         }else{
-            cell.summitVisitCount.backgroundColor = UIColor(red: 0.33, green: 0.88, blue: 0.0, alpha: 0.5)
+            //set the green color
+            //cell.summitVisitCount.backgroundColor = UIColor(red: 0.33, green: 0.88, blue: 0.0, alpha: 0.5)
+            cell.summitVisitCount.backgroundColor = UIColor(red: 83/255, green: 215/255, blue: 105/255, alpha: 1)
         }
-        
-//        //CHACING AV BILDER!!!!
-//        // Grab the artworkUrl60 key to get an image URL for the app's thumbnail
-//        let urlString = "AppIcon72x72" //rowData["artworkUrl60"] as String
-//
-//        // Check our image cache for the existing key. This is just a dictionary of UIImages
-//        //var image: UIImage? = self.imageCache.valueForKey(urlString) as? UIImage
-//        var image = self.imageCache[urlString]
-//
-//        if( image == nil ) {
-//            // If the image does not exist, we need to download it
-//            var imgURL: NSURL = NSURL(string: urlString)
-//
-//            // Download an NSData representation of the image at the URL
-//            let request: NSURLRequest = NSURLRequest(URL: imgURL)
-//            NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {(response: NSURLResponse!,data: NSData!,error: NSError!) -> Void in
-//                if error == nil {
-//                    image = UIImage(data: data)
-//
-//                    // Store the image in to our cache
-//                    self.imageCache[urlString] = image
-//                    if let cellToUpdate = tableView.cellForRowAtIndexPath(indexPath) {
-//                        cellToUpdate.imageView.image = image
-//                    }
-//                }
-//                else {
-//                    println("Error: \(error.localizedDescription)")
-//                }
-//            })
-//
-//        }
-//        else {
-//            dispatch_async(dispatch_get_main_queue(), {
-//                if let cellToUpdate = tableView.cellForRowAtIndexPath(indexPath) {
-//                    cellToUpdate.imageView.image = image
-//                }
-//            })
-//        }
         
         return cell
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if (segue.identifier == "showVisits"){
             
             //find the selected summit
-            let indexPath = self.table.indexPathForSelectedRow()!
-            let summit:Summit = summitMgr.summits[indexPath.row] as Summit
+            let indexPath = self.table.indexPathForSelectedRow!
+            let summit = summitMgr.summits[(indexPath as NSIndexPath).row]
   
-            var vc:UITabBarController = segue.destinationViewController as UITabBarController
+            let vc:UITabBarController = segue.destination as! UITabBarController
             
             //Add the correct summit to the controllers
             
-            var navCon:UINavigationController = vc.viewControllers?[0] as UINavigationController
-            var detailVC:DetailVC =  navCon.topViewController as DetailVC
+            var navCon:UINavigationController = vc.viewControllers?[0] as! UINavigationController
+            let detailVC:DetailVC =  navCon.topViewController as! DetailVC
             detailVC.summit = summit
             
-            navCon = vc.viewControllers?[1] as UINavigationController
-            var descVC:DescriptionVC =  navCon.topViewController as DescriptionVC
+            navCon = vc.viewControllers?[1] as! UINavigationController
+            let descVC:DescriptionVC =  navCon.topViewController as! DescriptionVC
             descVC.summit = summit
             
-            navCon = vc.viewControllers?[2] as UINavigationController
-            var mapVC:MapVC =  navCon.topViewController as MapVC
+            navCon = vc.viewControllers?[2] as! UINavigationController
+            let mapVC:MapVC =  navCon.topViewController as! MapVC
             mapVC.summit = summit
         }
     }

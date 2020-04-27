@@ -18,7 +18,7 @@ class SummitPointAnnotation: MKPointAnnotation {
         
         self.summit = summit
         
-        var summitLocation:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: summit.latitude, longitude: summit.longitude)
+        let summitLocation:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: summit.latitude, longitude: summit.longitude)
         
         self.coordinate = summitLocation
         self.title = summit.name

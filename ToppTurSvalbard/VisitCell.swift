@@ -10,14 +10,15 @@ import UIKit
 
 class VisitCell: UITableViewCell {
 
-    var visitDate:NSDate = NSDate()
+    var visitName:NSString = ""
+    var visitDate:Date = Date()
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
