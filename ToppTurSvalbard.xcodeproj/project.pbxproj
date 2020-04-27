@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		850EB2712288AE1F00C28B98 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EB2702288AE1F00C28B98 /* CloudKit.framework */; };
 		854576FB224ABA7D009717AF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 854576FA224ABA7D009717AF /* Launch Screen.storyboard */; };
-		854576FD224ADAA7009717AF /* Jansson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 854576FC224ADAA7009717AF /* Jansson.jpg */; };
 		858225BB224B97AE005571D8 /* LaunchImage1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 858225BA224B97AE005571D8 /* LaunchImage1242x2208.png */; };
 		858225BD224C087E005571D8 /* Lunsjtoppen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 858225BC224C087D005571D8 /* Lunsjtoppen.jpg */; };
 		858225BF224C0888005571D8 /* Kuhaugen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 858225BE224C0888005571D8 /* Kuhaugen.jpg */; };
@@ -19,6 +18,7 @@
 		8594B69A2250932D004E856D /* Endalen2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8594B6992250932C004E856D /* Endalen2.jpg */; };
 		8594B69C2250B7F2004E856D /* Sverdruphammern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8594B69B2250B7F2004E856D /* Sverdruphammern.jpg */; };
 		8594B6A3225140EA004E856D /* Tenoren_person.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8594B6A2225140EA004E856D /* Tenoren_person.jpg */; };
+		85A0B80C245753C0008F7246 /* Jansson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85A0B80B245753C0008F7246 /* Jansson.jpg */; };
 		B400419D1C66A475002CCA9B /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B400419B1C66A475002CCA9B /* About.storyboard */; };
 		B411BFEC1AC4917F00FFCED3 /* VardenBjorndalen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B411BFEB1AC4917F00FFCED3 /* VardenBjorndalen.jpg */; };
 		B411BFF01AC4954A00FFCED3 /* Endalen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B411BFEF1AC4954A00FFCED3 /* Endalen.jpg */; };
@@ -103,7 +103,6 @@
 		850EB26F2288AE1300C28B98 /* Topptur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Topptur.entitlements; sourceTree = "<group>"; };
 		850EB2702288AE1F00C28B98 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		854576FA224ABA7D009717AF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		854576FC224ADAA7009717AF /* Jansson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Jansson.jpg; path = ../../../../../Downloads/Jansson.jpg; sourceTree = "<group>"; };
 		858225BA224B97AE005571D8 /* LaunchImage1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchImage1242x2208.png; path = Images.xcassets/LaunchImage.launchimage/LaunchImage1242x2208.png; sourceTree = "<group>"; };
 		858225BC224C087D005571D8 /* Lunsjtoppen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lunsjtoppen.jpg; sourceTree = "<group>"; };
 		858225BE224C0888005571D8 /* Kuhaugen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kuhaugen.jpg; sourceTree = "<group>"; };
@@ -115,6 +114,7 @@
 		8594B6A02250BB6C004E856D /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = nb; path = nb.lproj/Info.plist; sourceTree = "<group>"; };
 		8594B6A12250BC5F004E856D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 		8594B6A2225140EA004E856D /* Tenoren_person.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tenoren_person.jpg; sourceTree = "<group>"; };
+		85A0B80B245753C0008F7246 /* Jansson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jansson.jpg; sourceTree = "<group>"; };
 		B400419C1C66A475002CCA9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
 		B411BFEB1AC4917F00FFCED3 /* VardenBjorndalen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VardenBjorndalen.jpg; sourceTree = "<group>"; };
 		B411BFEF1AC4954A00FFCED3 /* Endalen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Endalen.jpg; sourceTree = "<group>"; };
@@ -389,7 +389,7 @@
 			children = (
 				8594B6992250932C004E856D /* Endalen2.jpg */,
 				8594B697225084FE004E856D /* LarsHiertafjellet.jpg */,
-				854576FC224ADAA7009717AF /* Jansson.jpg */,
+				85A0B80B245753C0008F7246 /* Jansson.jpg */,
 				B482AC311F154900007852EC /* Lars_Hiertafjellet.jpg */,
 				B482AC2F1F1546B1007852EC /* Turboski.jpg */,
 				B482AC2D1F154682007852EC /* Turbo-bål.jpg */,
@@ -583,7 +583,6 @@
 				B4EB803D1A93DAD00038137F /* BlomsterdalshogdaGraf.png in Resources */,
 				B4EB80401A93DAD00038137F /* LindholmhogdaGraf.png in Resources */,
 				B46C2C071C8616F600F2D909 /* Tenoren.jpg in Resources */,
-				854576FD224ADAA7009717AF /* Jansson.jpg in Resources */,
 				B4EB80261A93CFE80038137F /* 12.GPX in Resources */,
 				858225C1224C0891005571D8 /* HalveistilVarden.jpg in Resources */,
 				B4EB80211A93CFE80038137F /* 7.GPX in Resources */,
@@ -628,6 +627,7 @@
 				8594B6A3225140EA004E856D /* Tenoren_person.jpg in Resources */,
 				B411BFEC1AC4917F00FFCED3 /* VardenBjorndalen.jpg in Resources */,
 				B4EB80431A93DAD00038137F /* SarkofagenGraf.png in Resources */,
+				85A0B80C245753C0008F7246 /* Jansson.jpg in Resources */,
 				B4EB80481A93DAD00038137F /* VardenBjorndalenGraf.png in Resources */,
 				B4E45F201AC3275B0085D088 /* VardenBolterdalen.jpg in Resources */,
 				B4EB80411A93DAD00038137F /* MorenaLongyearbreenGraf.png in Resources */,
