@@ -64,7 +64,7 @@ class SummitManager:NSObject {
                 imageSummit:UIImage(named: "Blomsterdalshogda.jpg")!,imageGraph:UIImage(named: "BlomsterdalshogdaGraf.png")!))
         summits.append(
             Summit(id:12,name: "Endalen",height: 190,distance:0,winter:true,terrain: .flat,difficulty: .easy,sutibleFor: .child,
-                latitude: 78.16238,longitude: 15.67135,description:NSLocalizedString("ENDALEN_DESC",comment:"Endalen"),
+                latitude: 78.15806,longitude: 15.64773,description:NSLocalizedString("ENDALEN_DESC",comment:"Endalen"),
                 imageSummit:UIImage(named: "Endalen2.jpg")!,imageGraph:UIImage(named: "EndalenGraf.png")!))
         summits.append(
             Summit(id:13,name: "Varden på Sverdruphamaren",height: 456,distance:0,winter:false,terrain: .hilly,difficulty: .medium,sutibleFor: .mostPeople,
