@@ -60,7 +60,6 @@ class InfoVC: UITableViewController {
             case 2: sectionName = NSLocalizedString("INFO_HEADER_3",comment:"3")
             case 3: sectionName = NSLocalizedString("INFO_HEADER_4",comment:"4")
             case 4: sectionName = NSLocalizedString("INFO_HEADER_5",comment:"5")
-            case 5: sectionName = NSLocalizedString("INFO_HEADER_6",comment:"6")
             
             default: sectionName = "Noe er feil her..."
         }

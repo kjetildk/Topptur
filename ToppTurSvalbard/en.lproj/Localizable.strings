@@ -41,8 +41,7 @@ INFO_HEADER_1 = "Developed by";
 INFO_HEADER_2 = "Information and data collected from";
 INFO_HEADER_3 = "Your total covered elevation";
 INFO_HEADER_4 = "Big thanks for pictures";
-INFO_HEADER_5 = "Purchase App without advertisement";
-INFO_HEADER_6 = "Delete data";
+INFO_HEADER_5 = "Delete data";
 
 INFO_FOOTER_1 = "Version";
 
@@ -53,7 +52,7 @@ SHOW_RATE_ME_4 = "No Thanks";
 SHOW_RATE_ME_5 = "Maybe Later";
 
 ALERT_TITLE = "IMPORTANT!";
-ALERT_MESSAGE = "Always make sure you follow recommended route choices according to current weather conditions. If you are unsure, contact Topptrimmen at Svalbard Turn. Good trip!";
+ALERT_MESSAGE = "Always make sure you follow recommended route choices according to current weather conditions. If you are unsure, contact Topptrimmen at Svalbard Turn. Have a safe trip!";
 
 
 INFO_GALD = "of Galdhøpiggen";
