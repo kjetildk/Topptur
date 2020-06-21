@@ -26,6 +26,7 @@ class Summit { //: NSObject {
     var summer:Bool = true
     var imageSummit:UIImage?
     var imageGraph:UIImage?
+    var desc_URL:NSURL?
     
     class Visit: NSObject{
         
@@ -45,15 +46,15 @@ class Summit { //: NSObject {
     }
     
     
-    convenience init(id:Int,name:String,height:Int,distance:Int,winter:Bool,summer:Bool,terrain:SummitTerrain,difficulty:SummitDifficulty,sutibleFor:SummitSutibleFor,latitude:CLLocationDegrees, longitude:CLLocationDegrees,description:String,imageSummit:UIImage,imageGraph:UIImage){
+    convenience init(id:Int,name:String,height:Int,distance:Int,winter:Bool,summer:Bool,terrain:SummitTerrain,difficulty:SummitDifficulty,sutibleFor:SummitSutibleFor,latitude:CLLocationDegrees, longitude:CLLocationDegrees,description:String,imageSummit:UIImage,imageGraph:UIImage,desc_url:String){
         
-        self.init(id:id, name:name, height:height, distance:distance, winter:winter, terrain:terrain,difficulty:difficulty, sutibleFor:sutibleFor, latitude:latitude, longitude:longitude, description:description,imageSummit:imageSummit,imageGraph:imageGraph)
+        self.init(id:id, name:name, height:height, distance:distance, winter:winter, terrain:terrain,difficulty:difficulty, sutibleFor:sutibleFor, latitude:latitude, longitude:longitude, description:description,imageSummit:imageSummit,imageGraph:imageGraph,desc_url:desc_url)
     
         self.summer = summer
         
     }
     
-    init(id:Int,name:String,height:Int,distance:Int,winter:Bool,terrain:SummitTerrain,difficulty:SummitDifficulty,sutibleFor:SummitSutibleFor,latitude:CLLocationDegrees,longitude:CLLocationDegrees,description:String,imageSummit:UIImage,imageGraph:UIImage){
+    init(id:Int,name:String,height:Int,distance:Int,winter:Bool,terrain:SummitTerrain,difficulty:SummitDifficulty,sutibleFor:SummitSutibleFor,latitude:CLLocationDegrees,longitude:CLLocationDegrees,description:String,imageSummit:UIImage,imageGraph:UIImage,desc_url:String){
         self.id = id
         self.name = name
         self.height = height
@@ -68,6 +69,7 @@ class Summit { //: NSObject {
         self.imageSummit = imageSummit
         self.imageGraph = imageGraph
         self.summer = true
+        self.desc_URL = NSURL(string : desc_url)
         
         //clean up
         if(self.visitdates.count > 0){

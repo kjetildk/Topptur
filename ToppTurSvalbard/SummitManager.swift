@@ -21,59 +21,73 @@ class SummitManager:NSObject {
         summits.append(
             Summit(id:1,name: "Sukkertoppen",height: 370,distance:0,winter:true,terrain: .hilly,difficulty: .medium,sutibleFor: .mostPeople,
                 latitude: 78.21063,longitude: 15.65408,description:NSLocalizedString("SUKKERTOPPEN_DESC",comment:"Sukkertoppen"),
-                imageSummit:UIImage(named: "Sukkertoppen.jpg")!,imageGraph:UIImage(named: "SukkertoppenGraf.png")!))
+                imageSummit:UIImage(named: "Sukkertoppen.jpg")!,imageGraph:UIImage(named: "SukkertoppenGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/sukkertoppen/"))
         summits.append(
             Summit(id:2,name: "Sarkofagen",height: 490,distance:0,winter:true,terrain: .hilly,difficulty: .medium,sutibleFor: .mostPeople,
                 latitude: 78.1902,longitude: 15.56362,description:NSLocalizedString("SARKOFAGEN_DESC",comment:"Sarkofagen"),
-                imageSummit:UIImage(named: "Sarkofagen.jpg")!,imageGraph:UIImage(named: "SarkofagenGraf.png")!))
+                imageSummit:UIImage(named: "Sarkofagen.jpg")!,imageGraph:UIImage(named: "SarkofagenGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/sarkofagen/"))
         summits.append(
             Summit(id:3,name: "Trollsteinen",height: 850,distance:0,winter:true,terrain: .hilly,difficulty: .moreDemanding,sutibleFor: .mostPeople,
                 latitude: 78.1685,longitude: 15.58627,description:NSLocalizedString("TROLLSTEINEN_DESC",comment:"Trollsteinen"),
-                imageSummit:UIImage(named: "Trollstein.jpg")!,imageGraph:UIImage(named: "TrollsteinGraf.png")!))
+                imageSummit:UIImage(named: "Trollstein.jpg")!,imageGraph:UIImage(named: "TrollsteinGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/trollsteinen/"))
         summits.append(
             Summit(id:4,name: "Nordenskiöld",height: 1050,distance:0,winter:true,terrain: .hilly,difficulty: .intensive,sutibleFor: .mostPeople,
                 latitude: 78.17903,longitude: 15.42458,description:NSLocalizedString("NORDENSKJOLD_DESC",comment:"Nordenskiöld"),
-                imageSummit:UIImage(named: "Nordenskjold.jpg")!,imageGraph:UIImage(named: "NordenskjoldGraf.png")!))
+                imageSummit:UIImage(named: "Nordenskjold.jpg")!,imageGraph:UIImage(named: "NordenskjoldGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/nordenskioldtoppen/"))
         summits.append(
             Summit(id:5,name: "Morena ved Longyearbreen",height: 246,distance:0,winter:false,terrain: .flat,difficulty: .easy,sutibleFor: .child,
                 latitude: 78.19205,longitude: 15.53917,description:NSLocalizedString("MORENA_DESC",comment:"Morena ved Longyearbreen"),
-                imageSummit:UIImage(named: "MorenaLongyearbreen.jpg")!,imageGraph:UIImage(named: "MorenaLongyearbreenGraf.png")!))
+                imageSummit:UIImage(named: "MorenaLongyearbreen.jpg")!,imageGraph:UIImage(named: "MorenaLongyearbreenGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/morena-pa-longyearbreen/"))
         summits.append(
             Summit(id:6,name: "Varden i Bjørndalen",height: 89,distance:0,winter:false,terrain: .flat,difficulty: .easy,sutibleFor: .child,
                 latitude: 78.2163,longitude: 15.34592,description:NSLocalizedString("BJORNDALEN_DESC",comment:"Varden i Bjørndalen"),
-                imageSummit:UIImage(named: "VardenBjorndalen.jpg")!,imageGraph:UIImage(named: "VardenBjorndalenGraf.png")!))
+                imageSummit:UIImage(named: "VardenBjorndalen.jpg")!,imageGraph:UIImage(named: "VardenBjorndalenGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/varden-i-bjorndalen/"))
         summits.append(
             Summit(id:7,name: "Sneheim",height: 545,distance:0,winter:false,terrain: .hilly,difficulty: .moreDemanding,sutibleFor: .mostPeople,
                 latitude: 78.25927,longitude: 15.76723,description:NSLocalizedString("SNEHEIM_DESC",comment:"Sneheim"),
-                imageSummit:UIImage(named: "Sneheim.jpg")!,imageGraph:UIImage(named: "SneheimGraf.png")!))
+                imageSummit:UIImage(named: "Sneheim.jpg")!,imageGraph:UIImage(named: "SneheimGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/sneheim/"))
         summits.append(
             Summit(id:8,name: "Varden ved Platåberget",height: 326,distance:0,winter:true,terrain: .hilly,difficulty: .easy,sutibleFor: .mostPeople,
                 latitude: 78.2185,longitude: 15.59543,description:NSLocalizedString("PLATAABERGET_DESC",comment:"Varden ved Platåberget"),
-                imageSummit:UIImage(named: "VardenPlataaberget.jpg")!,imageGraph:UIImage(named: "VardenPlataabergetGraf.png")!))
+                imageSummit:UIImage(named: "VardenPlataaberget.jpg")!,imageGraph:UIImage(named: "VardenPlataabergetGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/varden-pa-plataberget/"))
         summits.append(
             Summit(id:9,name: "Fuglefjella",height: 437,distance:0,winter:false,terrain: .hilly,difficulty: .moreDemanding,sutibleFor: .mostPeople,
                 latitude: 78.21647,longitude: 15.27997,description:NSLocalizedString("FUGLEFJELLA_DESC",comment:"Fuglefjella"),
-                imageSummit:UIImage(named: "Fuglefjella.jpg")!,imageGraph:UIImage(named: "FuglefjellaGraf.png")!))
+                imageSummit:UIImage(named: "Fuglefjella.jpg")!,imageGraph:UIImage(named: "FuglefjellaGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/varden-pa-fuglefjella/"))
         summits.append(
             Summit(id:10,name: "Lindholmhøgda",height: 361,distance:0,winter:false,terrain: .hilly,difficulty: .medium,sutibleFor: .child,
                 latitude: 78.20385,longitude: 15.7028,description:NSLocalizedString("LINDHOLMHOGDA_DESC",comment:"Lindholmhøgda"),
-                imageSummit:UIImage(named: "Lindholmhogda.jpg")!,imageGraph:UIImage(named: "LindholmhogdaGraf.png")!))
+                imageSummit:UIImage(named: "Lindholmhogda.jpg")!,imageGraph:UIImage(named: "LindholmhogdaGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/varden-pa-lindholmhogda/"))
         summits.append(
             Summit(id:11,name: "Blomsterdalshøgda",height: 317,distance:0,winter:false,terrain: .hilly,difficulty: .medium,sutibleFor: .child,
                 latitude: 78.22653,longitude: 15.53115,description:NSLocalizedString("BLOMSTERDALSHOGDA_DESC",comment:"Blomsterdalshøgda"),
-                imageSummit:UIImage(named: "Blomsterdalshogda.jpg")!,imageGraph:UIImage(named: "BlomsterdalshogdaGraf.png")!))
+                imageSummit:UIImage(named: "Blomsterdalshogda.jpg")!,imageGraph:UIImage(named: "BlomsterdalshogdaGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/"))
         summits.append(
             Summit(id:12,name: "Endalen",height: 190,distance:0,winter:true,terrain: .flat,difficulty: .easy,sutibleFor: .child,
                 latitude: 78.15806,longitude: 15.64773,description:NSLocalizedString("ENDALEN_DESC",comment:"Endalen"),
-                imageSummit:UIImage(named: "Endalen2.jpg")!,imageGraph:UIImage(named: "EndalenGraf.png")!))
+                imageSummit:UIImage(named: "Endalen2.jpg")!,imageGraph:UIImage(named: "EndalenGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/varden-i-endalen/"))
         summits.append(
             Summit(id:13,name: "Varden på Sverdruphamaren",height: 456,distance:0,winter:false,terrain: .hilly,difficulty: .medium,sutibleFor: .mostPeople,
                 latitude: 78.20413,longitude: 15.55447,description:NSLocalizedString("SVERDRUPHAMAREN_DESC",comment:"Varden på Sverdruphamaren"),
-                imageSummit:UIImage(named: "Sverdruphammern.jpg")!,imageGraph:UIImage(named: "SverdruphammarenGraf.png")!))
+                imageSummit:UIImage(named: "Sverdruphammern.jpg")!,imageGraph:UIImage(named: "SverdruphammarenGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/"))
         summits.append(
             Summit(id:14,name: "Varden i Bolterdalen",height: 175,distance:0,winter:false,summer:false,terrain: .flat,difficulty: .easy,sutibleFor: .child,
                  latitude: 78.13518,longitude: 16.00832,description:NSLocalizedString("BOLTERDALEN_DESC",comment:"Varden i Bolterdalen"),
-                 imageSummit:UIImage(named: "VardenBolterdalen.jpg")!,imageGraph:UIImage(named: "VardenBolterdalenGraf.png")!))
+                 imageSummit:UIImage(named: "VardenBolterdalen.jpg")!,imageGraph:UIImage(named: "VardenBolterdalenGraf.png")!,
+                 desc_url: "https://svalbardturn.no/topptrimmen/varden-i-bolterdalen/"))
         //summits.append(
             //Summit(id:14,name: "Gruvefjellet",height: 451,distance:0,winter:false,terrain: .hilly,difficulty: .medium,sutibleFor: .mostPeople,
             //    latitude: 78.2039,longitude: 15.6289,description:NSLocalizedString("GRUVEFJELLET_DESC",comment:"Gruvefjellet"),
@@ -81,29 +95,35 @@ class SummitManager:NSObject {
         summits.append(
             Summit(id:15,name: "Tenoren",height: 656,distance:0,winter:true,terrain: .hilly,difficulty: .moreDemanding,sutibleFor: .mostPeople,
                 latitude: 78.2227,longitude: 15.9755,description:NSLocalizedString("TENOREN_DESC",comment:"Tenoren"),
-                imageSummit:UIImage(named: "Tenoren_person.jpg")!,imageGraph:UIImage(named: "TenorenGraf.png")!))
+                imageSummit:UIImage(named: "Tenoren_person.jpg")!,imageGraph:UIImage(named: "TenorenGraf.png")!,
+                desc_url: "https://svalbardturn.no/topptrimmen/tenoren/"))
         
         summits.append(
             Summit(id:16,name: "Janssonhaugen",height: 352,distance:0,winter:true,terrain: .hilly,difficulty: .moreDemanding,sutibleFor: .mostPeople,
                    latitude: 78.17869,longitude: 16.34768,description:NSLocalizedString("JANSSON_DESC",comment:"Janssonhaugen"),
-                   imageSummit:UIImage(named: "Jansson.jpg")!,imageGraph:UIImage(named: "Turboski.jpg")!))
+                   imageSummit:UIImage(named: "Jansson.jpg")!,imageGraph:UIImage(named: "Turboski.jpg")!,
+                   desc_url: "https://svalbardturn.no/topptrimmen/"))
         
         summits.append(
             Summit(id:17,name: "Lars Hiertafjellet",height: 878,distance:0,winter:true,terrain: .hilly,difficulty: .moreDemanding,sutibleFor: .mostPeople,
                    latitude: 78.1657,longitude: 15.5110,description:NSLocalizedString("LARS_DESC",comment:"Lars Hiertafjellet"),
-                   imageSummit:UIImage(named: "LarsHiertafjellet.jpg")!,imageGraph:UIImage(named: "TenorenGraf.png")!))
+                   imageSummit:UIImage(named: "LarsHiertafjellet.jpg")!,imageGraph:UIImage(named: "TenorenGraf.png")!,
+                   desc_url: "https://svalbardturn.no/topptrimmen/"))
         summits.append(
             Summit(id:18,name: "Halvveis til Sukkertoppen",height: 171,distance:0,winter:true,terrain: .hilly,difficulty: .moreDemanding,sutibleFor: .mostPeople,
                    latitude: 78.2145,longitude: 15.6532,description:NSLocalizedString("DUMMY_DESC",comment:"Halvveis til Sukkertoppen"),
-                   imageSummit:UIImage(named: "Lunsjtoppen.jpg")!,imageGraph:UIImage(named: "Turboski.jpg")!))
+                   imageSummit:UIImage(named: "Lunsjtoppen.jpg")!,imageGraph:UIImage(named: "Turboski.jpg")!,
+                   desc_url: "https://svalbardturn.no/topptrimmen/"))
         summits.append(
             Summit(id:19,name: "Taubanebukken på Kuhaugen",height: 78,distance:0,winter:true,terrain: .hilly,difficulty: .moreDemanding,sutibleFor: .mostPeople,
                    latitude: 78.2129,longitude: 15.6893,description:NSLocalizedString("DUMMY_DESC",comment:"Taubanebukken på Kuhaugen"),
-                   imageSummit:UIImage(named: "Kuhaugen.jpg")!,imageGraph:UIImage(named: "Turboski.jpg")!))
+                   imageSummit:UIImage(named: "Kuhaugen.jpg")!,imageGraph:UIImage(named: "Turboski.jpg")!,
+                   desc_url: "https://svalbardturn.no/topptrimmen/"))
         summits.append(
             Summit(id:20,name: "Halvveis til Platåberget",height: 131,distance:0,winter:true,terrain: .hilly,difficulty: .moreDemanding,sutibleFor: .mostPeople,
                    latitude: 78.2201,longitude: 15.5993,description:NSLocalizedString("DUMMY_DESC",comment:"Halvveis til Platåberget"),
-                   imageSummit:UIImage(named: "HalveistilVarden.jpg")!,imageGraph:UIImage(named: "Turboski.jpg")!))
+                   imageSummit:UIImage(named: "HalveistilVarden.jpg")!,imageGraph:UIImage(named: "Turboski.jpg")!,
+                   desc_url: "https://svalbardturn.no/topptrimmen/"))
         
         for index:Int in 0...(self.summits.count-1){
             if(summits[index].visitdates.count > 0){

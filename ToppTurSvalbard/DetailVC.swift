@@ -15,10 +15,6 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     @IBOutlet weak var summitLabel: UILabel!
     @IBOutlet weak var emptyListMessageLabel: UILabel!
     
-    @IBAction func openURL(_ sender: Any) {
-        UIApplication.shared.open(NSURL(string: "https://svalbardturn.no/topptrimmen/varden-i-endalen/")! as URL)
-    }
-    
     var summit:Summit?
     
     override func viewDidLoad() {
@@ -88,6 +84,10 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
         
         visitList.reloadData()
         updateSummitlabel()
+    }
+    
+    @IBAction func openURL(_ sender: Any) {
+        UIApplication.shared.open((summit?.desc_URL)! as URL)
     }
     
     //Add current date to the list
