@@ -52,6 +52,10 @@ SHOW_RATE_ME_3 = "Rate SUMMITING";
 SHOW_RATE_ME_4 = "No Thanks";
 SHOW_RATE_ME_5 = "Maybe Later";
 
+ALERT_TITLE = "IMPORTANT!";
+ALERT_MESSAGE = "Always make sure you follow recommended route choices according to current weather conditions. If you are unsure, contact Topptrimmen at Svalbard Turn. Good trip!";
+
+
 INFO_GALD = "of Galdhøpiggen";
 INFO_EVER = "of Mount Everest";
 INFO_DELETE_BUTTON = "Delete all your trips and start over";

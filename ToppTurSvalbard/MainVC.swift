@@ -16,6 +16,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var imageCache = [String : UIImage]()
     
+    let alertService = AlertService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +35,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
             defaults.set(0, forKey: "LaunchCount")
         }
+        
+        let alertVC = alertService.alert(title: NSLocalizedString("ALERT_TITLE",comment:"title"), message: NSLocalizedString("ALERT_MESSAGE",comment:"message")){
+            
+            print("Joho!!!")
+        }
+        
+        present(alertVC, animated: true)
     }
 
     func showRateMe() {

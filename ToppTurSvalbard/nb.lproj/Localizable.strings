@@ -53,6 +53,9 @@ SHOW_RATE_ME_3 = "Vurder TOPPTUR";
 SHOW_RATE_ME_4 = "Nei takk";
 SHOW_RATE_ME_5 = "Kanskje seinere";
 
+ALERT_TITLE = "VIKTIG!";
+ALERT_MESSAGE = "Alltid påse at du følger anbefalte rutevalg ihht til vær- og føreforhold. Om du er usikker ta kontakt med Topptrimmen i Svalbard Turn. God tur!";
+
 INFO_GALD = "av Galdhøpiggen";
 INFO_EVER = "av Mount Everest";
 INFO_DELETE_BUTTON = "Slette alle dine turer og start på nytt";

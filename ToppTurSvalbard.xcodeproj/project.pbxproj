@@ -14,6 +14,9 @@
 		858225C1224C0891005571D8 /* HalveistilVarden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 858225C0224C0891005571D8 /* HalveistilVarden.jpg */; };
 		858225C2224C0AEF005571D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D01AF619A23C8C00CA44B3 /* MapKit.framework */; };
 		85881EBA249601C80061A8C9 /* AppIcon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 85881EB9249601C80061A8C9 /* AppIcon72x72.png */; };
+		858C40F9249F8A9100C7445B /* AlertStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858C40F8249F8A9100C7445B /* AlertStoryboard.storyboard */; };
+		858C4101249F8D0700C7445B /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C4100249F8D0700C7445B /* AlertViewController.swift */; };
+		858C4103249F92F900C7445B /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C4102249F92F900C7445B /* AlertService.swift */; };
 		8594B698225084FE004E856D /* LarsHiertafjellet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8594B697225084FE004E856D /* LarsHiertafjellet.jpg */; };
 		8594B69A2250932D004E856D /* Endalen2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8594B6992250932C004E856D /* Endalen2.jpg */; };
 		8594B69C2250B7F2004E856D /* Sverdruphammern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8594B69B2250B7F2004E856D /* Sverdruphammern.jpg */; };
@@ -106,6 +109,9 @@
 		858225BE224C0888005571D8 /* Kuhaugen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kuhaugen.jpg; sourceTree = "<group>"; };
 		858225C0224C0891005571D8 /* HalveistilVarden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HalveistilVarden.jpg; sourceTree = "<group>"; };
 		85881EB9249601C80061A8C9 /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon72x72.png; sourceTree = "<group>"; };
+		858C40F8249F8A9100C7445B /* AlertStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertStoryboard.storyboard; sourceTree = "<group>"; };
+		858C4100249F8D0700C7445B /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		858C4102249F92F900C7445B /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		8594B697225084FE004E856D /* LarsHiertafjellet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LarsHiertafjellet.jpg; sourceTree = "<group>"; };
 		8594B6992250932C004E856D /* Endalen2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Endalen2.jpg; sourceTree = "<group>"; };
 		8594B69B2250B7F2004E856D /* Sverdruphammern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sverdruphammern.jpg; sourceTree = "<group>"; };
@@ -280,6 +286,8 @@
 				B4D57BCB1A038423008D5478 /* Summit */,
 				B4D57BCA1A03840B008D5478 /* Storyboard */,
 				B4D175D1198C100D008DA3AE /* AppDelegate.swift */,
+				858C4100249F8D0700C7445B /* AlertViewController.swift */,
+				858C4102249F92F900C7445B /* AlertService.swift */,
 				B4D175F1198C11C8008DA3AE /* MainVC.swift */,
 				B4E4A6E719CAF1A8002B5AC6 /* InfoVC.swift */,
 				B4D6324019AB1C55003A7BE9 /* MainMapVC.swift */,
@@ -345,6 +353,7 @@
 				B4216C6119A29BC900BC8725 /* Main.storyboard */,
 				B400419B1C66A475002CCA9B /* About.storyboard */,
 				854576FA224ABA7D009717AF /* Launch Screen.storyboard */,
+				858C40F8249F8A9100C7445B /* AlertStoryboard.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -604,6 +613,7 @@
 				858225BD224C087E005571D8 /* Lunsjtoppen.jpg in Resources */,
 				B4EB80421A93DAD00038137F /* NordenskjoldGraf.png in Resources */,
 				B4EB801F1A93CFE80038137F /* 5.GPX in Resources */,
+				858C40F9249F8A9100C7445B /* AlertStoryboard.storyboard in Resources */,
 				B4E45F2D1AC3361E0085D088 /* Sverdruphammaren.jpg in Resources */,
 				B4EB80461A93DAD00038137F /* SverdruphammarenGraf.png in Resources */,
 				B4EB804A1A93DAD00038137F /* VardenPlataabergetGraf.png in Resources */,
@@ -709,7 +719,9 @@
 				B4DCF59619A9157000C3B7F2 /* DescriptionVC.swift in Sources */,
 				B4D175F2198C11C8008DA3AE /* MainVC.swift in Sources */,
 				B4E4A6E819CAF1A8002B5AC6 /* InfoVC.swift in Sources */,
+				858C4103249F92F900C7445B /* AlertService.swift in Sources */,
 				B458D5871D188D9000723B5A /* KeyboardLayoutConstraints.swift in Sources */,
+				858C4101249F8D0700C7445B /* AlertViewController.swift in Sources */,
 				B4D6324719AB338A003A7BE9 /* SummitPointAnnotation.swift in Sources */,
 				B4D6324119AB1C55003A7BE9 /* MainMapVC.swift in Sources */,
 				B4D175D2198C100D008DA3AE /* AppDelegate.swift in Sources */,
@@ -884,7 +896,7 @@
 				CODE_SIGN_ENTITLEMENTS = ToppTurSvalbard/Topptur.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = GE6XU8T7VW;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -917,7 +929,7 @@
 				CODE_SIGN_ENTITLEMENTS = ToppTurSvalbard/Topptur.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = GE6XU8T7VW;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
