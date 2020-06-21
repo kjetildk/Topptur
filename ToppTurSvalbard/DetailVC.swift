@@ -14,7 +14,11 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     @IBOutlet weak var summitImage: UIImageView!
     @IBOutlet weak var summitLabel: UILabel!
     @IBOutlet weak var emptyListMessageLabel: UILabel!
-
+    
+    @IBAction func openURL(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: "https://svalbardturn.no/topptrimmen/varden-i-endalen/")! as URL)
+    }
+    
     var summit:Summit?
     
     override func viewDidLoad() {

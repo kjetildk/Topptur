@@ -113,11 +113,11 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             let detailVC:DetailVC =  navCon.topViewController as! DetailVC
             detailVC.summit = summit
             
-            navCon = vc.viewControllers?[1] as! UINavigationController
-            let descVC:DescriptionVC =  navCon.topViewController as! DescriptionVC
-            descVC.summit = summit
+//            navCon = vc.viewControllers?[1] as! UINavigationController
+//            let descVC:DescriptionVC =  navCon.topViewController as! DescriptionVC
+//            descVC.summit = summit
             
-            navCon = vc.viewControllers?[2] as! UINavigationController
+            navCon = vc.viewControllers?[1] as! UINavigationController
             let mapVC:MapVC =  navCon.topViewController as! MapVC
             mapVC.summit = summit
         }
