@@ -111,11 +111,11 @@ class Summit { //: NSObject {
         dicSummit["name"] = name as String
         dicSummit["comment"] = visitComment as String
         dicSummit["visitdate"] = visitDate as Date
-        dicSummit["photo"] = UIImagePNGRepresentation(UIImage(named:"AppIcon72x72.png")!)! as Data
+        dicSummit["photo"] = UIImage(named:"AppIcon72x72.png")!.pngData()! as Data
         
         //Update core data and this current list for this object
         if(persistenceHelper.save(entity: "Summit", parameters: dicSummit as Dictionary<String, AnyObject>)){
-            self.visitdates.append(Visit(visitComment: visitComment,visitDate: visitDate, photo: UIImagePNGRepresentation(UIImage(named:"AppIcon72x72.png")!)!))
+            self.visitdates.append(Visit(visitComment: visitComment,visitDate: visitDate, photo: UIImage(named:"AppIcon72x72.png")!.pngData()!))
         }
         
         return self.visitdates.count
@@ -126,7 +126,7 @@ class Summit { //: NSObject {
         var result: Int = 0
         for visit in self.visitdates{
             
-            result += removeVisit(self.visitdates.index(of: visit)!)
+            result += removeVisit(self.visitdates.firstIndex(of: visit)!)
             
         }
     }

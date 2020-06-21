@@ -23,7 +23,7 @@ class InfoVC: UITableViewController {
 
         self.title = NSLocalizedString("APPLICATION_TITLE",comment:"Toppturer på Svalbard")
         
-        self.buttonLabel.setTitle(NSLocalizedString("INFO_DELETE_BUTTON",comment:"Slette alt"), for: UIControlState())
+        self.buttonLabel.setTitle(NSLocalizedString("INFO_DELETE_BUTTON",comment:"Slette alt"), for: UIControl.State())
         
         self.total = summitMgr.getTotalHeight()
         updateHeight()

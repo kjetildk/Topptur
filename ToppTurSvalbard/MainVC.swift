@@ -49,16 +49,16 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let url = "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=920734035&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8"
         //"https://itunes.apple.com/no/app/topptur/id920734035?l=nb&mt=8"
         
-        let alert = UIAlertController(title: NSLocalizedString("SHOW_RATE_ME_1",comment:"Rate us"), message: NSLocalizedString("SHOW_RATE_ME_2",comment:"Rate us"), preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("SHOW_RATE_ME_3",comment:"Rate us"), style: UIAlertActionStyle.default, handler: { alertAction in
-            UIApplication.shared.open(URL(string : url)!, options: [:], completionHandler: nil)
+        let alert = UIAlertController(title: NSLocalizedString("SHOW_RATE_ME_1",comment:"Rate us"), message: NSLocalizedString("SHOW_RATE_ME_2",comment:"Rate us"), preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("SHOW_RATE_ME_3",comment:"Rate us"), style: UIAlertAction.Style.default, handler: { alertAction in
+            UIApplication.shared.open(URL(string : url)!, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
             alert.dismiss(animated: true, completion: nil)
         }))
-        alert.addAction(UIAlertAction(title: NSLocalizedString("SHOW_RATE_ME_4",comment:"Rate us"), style: UIAlertActionStyle.default, handler: { alertAction in
+        alert.addAction(UIAlertAction(title: NSLocalizedString("SHOW_RATE_ME_4",comment:"Rate us"), style: UIAlertAction.Style.default, handler: { alertAction in
             UserDefaults.standard.set(true, forKey: "neverRate")
             alert.dismiss(animated: true, completion: nil)
         }))
-        alert.addAction(UIAlertAction(title: NSLocalizedString("SHOW_RATE_ME_5",comment:"Rate us"), style: UIAlertActionStyle.default, handler: { alertAction in
+        alert.addAction(UIAlertAction(title: NSLocalizedString("SHOW_RATE_ME_5",comment:"Rate us"), style: UIAlertAction.Style.default, handler: { alertAction in
             alert.dismiss(animated: true, completion: nil)
         }))
         self.present(alert, animated: true, completion: nil)
@@ -132,4 +132,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

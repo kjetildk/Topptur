@@ -95,7 +95,7 @@ class PersistenceHelper: NSObject {
         if(results.count > 0){
             //update result
             let res = results[0] as! NSManagedObject
-            res.setValue(UIImagePNGRepresentation(photo), forKey: "photo")
+            res.setValue(photo.pngData(), forKey: "photo")
             
             print("Saving photo")
             do {

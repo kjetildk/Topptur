@@ -87,7 +87,7 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     }
     
     @IBAction func openURL(_ sender: Any) {
-        UIApplication.shared.open((summit?.desc_URL)! as URL)
+        UIApplication.shared.open((summit?.desc_URL)! as URL, options: [:], completionHandler: nil) //openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary((summit?.desc_URL)! as URL)
     }
     
     //Add current date to the list
@@ -157,9 +157,9 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     }
     
     //slide selected and click delete
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
-        if(editingStyle == UITableViewCellEditingStyle.delete){
+        if(editingStyle == UITableViewCell.EditingStyle.delete){
             summitMgr.removeVisit(summit!.name, index: (indexPath as NSIndexPath).row)
             visitList.reloadData()
             updateSummitlabel()
@@ -167,4 +167,9 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     }
 
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

@@ -44,7 +44,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         let latDelta:CLLocationDegrees = 0.05
         let longDelta:CLLocationDegrees = 0.05
         
-        let theSpan:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
+        let theSpan:MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: latDelta, longitudeDelta: longDelta)
         let summitLocation:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         let theRegion:MKCoordinateRegion = MKCoordinateRegion(center: summitLocation, span: theSpan)
         

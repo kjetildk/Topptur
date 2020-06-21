@@ -29,7 +29,7 @@ class MainMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate 
         //position the main map
         let latDelta:CLLocationDegrees = 0.32
         let longDelta:CLLocationDegrees = 0.32
-        let theSpan:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
+        let theSpan:MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: latDelta, longitudeDelta: longDelta)
         
         let mapCenter:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 78.2, longitude: 15.63)
         let theRegion:MKCoordinateRegion = MKCoordinateRegion(center: mapCenter, span: theSpan)
