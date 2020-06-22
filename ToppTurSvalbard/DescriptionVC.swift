@@ -19,31 +19,29 @@ class DescriptionVC: UIViewController {
     @IBOutlet weak var summitWinterImage: UIImageView!
     @IBOutlet weak var summitSummerImage: UIImageView!
     
-    var summit:Summit?
+    var target:Summit?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        self.navigationItem.title = self.summit!.name
-        
-        self.summitDescription.text = self.summit!.desc
-        
+        self.navigationItem.title = self.target!.name
+        self.summitDescription.text = self.target!.desc
         self.summitDescription.scrollRangeToVisible(NSRange(location: summitDescription.text.count, length: 0))
+        self.summitHeight.text = self.target!.getHeight()
         
-        self.summitImage.image = self.summit!.imageGraph
-        self.summitHeight.text = self.summit!.getHeight()
-        
-        if(self.summit!.winter == false)
-        {
-            self.summitWinterImage.isHidden = true
-        }
-        
-        if(self.summit!.summer == false)
-        {
-            self.summitSummerImage.isHidden = true
-        }
+//        self.summitImage.image = self.summit!.imageGraph
+//
+//        if(self.summit!.winter == false)
+//        {
+//            self.summitWinterImage.isHidden = true
+//        }
+//
+//        if(self.summit!.summer == false)
+//        {
+//            self.summitSummerImage.isHidden = true
+//        }
         
         //self.summitTerrain.text = self.summit!.getTerrain()
         //self.summitDifficulty.text = self.summit!.getDifficulty()

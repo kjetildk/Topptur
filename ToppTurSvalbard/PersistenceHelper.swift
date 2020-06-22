@@ -18,13 +18,17 @@ class PersistenceHelper: NSObject {
         context = appDel.managedObjectContext
     }
     
-    func list(entity: String, summit: String) -> [Any] {
+    /// Get the list of visits for listed target
+    /// - Parameters:
+    ///   - entity: Visit list
+    ///   - target: the target
+    /// - Returns: list of visits
+    func getListOfVisits(target: String) -> [Any] {
         
-        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity)
-        //let request = NSFetchRequest(entityName: entity)
+        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Visit")
         request.returnsObjectsAsFaults = false
         
-        request.predicate = NSPredicate(format: "name = %@", summit)
+        request.predicate = NSPredicate(format: "name = %@", target)
         
         let results: [Any] = try! context.fetch(request)
         
@@ -47,9 +51,9 @@ class PersistenceHelper: NSObject {
         }
     }
     
-    func update(entity: String, name:String, value: Date, newdate:Date, comment:String) -> Bool {
+    func updateVisit(name:String, value: Date, newdate:Date, comment:String) -> Bool {
         
-        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity)
+        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Visit")
         //let request = NSFetchRequest(entityName: entity)
         request.returnsObjectsAsFaults = false
         
@@ -78,41 +82,9 @@ class PersistenceHelper: NSObject {
         return false
     }
     
-    func update(entity: String, name:String, value: Date, photo:UIImage) -> Bool {
+    func removeVisit(name:String, value: Date) -> Bool {
         
-        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity)
-        //let request = NSFetchRequest(entityName: entity)
-        request.returnsObjectsAsFaults = false
-        
-        let resultPredicate1:NSPredicate = NSPredicate(format: "name = %@", name)
-        let resultPredicate2:NSPredicate = NSPredicate(format: "visitdate = %@", value as CVarArg)
-        
-        let compound = NSCompoundPredicate(andPredicateWithSubpredicates: [resultPredicate1, resultPredicate2])
-        request.predicate = compound
-        
-        let results: [Any] = try! context.fetch(request)
-        
-        if(results.count > 0){
-            //update result
-            let res = results[0] as! NSManagedObject
-            res.setValue(photo.pngData(), forKey: "photo")
-            
-            print("Saving photo")
-            do {
-                try context.save()
-            } catch _ {
-            }
-            print("PNG photo is saved!")
-            
-            return true
-        }
-        
-        return false
-    }
-    
-    func remove(entity: String, name:String, value: Date) -> Bool {
-        
-        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity)
+        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Visit")
         //let request = NSFetchRequest(entityName: entity)
         request.returnsObjectsAsFaults = false
         
@@ -138,5 +110,39 @@ class PersistenceHelper: NSObject {
         
         return false
     }
+    
+//    func updatePhoto(entity: String, name:String, value: Date, photo:UIImage) -> Bool {
+//
+//        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity)
+//        //let request = NSFetchRequest(entityName: entity)
+//        request.returnsObjectsAsFaults = false
+//
+//        let resultPredicate1:NSPredicate = NSPredicate(format: "name = %@", name)
+//        let resultPredicate2:NSPredicate = NSPredicate(format: "visitdate = %@", value as CVarArg)
+//
+//        let compound = NSCompoundPredicate(andPredicateWithSubpredicates: [resultPredicate1, resultPredicate2])
+//        request.predicate = compound
+//
+//        let results: [Any] = try! context.fetch(request)
+//
+//        if(results.count > 0){
+//            //update result
+//            let res = results[0] as! NSManagedObject
+//            res.setValue(photo.pngData(), forKey: "photo")
+//
+//            print("Saving photo")
+//            do {
+//                try context.save()
+//            } catch _ {
+//            }
+//            print("PNG photo is saved!")
+//
+//            return true
+//        }
+//
+//        return false
+//    }
+    
+    
     
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Collection" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="targetTotal" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="targetVisitCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <relationship name="target" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Target" inverseName="collection" inverseEntity="Target"/>
+    </entity>
+    <entity name="Target" syncable="YES">
+        <attribute name="height" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="collection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Collection" inverseName="target" inverseEntity="Collection"/>
+        <relationship name="visit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Visit" inverseName="target" inverseEntity="Visit"/>
+    </entity>
+    <entity name="Visit" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="visitdate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="target" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Target" inverseName="visit" inverseEntity="Target"/>
+    </entity>
+    <elements>
+        <element name="Visit" positionX="-178.62109375" positionY="102.125" width="128" height="103"/>
+        <element name="Collection" positionX="-775.8515625" positionY="19.6015625" width="128" height="103"/>
+        <element name="Target" positionX="-501.13671875" positionY="-60.90234375" width="128" height="148"/>
+    </elements>
+</model>

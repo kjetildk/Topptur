@@ -111,6 +111,7 @@
 		858225C0224C0891005571D8 /* HalveistilVarden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HalveistilVarden.jpg; sourceTree = "<group>"; };
 		85881EB9249601C80061A8C9 /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon72x72.png; sourceTree = "<group>"; };
 		858A4705249FE91700BA708F /* VisitStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VisitStoryboard.storyboard; sourceTree = "<group>"; };
+		858A4707249FED8800BA708F /* ToppTurSvalbard 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ToppTurSvalbard 4.xcdatamodel"; sourceTree = "<group>"; };
 		858C40F8249F8A9100C7445B /* AlertStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertStoryboard.storyboard; sourceTree = "<group>"; };
 		858C4100249F8D0700C7445B /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		858C4102249F92F900C7445B /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
@@ -908,7 +909,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ToppTurSvalbard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -942,7 +943,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ToppTurSvalbard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -985,11 +986,12 @@
 		B43684AB1A35D79800CEE4FE /* ToppTurSvalbard.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				858A4707249FED8800BA708F /* ToppTurSvalbard 4.xcdatamodel */,
 				B4EBDA6A1AB8DA8E004875A6 /* ToppTurSvalbard 3.xcdatamodel */,
 				B4DC4FFC1A397C35004D0188 /* ToppTurSvalbard 2.xcdatamodel */,
 				B43684AC1A35D79800CEE4FE /* ToppTurSvalbard.xcdatamodel */,
 			);
-			currentVersion = B4EBDA6A1AB8DA8E004875A6 /* ToppTurSvalbard 3.xcdatamodel */;
+			currentVersion = 858A4707249FED8800BA708F /* ToppTurSvalbard 4.xcdatamodel */;
 			path = ToppTurSvalbard.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
