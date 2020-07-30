@@ -211,14 +211,6 @@
 		B4EB803C1A93DAD00038137F /* VardenPlataabergetGraf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VardenPlataabergetGraf.png; sourceTree = "<group>"; };
 		B4EBDA6A1AB8DA8E004875A6 /* ToppTurSvalbard 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ToppTurSvalbard 3.xcdatamodel"; sourceTree = "<group>"; };
 		B4FB189B19B73AB8000994AB /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
-		B4FEFDB91B49879900C87F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4FEFDBA1B49879900C87F2F /* JBChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBChart.h; sourceTree = "<group>"; };
-		B4FEFDD61B4987AF00C87F2F /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
-		B4FEFDD71B4987AF00C87F2F /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
-		B4FEFDD81B4987AF00C87F2F /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
-		B4FEFDD91B4987AF00C87F2F /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
-		B4FEFDDA1B4987AF00C87F2F /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
-		B4FEFDDB1B4987AF00C87F2F /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
 		D751770A75A9EAE2C48FDFC4 /* Pods-ToppTurSvalbard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToppTurSvalbard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToppTurSvalbard/Pods-ToppTurSvalbard.debug.xcconfig"; sourceTree = "<group>"; };
 		D98EDC3ACD17A4F94F0A37DE /* Pods-ToppTurSvalbard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToppTurSvalbard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToppTurSvalbard/Pods-ToppTurSvalbard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,7 +259,6 @@
 			children = (
 				B4D175CE198C100D008DA3AE /* ToppTurSvalbard */,
 				B4D57BA21A026885008D5478 /* Topptur.app */,
-				B4FEFDB71B49879900C87F2F /* JBChart */,
 				57FD4B967268787DDDAAF4F1 /* Pods */,
 				850EB26C2288AB2C00C28B98 /* Frameworks */,
 			);
@@ -448,37 +439,6 @@
 				858225C0224C0891005571D8 /* HalveistilVarden.jpg */,
 			);
 			name = Graphs;
-			sourceTree = "<group>";
-		};
-		B4FEFDB71B49879900C87F2F /* JBChart */ = {
-			isa = PBXGroup;
-			children = (
-				B4FEFDD51B4987A400C87F2F /* Classes */,
-				B4FEFDBA1B49879900C87F2F /* JBChart.h */,
-				B4FEFDB81B49879900C87F2F /* Supporting Files */,
-			);
-			path = JBChart;
-			sourceTree = "<group>";
-		};
-		B4FEFDB81B49879900C87F2F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B4FEFDB91B49879900C87F2F /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B4FEFDD51B4987A400C87F2F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B4FEFDD61B4987AF00C87F2F /* JBBarChartView.h */,
-				B4FEFDD71B4987AF00C87F2F /* JBBarChartView.m */,
-				B4FEFDD81B4987AF00C87F2F /* JBChartView.h */,
-				B4FEFDD91B4987AF00C87F2F /* JBChartView.m */,
-				B4FEFDDA1B4987AF00C87F2F /* JBLineChartView.h */,
-				B4FEFDDB1B4987AF00C87F2F /* JBLineChartView.m */,
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
