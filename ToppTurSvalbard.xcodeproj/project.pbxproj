@@ -213,8 +213,6 @@
 		B4FB189B19B73AB8000994AB /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		B4FEFDB91B49879900C87F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4FEFDBA1B49879900C87F2F /* JBChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBChart.h; sourceTree = "<group>"; };
-		B4FEFDC81B49879900C87F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4FEFDC91B49879900C87F2F /* JBChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBChartTests.m; sourceTree = "<group>"; };
 		B4FEFDD61B4987AF00C87F2F /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
 		B4FEFDD71B4987AF00C87F2F /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
 		B4FEFDD81B4987AF00C87F2F /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
@@ -270,7 +268,6 @@
 				B4D175CE198C100D008DA3AE /* ToppTurSvalbard */,
 				B4D57BA21A026885008D5478 /* Topptur.app */,
 				B4FEFDB71B49879900C87F2F /* JBChart */,
-				B4FEFDC61B49879900C87F2F /* JBChartTests */,
 				57FD4B967268787DDDAAF4F1 /* Pods */,
 				850EB26C2288AB2C00C28B98 /* Frameworks */,
 			);
@@ -467,23 +464,6 @@
 			isa = PBXGroup;
 			children = (
 				B4FEFDB91B49879900C87F2F /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B4FEFDC61B49879900C87F2F /* JBChartTests */ = {
-			isa = PBXGroup;
-			children = (
-				B4FEFDC91B49879900C87F2F /* JBChartTests.m */,
-				B4FEFDC71B49879900C87F2F /* Supporting Files */,
-			);
-			path = JBChartTests;
-			sourceTree = "<group>";
-		};
-		B4FEFDC71B49879900C87F2F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B4FEFDC81B49879900C87F2F /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
