@@ -211,8 +211,6 @@
 		B4EB803C1A93DAD00038137F /* VardenPlataabergetGraf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VardenPlataabergetGraf.png; sourceTree = "<group>"; };
 		B4EBDA6A1AB8DA8E004875A6 /* ToppTurSvalbard 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ToppTurSvalbard 3.xcdatamodel"; sourceTree = "<group>"; };
 		B4FB189B19B73AB8000994AB /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
-		D751770A75A9EAE2C48FDFC4 /* Pods-ToppTurSvalbard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToppTurSvalbard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToppTurSvalbard/Pods-ToppTurSvalbard.debug.xcconfig"; sourceTree = "<group>"; };
-		D98EDC3ACD17A4F94F0A37DE /* Pods-ToppTurSvalbard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToppTurSvalbard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToppTurSvalbard/Pods-ToppTurSvalbard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,15 +227,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		57FD4B967268787DDDAAF4F1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D751770A75A9EAE2C48FDFC4 /* Pods-ToppTurSvalbard.debug.xcconfig */,
-				D98EDC3ACD17A4F94F0A37DE /* Pods-ToppTurSvalbard.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		850EB26C2288AB2C00C28B98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,7 +248,6 @@
 			children = (
 				B4D175CE198C100D008DA3AE /* ToppTurSvalbard */,
 				B4D57BA21A026885008D5478 /* Topptur.app */,
-				57FD4B967268787DDDAAF4F1 /* Pods */,
 				850EB26C2288AB2C00C28B98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -448,12 +436,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4D175EB198C100D008DA3AE /* Build configuration list for PBXNativeTarget "ToppTurSvalbard" */;
 			buildPhases = (
-				2535D17E56E9A56520300818 /* [CP] Check Pods Manifest.lock */,
 				B4D175C8198C100D008DA3AE /* Sources */,
 				B4D175C9198C100D008DA3AE /* Frameworks */,
 				B4D175CA198C100D008DA3AE /* Resources */,
-				039D381A0F23E2141CEED701 /* [CP] Embed Pods Frameworks */,
-				25EE7638B550E3C94F0AA114 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -598,54 +583,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		039D381A0F23E2141CEED701 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToppTurSvalbard/Pods-ToppTurSvalbard-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2535D17E56E9A56520300818 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		25EE7638B550E3C94F0AA114 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToppTurSvalbard/Pods-ToppTurSvalbard-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4D175C8198C100D008DA3AE /* Sources */ = {
@@ -834,7 +771,6 @@
 		};
 		B4D175EC198C100D008DA3AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D751770A75A9EAE2C48FDFC4 /* Pods-ToppTurSvalbard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -868,7 +804,6 @@
 		};
 		B4D175ED198C100D008DA3AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D98EDC3ACD17A4F94F0A37DE /* Pods-ToppTurSvalbard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
