@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22E6C7AF24CF527400D2BA2E /* VisitStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E6C7AE24CF527400D2BA2E /* VisitStoryboard.storyboard */; };
+		22E6C7AF24CF527400D2BA2E /* Visit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E6C7AE24CF527400D2BA2E /* Visit.storyboard */; };
 		850EB2712288AE1F00C28B98 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EB2702288AE1F00C28B98 /* CloudKit.framework */; };
 		854576FB224ABA7D009717AF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 854576FA224ABA7D009717AF /* Launch Screen.storyboard */; };
 		858225BD224C087E005571D8 /* Lunsjtoppen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 858225BC224C087D005571D8 /* Lunsjtoppen.jpg */; };
@@ -15,8 +15,8 @@
 		858225C1224C0891005571D8 /* HalveistilVarden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 858225C0224C0891005571D8 /* HalveistilVarden.jpg */; };
 		858225C2224C0AEF005571D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D01AF619A23C8C00CA44B3 /* MapKit.framework */; };
 		85881EBA249601C80061A8C9 /* AppIcon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 85881EB9249601C80061A8C9 /* AppIcon72x72.png */; };
-		858C40F9249F8A9100C7445B /* AlertStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858C40F8249F8A9100C7445B /* AlertStoryboard.storyboard */; };
-		858C4101249F8D0700C7445B /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C4100249F8D0700C7445B /* AlertViewController.swift */; };
+		858C40F9249F8A9100C7445B /* ImportantAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858C40F8249F8A9100C7445B /* ImportantAlert.storyboard */; };
+		858C4101249F8D0700C7445B /* ImportantAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C4100249F8D0700C7445B /* ImportantAlertViewController.swift */; };
 		858C4103249F92F900C7445B /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C4102249F92F900C7445B /* AlertService.swift */; };
 		8594B698225084FE004E856D /* LarsHiertafjellet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8594B697225084FE004E856D /* LarsHiertafjellet.jpg */; };
 		8594B69A2250932D004E856D /* Endalen2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8594B6992250932C004E856D /* Endalen2.jpg */; };
@@ -86,7 +86,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22E6C7AE24CF527400D2BA2E /* VisitStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VisitStoryboard.storyboard; sourceTree = "<group>"; };
+		22E6C7AE24CF527400D2BA2E /* Visit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Visit.storyboard; sourceTree = "<group>"; };
 		850EB26F2288AE1300C28B98 /* Topptur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Topptur.entitlements; sourceTree = "<group>"; };
 		850EB2702288AE1F00C28B98 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		854576FA224ABA7D009717AF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 		858225C0224C0891005571D8 /* HalveistilVarden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HalveistilVarden.jpg; sourceTree = "<group>"; };
 		85881EB9249601C80061A8C9 /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon72x72.png; sourceTree = "<group>"; };
 		858A4707249FED8800BA708F /* ToppTurSvalbard 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ToppTurSvalbard 4.xcdatamodel"; sourceTree = "<group>"; };
-		858C40F8249F8A9100C7445B /* AlertStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertStoryboard.storyboard; sourceTree = "<group>"; };
-		858C4100249F8D0700C7445B /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		858C40F8249F8A9100C7445B /* ImportantAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImportantAlert.storyboard; sourceTree = "<group>"; };
+		858C4100249F8D0700C7445B /* ImportantAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportantAlertViewController.swift; sourceTree = "<group>"; };
 		858C4102249F92F900C7445B /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		8594B697225084FE004E856D /* LarsHiertafjellet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LarsHiertafjellet.jpg; sourceTree = "<group>"; };
 		8594B6992250932C004E856D /* Endalen2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Endalen2.jpg; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 				B4D57BCB1A038423008D5478 /* Summit */,
 				B4D57BCA1A03840B008D5478 /* Storyboard */,
 				B4D175D1198C100D008DA3AE /* AppDelegate.swift */,
-				858C4100249F8D0700C7445B /* AlertViewController.swift */,
+				858C4100249F8D0700C7445B /* ImportantAlertViewController.swift */,
 				858C4102249F92F900C7445B /* AlertService.swift */,
 				B4D175F1198C11C8008DA3AE /* MainVC.swift */,
 				B4E4A6E719CAF1A8002B5AC6 /* InfoVC.swift */,
@@ -270,11 +270,11 @@
 		B4D57BCA1A03840B008D5478 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				22E6C7AE24CF527400D2BA2E /* VisitStoryboard.storyboard */,
+				22E6C7AE24CF527400D2BA2E /* Visit.storyboard */,
 				B4216C6119A29BC900BC8725 /* Main.storyboard */,
 				B400419B1C66A475002CCA9B /* About.storyboard */,
 				854576FA224ABA7D009717AF /* Launch Screen.storyboard */,
-				858C40F8249F8A9100C7445B /* AlertStoryboard.storyboard */,
+				858C40F8249F8A9100C7445B /* ImportantAlert.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -472,7 +472,7 @@
 				B4DCC8B61AF6B90C00DFEE30 /* Gruvefjellet.jpg in Resources */,
 				858225BD224C087E005571D8 /* Lunsjtoppen.jpg in Resources */,
 				B4EB80421A93DAD00038137F /* NordenskjoldGraf.png in Resources */,
-				858C40F9249F8A9100C7445B /* AlertStoryboard.storyboard in Resources */,
+				858C40F9249F8A9100C7445B /* ImportantAlert.storyboard in Resources */,
 				B4E45F2D1AC3361E0085D088 /* Sverdruphammaren.jpg in Resources */,
 				B4EB80461A93DAD00038137F /* SverdruphammarenGraf.png in Resources */,
 				B4EB804A1A93DAD00038137F /* VardenPlataabergetGraf.png in Resources */,
@@ -498,7 +498,7 @@
 				854576FB224ABA7D009717AF /* Launch Screen.storyboard in Resources */,
 				B482AC321F154900007852EC /* Lars_Hiertafjellet.jpg in Resources */,
 				8594B698225084FE004E856D /* LarsHiertafjellet.jpg in Resources */,
-				22E6C7AF24CF527400D2BA2E /* VisitStoryboard.storyboard in Resources */,
+				22E6C7AF24CF527400D2BA2E /* Visit.storyboard in Resources */,
 				B482AC301F1546B1007852EC /* Turboski.jpg in Resources */,
 				B4E45F1F1AC3275B0085D088 /* Trollstein.jpg in Resources */,
 				B4EB80471A93DAD00038137F /* TrollsteinGraf.png in Resources */,
@@ -527,7 +527,7 @@
 				B4E4A6E819CAF1A8002B5AC6 /* InfoVC.swift in Sources */,
 				858C4103249F92F900C7445B /* AlertService.swift in Sources */,
 				B458D5871D188D9000723B5A /* KeyboardLayoutConstraints.swift in Sources */,
-				858C4101249F8D0700C7445B /* AlertViewController.swift in Sources */,
+				858C4101249F8D0700C7445B /* ImportantAlertViewController.swift in Sources */,
 				B4D6324719AB338A003A7BE9 /* SummitPointAnnotation.swift in Sources */,
 				B4D6324119AB1C55003A7BE9 /* MainMapVC.swift in Sources */,
 				B4D175D2198C100D008DA3AE /* AppDelegate.swift in Sources */,
