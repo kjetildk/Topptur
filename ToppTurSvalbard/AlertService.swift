@@ -10,11 +10,11 @@ import UIKit
 
 class AlertService{
     
-    func alert(title: String, message: String, completion: @escaping () -> Void) -> AlertViewController {
+    func alert(title: String, message: String, completion: @escaping () -> Void) -> ImportantAlertViewController {
         
-        let storyboard = UIStoryboard(name: "AlertStoryboard", bundle: .main)
+        let storyboard = UIStoryboard(name: "ImportantAlert", bundle: .main)
         
-        let alertVC = storyboard.instantiateViewController(withIdentifier: "AlertVC") as! AlertViewController
+        let alertVC = storyboard.instantiateViewController(withIdentifier: "AlertVC") as! ImportantAlertViewController
         
         alertVC.alertTitle = title
         alertVC.alertMessage = message

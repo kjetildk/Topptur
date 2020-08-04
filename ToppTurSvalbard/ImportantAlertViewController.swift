@@ -1,5 +1,5 @@
 //
-//  AlertViewController.swift
+//  ImportantAlertViewController.swift
 //  ToppTurSvalbard
 //
 //  Created by Kjetil Dahl Knutsen on 21.06.2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlertViewController: UIViewController {
+class ImportantAlertViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     
