@@ -38,7 +38,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         let alertVC = alertService.alert(title: NSLocalizedString("ALERT_TITLE",comment:"title"), message: NSLocalizedString("ALERT_MESSAGE",comment:"message")){
             
-            print("Joho!!!")
+            //print("Joho!!!")
         }
         
         present(alertVC, animated: true)
