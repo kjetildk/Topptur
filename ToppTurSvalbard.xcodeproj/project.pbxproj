@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		22E6C7AF24CF527400D2BA2E /* Visit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E6C7AE24CF527400D2BA2E /* Visit.storyboard */; };
-		850EB2712288AE1F00C28B98 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EB2702288AE1F00C28B98 /* CloudKit.framework */; };
 		854576FB224ABA7D009717AF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 854576FA224ABA7D009717AF /* Launch Screen.storyboard */; };
 		858225BD224C087E005571D8 /* Lunsjtoppen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 858225BC224C087D005571D8 /* Lunsjtoppen.jpg */; };
 		858225BF224C0888005571D8 /* Kuhaugen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 858225BE224C0888005571D8 /* Kuhaugen.jpg */; };
@@ -88,7 +87,6 @@
 /* Begin PBXFileReference section */
 		22E6C7AE24CF527400D2BA2E /* Visit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Visit.storyboard; sourceTree = "<group>"; };
 		850EB26F2288AE1300C28B98 /* Topptur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Topptur.entitlements; sourceTree = "<group>"; };
-		850EB2702288AE1F00C28B98 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		854576FA224ABA7D009717AF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		858225BC224C087D005571D8 /* Lunsjtoppen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lunsjtoppen.jpg; sourceTree = "<group>"; };
 		858225BE224C0888005571D8 /* Kuhaugen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kuhaugen.jpg; sourceTree = "<group>"; };
@@ -111,6 +109,7 @@
 		B411BFEF1AC4954A00FFCED3 /* Endalen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Endalen.jpg; sourceTree = "<group>"; };
 		B4216C6219A29BC900BC8725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B43684AC1A35D79800CEE4FE /* ToppTurSvalbard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToppTurSvalbard.xcdatamodel; sourceTree = "<group>"; };
+		B450A77924DABE53002534C8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		B4520F4B19917CEF00268F05 /* SummitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummitCell.swift; sourceTree = "<group>"; };
 		B458D5861D188D9000723B5A /* KeyboardLayoutConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraints.swift; sourceTree = "<group>"; };
 		B45B8C1419C72660003F8B7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -184,7 +183,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				850EB2712288AE1F00C28B98 /* CloudKit.framework in Frameworks */,
 				858225C2224C0AEF005571D8 /* MapKit.framework in Frameworks */,
 				B4D6324919AB3B1A003A7BE9 /* CoreLocation.framework in Frameworks */,
 			);
@@ -193,14 +191,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		850EB26C2288AB2C00C28B98 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				850EB2702288AE1F00C28B98 /* CloudKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B47C47831A0B802D002F5B7E /* Indexing headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,7 +204,6 @@
 			children = (
 				B4D175CE198C100D008DA3AE /* ToppTurSvalbard */,
 				B4D57BA21A026885008D5478 /* Topptur.app */,
-				850EB26C2288AB2C00C28B98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -303,6 +292,7 @@
 		B4DBA8AF1A0B71A60075BE39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B450A77924DABE53002534C8 /* CloudKit.framework */,
 				B48C6D4C19AB911E009AFB4B /* Photos.framework */,
 				B4D6324819AB3B1A003A7BE9 /* CoreLocation.framework */,
 				B4D01AF619A23C8C00CA44B3 /* MapKit.framework */,
