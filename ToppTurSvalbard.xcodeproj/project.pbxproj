@@ -146,7 +146,6 @@
 		B4DCF59519A9157000C3B7F2 /* DescriptionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionVC.swift; sourceTree = "<group>"; };
 		B4DCF59919A92E8E00C3B7F2 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		B4DE042C19A0BE69004EF7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B4E2DADC1D6481620032C5DE /* ToppTurSvalbard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToppTurSvalbard-Bridging-Header.h"; sourceTree = "<group>"; };
 		B4E45F151AC3275B0085D088 /* Sukkertoppen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sukkertoppen.jpg; sourceTree = "<group>"; };
 		B4E45F161AC3275B0085D088 /* Sarkofagen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sarkofagen.jpg; sourceTree = "<group>"; };
 		B4E45F171AC3275B0085D088 /* Trollstein.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Trollstein.jpg; sourceTree = "<group>"; };
@@ -191,14 +190,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B47C47831A0B802D002F5B7E /* Indexing headers */ = {
-			isa = PBXGroup;
-			children = (
-				B4E2DADC1D6481620032C5DE /* ToppTurSvalbard-Bridging-Header.h */,
-			);
-			name = "Indexing headers";
-			sourceTree = "<group>";
-		};
 		B4D175C3198C100D008DA3AE = {
 			isa = PBXGroup;
 			children = (
@@ -212,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				850EB26F2288AE1300C28B98 /* Topptur.entitlements */,
-				B47C47831A0B802D002F5B7E /* Indexing headers */,
 				B4DBA8AF1A0B71A60075BE39 /* Frameworks */,
 				B4D57BA41A0268E2008D5478 /* Images */,
 				B4D57BCC1A03848D008D5478 /* Core Data */,
@@ -709,7 +699,7 @@
 				PRODUCT_NAME = Topptur;
 				PROVISIONING_PROFILE = "";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ToppTurSvalbard/ToppTurSvalbard-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -742,7 +732,7 @@
 				PRODUCT_NAME = Topptur;
 				PROVISIONING_PROFILE = "";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ToppTurSvalbard/ToppTurSvalbard-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
